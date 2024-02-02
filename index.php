@@ -24,24 +24,27 @@ include "header.php";
         <div class="icon-container container">
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
-                    <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-play.png" alt="Video">
                     <a href="https://www.youtube.com/watch?v=fdGWRq1dVBA" target="blank">
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-play.png"
+                            alt="Video">
                         <h2>Watch videos</h2>
                     </a>
                 </div>
             </div>
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
-                    <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-find.png" alt="Product">
                     <a href="Products.php" target="#">
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-find.png"
+                            alt="Product">
                         <h2>Find spare parts</h2>
                     </a>
                 </div>
             </div>
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
-                    <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-write.png" alt="Partner">
                     <a href="Contact.php" target="#">
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-write.png"
+                            alt="Partner">
                         <h2>Become our partner</h2>
                     </a>
                 </div>
