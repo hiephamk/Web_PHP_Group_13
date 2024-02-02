@@ -27,7 +27,7 @@ include "header.php";
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
           <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-find.png" alt="">
-          <a href="Products.html" target="#">
+          <a href="Products.php" target="#">
             <h2>Find spare parts</h2>
           </a>
         </div>
@@ -35,7 +35,7 @@ include "header.php";
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
           <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-write.png" alt="">
-          <a href="Contact.html" target="#">
+          <a href="Contact.php" target="#">
             <h2>Become our partner</h2>
           </a>
         </div>
