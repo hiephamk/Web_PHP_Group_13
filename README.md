@@ -1,5 +1,5 @@
 Live version's link:
-https://hiephamk.github.io/group_13_Web_Project/
+https://github.com/hiephamk/Web_PHP_Group_13.git
 
 Welcome to the task README!
 
