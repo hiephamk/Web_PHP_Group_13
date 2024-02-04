@@ -1,58 +1,85 @@
 Live version's link:
 https://github.com/hiephamk/Web_PHP_Group_13.git
 
-Welcome to the task README!
+# Website for Car Producing Company - Team 13
 
-You are required to create ´Readme.md´ in your project directory to document your activities throughout the project's lifecycle.
+The website will serve as a comprehensive product showcase platform for a car producing company. The website will display the company news, product descriptions and contact information.
 
-You will regularly update it to monitor the ongoing development of the project.
+## Members:
+1. Huynh Van Hiep
+2. Vu Quang Dan
+3. Tran Huynh An Duy
+4. Nguyen Dinh Khanh Chi
 
-You will start by outlining the planned features, task assignments to team members and document the evolving progress of your work.
+## Table of Contents
+- [Features](#features)
+- [Database Tables](#database-tables)
+- [Created Forms](#created-forms)
+- [Created Tables](#created-tables)
 
-Below, you will find an example to help you get started. Feel free to customize it to match your specific requirements and needs.
+---
 
-Project Name - Team Number
-A brief description of your web development project.
+## Features
 
-Table of Contents
-Features
-Database Tables
-Created Forms
-Created Tables
-Features
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
- Feature 1 (Full Name): Title of the feature.
- Feature 2 (Full Name): Title of the feature.
- Feature 3 (Full Name): Title of the feature.
-Add features as required.
+- [ ] Feature 1 (Full Name): Adding a match (filter) for product page
+- [ ] Feature 2 (Full Name): Feedback & suggestion (form)  for Contact page
+- [ ] Feature 3 (Full Name): Voting options (rate, review - only for members) for product page
+- [ ] Feature 4 (Full Name): Member registration 
+- [ ] Feature 5 (Full Name): Display cars on sales for Home, product and news pages
+- [ ] Feature 6 (Full Name): Login and update profile 
+- [ ] Feature 7 (Full Name): Search - in header of all pages (optional)
 
-Feature 1
-Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+### Feature 1
 
-Feature 2
+Include more detailed information about Feature 1 here. 
+- Provide links to related code files (github): Ex: ### Github/project13/Feature1.php
+- Link to the feature (shell.hamk.fi): Ex: ### shell.hamk.fi/~member1/Feature1.php
+
+### Feature 2
+
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-Feature 3
+### Feature 3
+
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-Database Tables
-List the database tables that are part of your project.
+---
 
-Table 1 (Created By): Table Name
-Table 2 (Created By): Table Name
-Table 3 (Created By): Table Name
-Include the ER Diagram of the database.
+## Database Tables
 
-Created Forms
+List the database tables that are part of your project. 
+
+- Table 1 (Created By): Table Name 
+- Table 2 (Created By): Table Name 
+- Table 3 (Created By): Table Name 
+
+> Include the ER Diagram of the database. 
+
+---
+
+## Created Forms
+
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-Created Tables
+- Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+
+
+---
+
+## Created Tables
+
 List any tables that you have created in the project work
 
-Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+
+---
+
+
+
+> Feel free to customize this README template to suit your project's specific needs. Providing clear and organized documentation will help your team members understand the project's progress and tasks effectively. This document will have a significant impact on the grading. 
