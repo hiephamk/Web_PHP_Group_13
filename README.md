@@ -23,12 +23,12 @@ The website will serve as a comprehensive product showcase platform for a car pr
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 (Full Name): Adding a match (filter) for product page
+- [ ] Feature 1 (Full Name): Adding a match (filter) for Product page
 - [ ] Feature 2 (Full Name): Feedback & suggestion (form)  for Contact page
-- [ ] Feature 3 (Full Name): Voting options (rate, review - only for members) for product page
+- [ ] Feature 3 (Full Name): Voting options (rate, review - only for members) for Product page
 - [ ] Feature 4 (Full Name): Member registration 
-- [ ] Feature 5 (Full Name): Display cars on sales for Home, product and news pages
-- [ ] Feature 6 (Full Name): Login and update profile 
+- [ ] Feature 5 (Full Name): Display cars on sales for Home, Product and News pages
+- [ ] Feature 6 (Full Name): Login and update profile for Member page (optional) 
 - [ ] Feature 7 (Full Name): Search - in header of all pages (optional)
 
 ### Feature 1
