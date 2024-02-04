@@ -5,7 +5,7 @@ https://github.com/hiephamk/Web_PHP_Group_13.git
 
 The website will serve as a comprehensive product showcase platform for a car producing company. The website will display the company news, product descriptions and contact information.
 
-## Members:
+## Members
 1. Huynh Van Hiep
 2. Vu Quang Dan
 3. Tran Huynh An Duy
