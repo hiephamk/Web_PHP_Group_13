@@ -27,9 +27,10 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 2 (Full Name): Adding a match (filter) for product page
 - [ ] Feature 3 (Full Name): Feedback & suggestion (form) for Contact page
 - [ ] Feature 4 (Full Name): Display cars on sales for Home, product and news pages
-- [ ] Feature 5 (Full Name): Voting options (rate, review - only for members) for product page
-- [ ] Feature 6 (Full Name): Member registration 
-- [ ] Feature 7 (Full Name): Login and update profile 
+- [ ] Feature 5 (Full Name): Member registration 
+- [ ] Feature 6 (Full Name): Login and update profile 
+- [ ] Feature 7 (Full Name): Voting options (rate, review - only for members) for product page
+
 
 
 ### Feature 1
@@ -52,9 +53,9 @@ Include more detailed information about Feature 3 here. Provide links to related
 
 List the database tables that are part of your project. 
 
-- Table 1 (Created By): Table Name 
-- Table 2 (Created By): Table Name 
-- Table 3 (Created By): Table Name 
+- Table 1 (Created By): User Accounts
+- Table 2 (Created By): Products
+- Table 3 (Created By): Contacts
 
 > Include the ER Diagram of the database. 
 
