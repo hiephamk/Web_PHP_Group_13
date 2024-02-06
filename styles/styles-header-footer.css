@@ -74,7 +74,10 @@
 .search-icon:hover {
   zoom: 1.1;
 }
-
+.login_btn{
+  margin:0 0 10px 20px;
+}
+/*  */
 .banner-items{
   width: 100%;
   position: relative;

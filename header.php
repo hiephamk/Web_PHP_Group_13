@@ -7,10 +7,10 @@
     <title>
         <?php echo $title; ?>
     </title>
-    <link rel="stylesheet" href="styles-<?php echo $title; ?>.css">
+    <link rel="stylesheet" href="./styles/styles-<?php echo $title; ?>.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles-header-footer.css">
+    <link rel="stylesheet" href="./styles/styles-header-footer.css">
 </head>
 
 <body>
@@ -67,6 +67,12 @@
                                     <img src="img/icons8-search.png" alt="">
                                 </a>
                             </div>
+                            <div class="login_btn">
+                                <a href="register.php"><button class="btn btn-primary">SignUp</button></a>
+                                <a href="login.php"><button class="btn btn-primary">LogIn</button></a>
+                            </div>
+
+
                         </div>
                     </div>
                 </nav>

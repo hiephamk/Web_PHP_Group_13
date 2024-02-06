@@ -2,7 +2,6 @@
 $title = "Home";
 include "header.php";
 ?>
-
 <!-- body -->
 <div class="body-page container d-flex-column justify-content-center">
     <div class="banner-items">
