@@ -7,7 +7,7 @@ The website will serve as a comprehensive product showcase platform for a car pr
 
 ## Members
 1. Huynh Van Hiep
-2. Vu Quang Dan
+2. Vu Quang Dan (Dan)
 3. Tran Huynh An Duy
 4. Nguyen Dinh Khanh Chi
 
