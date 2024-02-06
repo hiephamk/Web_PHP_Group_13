@@ -3,9 +3,9 @@
 CREATE TABLE `Product` (
   `product_id` int NOT NULL AUTO_INCREMENT,
   `product_name` varchar(50) NOT NULL,
-  `short_desc` varchar(50) NOT NULL,
+  `short_desc` varchar(100) NOT NULL,
   `full_desc` varchar(500) NOT NULL,
-  `image` varchar(100) NOT NULL,
+  `image` varchar(50) NOT NULL,
   `category_id` int NOT NULL,
   `energy_id` int NOT NULL,
   PRIMARY KEY (`product_id`),
