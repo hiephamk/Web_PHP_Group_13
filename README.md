@@ -53,9 +53,9 @@ Include more detailed information about Feature 3 here. Provide links to related
 
 List the database tables that are part of your project. 
 
-- Table 1 (Created By): User Accounts
-- Table 2 (Created By): Products
-- Table 3 (Created By): Contacts
+- Table 1 (Created By Nguyen Dinh Khanh Chi): Product
+- Table 2 (Created By Nguyen Dinh Khanh Chi): CarCategory
+- Table 3 (Created By Nguyen Dinh Khanh Chi): EnergyType
 
 > Include the ER Diagram of the database. 
 
