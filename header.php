@@ -1,3 +1,9 @@
+<?php
+ob_start();
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,13 +74,19 @@
                                 </a>
                             </div>
                             <div class="login_btn">
-                                <a href="register.php"><button class="btn btn-primary">SignUp</button></a>
-                                <a href="login.php"><button class="btn btn-primary">LogIn</button></a>
+                                <?php
+                                if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
+                                    echo '<a href="index.php">Welcome ' . $_SESSION['lname'] . '! </a>';
+                                    echo '<a href="logout.php"><button class="btn btn-primary">LogOut</button></a>';
+                                } else {
+                                    ?>
+                                    <a href="register.php"><button class="btn btn-primary">SignUp</button></a>
+                                    <a href="login.php"><button class="btn btn-primary ">LogIn</button></a>
+                                <?php } ?>
                             </div>
-
-
                         </div>
                     </div>
                 </nav>
             </div>
+
         </div>

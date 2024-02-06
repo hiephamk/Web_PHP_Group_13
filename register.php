@@ -2,8 +2,9 @@
 $title = "Register";
 include "header.php";
 ?>
-<div class="container w-50">
-    <form class="row g-3" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+<div class="container w-50 align-middle">
+    <h3 style="color: rgb(27, 3, 241);text-align: center;"> SIGN UP </h3> <br>
+    <form class="row g-3 bg-warning" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">First Name</label>
             <input type="text" class="form-control" id="inputEmail4" name="fname">
@@ -36,13 +37,13 @@ include "header.php";
                 </label>
             </div>
         </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary" name="submit">Register</button>
+        <div class="col-12" align-middle>
+            <input type="submit" class="btn btn-primary" name="submit" value="Sign Up">
         </div>
     </form>
 </div>
 
-<div class="container text-center">
+<div class="container text-center">`
     <?php
     // Check if the 'submit' button in the form was clicked
     if (isset($_POST['submit'])) {

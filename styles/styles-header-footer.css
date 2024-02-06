@@ -75,7 +75,13 @@
   zoom: 1.1;
 }
 .login_btn{
-  margin:0 0 10px 20px;
+  margin:0 0 0 20px;
+  width: 200px;
+  align-content: center;
+  display: inline-block;
+}
+.btn{
+  margin:0 0 0 20px;
 }
 /*  */
 .banner-items{
