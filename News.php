@@ -1,6 +1,6 @@
 <?php
 $title = "News";
-include "header.php";
+include "./layout/header.php";
 ?>
 <!-- body -->
 <div class="body-page container d-inline-block justify-content-center">
@@ -466,4 +466,4 @@ include "header.php";
 </div> <!-- End Body-->
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "./layout/footer.php"; ?>

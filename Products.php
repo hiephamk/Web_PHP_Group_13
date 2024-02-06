@@ -1,6 +1,6 @@
 <?php
 $title = "Products";
-include "header.php";
+include "./layout/header.php";
 ?>
 
 <!-- Body -->
@@ -232,4 +232,4 @@ include "header.php";
 </div>
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "./layout/footer.php"; ?>

@@ -1,6 +1,6 @@
 <?php
 $title = "Home";
-include "header.php";
+include "./layout/header.php";
 ?>
 
 <!-- body -->
@@ -166,4 +166,4 @@ include "header.php";
 <!--Footer-->
 
 <!--Column 3-->
-<?php include "footer.php"; ?>
+<?php include "./layout/footer.php"; ?>
