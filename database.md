@@ -42,7 +42,7 @@ CREATE TABLE `EnergyType` (
 ```
 
 # table 6: duy23000
-
+```sql
 CREATE TABLE `news` (
   `id` int NOT NULL,
   `title` varchar(50) NOT NULL,
@@ -50,7 +50,8 @@ CREATE TABLE `news` (
   `image` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `news_categoryId` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+```
+```sql
 --
 -- Dumping data for table `news`
 --
@@ -60,7 +61,7 @@ INSERT INTO `news` (`id`, `title`, `news_desc`, `image`, `news_categoryId`) VALU
 (3, 'News-2', 'News about business today', '../andy_tasks/images/news2.jpg', 2),
 (4, 'News-2', 'News about Technology today', '../andy_tasks/images/news3.jpg', 3);
 
-
+```
 # table 7: duy23000
 ```sql
 CREATE TABLE `NewsCategory` (
