@@ -32,18 +32,17 @@ CREATE TABLE `EnergyType` (
 ```
 
 # table 4: hiep23000
-```Database_Customers:
+```Database_Customers:```
 CREATE TABLE `customers` (
-  `customer_id` int NOT NULL,
-  `fname` varchar(100) DEFAULT NULL,
-  `lname` varchar(100) DEFAULT NULL,
-  `address` varchar(200) DEFAULT NULL,
-  `login_status` tinyint(1) DEFAULT NULL,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `phone` varchar(15) NOT NULL
+  customer_id` int NOT NULL,
+  fname` varchar(100) DEFAULT NULL,
+  lname` varchar(100) DEFAULT NULL,
+  address` varchar(200) DEFAULT NULL,
+  login_status` tinyint(1) DEFAULT NULL,
+  email` varchar(100) NOT NULL,
+  password` varchar(100) NOT NULL,
+  phone` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-```
 
 # table 5: dan23000
 ```sql
