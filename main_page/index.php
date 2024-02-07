@@ -1,12 +1,12 @@
 <?php
 $title = "Home";
-include "header.php";
+include_once "../sub_page/header.php";
 ?>
-<!-- body -->
+<!-- php controler -->
 <div class="body-page container d-flex-column justify-content-center">
     <div class="banner-items">
         <div class="banner-img">
-            <img class="img-fluid" src="./img-hiep/banner-home.jpeg" alt="">
+            <img class="img-fluid" src="../img/banner-home.jpeg" alt="">
         </div>
         <div class="banner-text">
             <input type="checkbox" id="ck">
@@ -24,7 +24,7 @@ include "header.php";
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
                     <a href="https://www.youtube.com/watch?v=fdGWRq1dVBA" target="blank">
-                        <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-play.png"
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-play.png"
                             alt="Video">
                         <h2>Watch videos</h2>
                     </a>
@@ -33,7 +33,7 @@ include "header.php";
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
                     <a href="Products.php" target="#">
-                        <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-find.png"
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-find.png"
                             alt="Product">
                         <h2>Find spare parts</h2>
                     </a>
@@ -42,7 +42,7 @@ include "header.php";
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
                     <a href="Contact.php" target="#">
-                        <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-write.png"
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-write.png"
                             alt="Partner">
                         <h2>Become our partner</h2>
                     </a>
@@ -55,21 +55,21 @@ include "header.php";
             <input type="checkbox" id="expand-3">
             <div class="accessory-item-container d-inline-flex">
                 <div class="accessory-item item-1 col-4">
-                    <img class="img-fluid" src="./img/interior-1.jpeg" alt="">
+                    <img class="img-fluid" src="../img/interior-1.jpeg" alt="">
                     <label class="label-1" for="expand">
                         Self Driving Technology<br>
                         Click here
                     </label>
                 </div>
                 <div class="accessory-item item-2 col-4">
-                    <img class="img-fluid" src="./img-hiep/interior-2.jpeg" alt="">
+                    <img class="img-fluid" src="../img-hiep/interior-2.jpeg" alt="">
                     <label class="label-2" for="expand-2">
                         Interior Accessories<br>
                         Click here
                     </label>
                 </div>
                 <div class="accessory-item item-3 col-4">
-                    <img class="img-fluid" src="./img-hiep/interior-4.jpeg" alt="">
+                    <img class="img-fluid" src="../img-hiep/interior-4.jpeg" alt="">
                     <label class="label-3" for="expand-3">
                         Exterior Accessories<br>
                         Click here
@@ -78,7 +78,7 @@ include "header.php";
             </div>
             <div class="expand-item-2">
                 <div class="d-flex expand-block">
-                    <img class="img-fluid col-6" src="./img/interior-2.jpeg" alt="">
+                    <img class="img-fluid col-6" src="../img/interior-2.jpeg" alt="">
                     <div class="col-6 p-3">
                         <h3 class="text-left-2">Interior Accessories</h3>
                         <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, sit
@@ -89,7 +89,7 @@ include "header.php";
             </div>
             <div class="expand-item-1">
                 <div class="d-flex expand-block">
-                    <img class="img-fluid col-6" src="./img/interior-1.jpeg" alt="">
+                    <img class="img-fluid col-6" src="../img/interior-1.jpeg" alt="">
                     <div class="col-6 p-3">
                         <h3 class="text-left-1">Self Driving Technology</h3>
                         <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, sit
@@ -100,7 +100,7 @@ include "header.php";
             </div>
             <div class="expand-item-3">
                 <div class="d-flex expand-block">
-                    <img class="img-fluid col-6" src="./img/interior-4.jpeg" alt="">
+                    <img class="img-fluid col-6" src="../img/interior-4.jpeg" alt="">
                     <div class="col-6 p-3 ">
                         <h3 class="text-left-3">Exterior Accessories</h3>
                         <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, sit
@@ -113,7 +113,7 @@ include "header.php";
         </div>
         <div class="newcar-container">
             <div class="newcar-img">
-                <img class="img-fluid" src="./img/luxury-2.jpeg" alt="">
+                <img class="img-fluid" src="../img/luxury-2.jpeg" alt="">
             </div>
             <div class="newcar-text">
                 <input type="checkbox" id="ch">
@@ -136,22 +136,22 @@ include "header.php";
                 <h3>Feature Products</h3>
             </div>
             <div class="discovery-item">
-                <div class="col-3 item-img"><img class="img-fluid" src="./img/luxury-2.jpeg" alt="Product_1">
+                <div class="col-3 item-img"><img class="img-fluid" src="../img/luxury-2.jpeg" alt="Product_1">
                     <div class="item-text">
                         <p>Hybrid Cars</p>
                     </div>
                 </div>
-                <div class="col-3 item-img"><img class="img-fluid" src="./img/luxury-3.jpeg" alt="Product_2">
+                <div class="col-3 item-img"><img class="img-fluid" src="../img/luxury-3.jpeg" alt="Product_2">
                     <div class="item-text">
                         <p>Electric Cars</p>
                     </div>
                 </div>
-                <div class="col-3 item-img"><img class="img-fluid" src="./img/luxury-1.jpeg" alt="Product_2">
+                <div class="col-3 item-img"><img class="img-fluid" src="../img/luxury-1.jpeg" alt="Product_2">
                     <div class="item-text">
                         <p>Hi-Class Cars</p>
                     </div>
                 </div>
-                <div class="col-3 item-img"><img class="img-fluid" src="./img/luxury-4.jpeg" alt="Product_2">
+                <div class="col-3 item-img"><img class="img-fluid" src="../img/luxury-4.jpeg" alt="Product_2">
                     <div class="item-text">
                         <p>Sport Cars</p>
                     </div>
@@ -161,8 +161,5 @@ include "header.php";
     </div>
 </div>
 </div>
-
 <!--Footer-->
-
-<!--Column 3-->
-<?php include "footer.php"; ?>
+<?php include "../sub_page/footer.php"; ?>

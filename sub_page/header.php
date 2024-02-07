@@ -13,10 +13,10 @@ session_start();
     <title>
         <?php echo $title; ?>
     </title>
-    <link rel="stylesheet" href="./styles/styles-<?php echo $title; ?>.css">
+    <link rel="stylesheet" href="../styles/styles-<?php echo $title; ?>.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/styles-header-footer.css">
+    <link rel="stylesheet" href="../styles/styles-header-footer.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@ session_start();
         <div class="header-container align-content-center fs-5 fw-bold text-dark">
             <!-- Logo -->
             <div class="logo-container">
-                <img src="./img/logo.png" alt="logo">
+                <img src="../img/logo.png" alt="logo">
             </div>
             <!-- Navigation -->
             <div class="nav-container">
@@ -39,11 +39,11 @@ session_start();
                         <div class="collapse navbar-collapse nav-item" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="index.php" aria-current="page"
-                                        href="index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page"
+                                        href="../main_page/index.php">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="Products.php" role="button"
+                                    <a class="nav-link dropdown-toggle" href="../main_page/Products.php" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Products
                                     </a>
@@ -61,27 +61,29 @@ session_start();
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="News.php">News</a>
+                                    <a class="nav-link" href="../main_page/News.php">News</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Contact.php">Contact</a>
+                                    <a class="nav-link" href="../main_page/Contact.php">Contact</a>
                                 </li>
                             </ul>
                             <div class="search">
                                 <input type="text" class="search-input" placeholder="Search" name="Search">
                                 <a href="#" class="search-icon">
-                                    <img src="img/icons8-search.png" alt="">
+                                    <img src="../img/icons8-search.png" alt="">
                                 </a>
                             </div>
                             <div class="login_btn">
                                 <?php
                                 if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
-                                    echo '<a href="index.php">Welcome ' . $_SESSION['lname'] . '! </a>';
-                                    echo '<a href="logout.php"><button class="btn btn-primary">LogOut</button></a>';
+                                    echo '<a href="../main_page/index.php">' . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '! </a> <br>';
+                                    echo '<a href="../sub_page/logout.php"><button class="btn-primary" style="margin-bottom: 30px;" >Log Out</button></a>';
                                 } else {
                                     ?>
-                                    <a href="register.php"><button class="btn btn-primary">SignUp</button></a>
-                                    <a href="login.php"><button class="btn btn-primary ">LogIn</button></a>
+                                    <a href="../sub_page/register.php"><button style="margin-bottom: 5px;"
+                                            class="btn-primary">Sign Up</button></a>
+                                    <a href="../sub_page/login.php"><button style="margin-bottom: 5px;"
+                                            class="btn-primary ">Log In</button></a>
                                 <?php } ?>
                             </div>
                         </div>

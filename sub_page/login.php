@@ -3,11 +3,11 @@ ob_start();
 ?>
 <?php
 $title = "Login";
-include 'header.php';
+include_once 'header.php';
 
 ?>
-<div class="container w-25">
-    <form action="process_login.php" method="post">
+<div class="container w-25 bg-warning">
+    <form action="process_login.php" method="post" style="align-items: center; justify-items: center;">
         <h3 class="text-center">LOGIN</h3>
         <div class="bg-warning text-danger">
             <?php
@@ -29,7 +29,7 @@ include 'header.php';
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Remember me.</label>
         </div>
-        <button type="submit" class="btn btn-primary" name="submit">Login</button>
+        <button type="submit" class="btn-primary btn" style="margin:0 0 20px 150px" name="submit">Login</button>
     </form>
 </div>
 <!--  -->

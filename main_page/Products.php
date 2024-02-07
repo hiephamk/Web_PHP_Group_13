@@ -1,6 +1,6 @@
 <?php
 $title = "Products";
-include "header.php";
+include "../sub_page/header.php";
 ?>
 
 <!-- Body -->
@@ -8,7 +8,7 @@ include "header.php";
   <!-- Banner -->
   <div class="banner-items container">
     <div class="banner-img">
-      <img src="./img/banner-products.png" alt="banner" class="img-fluid">
+      <img src="../img/banner-products.png" alt="banner" class="img-fluid">
     </div>
     <div class="banner-text">
       <h3>YOUR IDEAL CAR NOW AVAILABLE!</h3>
@@ -26,7 +26,7 @@ include "header.php";
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
           <a href="https://www.youtube.com/watch?v=fdGWRq1dVBA" target="blank">
-            <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-play.png" alt="Video">
+            <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-play.png" alt="Video">
             <h2>Watch videos</h2>
           </a>
         </div>
@@ -34,7 +34,7 @@ include "header.php";
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
           <a href="Products.php" target="blank">
-            <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-find.png" alt="">
+            <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-find.png" alt="">
             <h2>Find spare parts</h2>
           </a>
         </div>
@@ -42,7 +42,7 @@ include "header.php";
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
           <a href="Contact.php" target="blank">
-            <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-write.png" alt="">
+            <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-write.png" alt="">
             <h2>Become our partner</h2>
           </a>
         </div>
@@ -63,7 +63,7 @@ include "header.php";
         <!-- Column 1 -->
         <div class=" col-3 item-box ">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/ecar-iXM60.png" alt="Product_1">
+            <img class="img-fluid" src="../img/ecar-iXM60.png" alt="Product_1">
             <h3>T13 iX M60</h3>
             <h6>Electric car</h6>
             <p>
@@ -75,7 +75,7 @@ include "header.php";
         <!-- Column 2 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/ecar-iX.png" alt="Product_2">
+            <img class="img-fluid" src="../img/ecar-iX.png" alt="Product_2">
             <h3>T13 iX</h3>
             <h6>Electric car</h6>
             <p>
@@ -87,7 +87,7 @@ include "header.php";
         <!-- Column 3 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/ecar-i7.png" alt="Product_3">
+            <img class="img-fluid" src="../img/ecar-i7.png" alt="Product_3">
             <h3>T13 i7</h3>
             <h6>Electric car</h6>
             <p>
@@ -99,7 +99,7 @@ include "header.php";
         <!-- Column 4 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/ecar-i7M70.png" alt="Product_4">
+            <img class="img-fluid" src="../img/ecar-i7M70.png" alt="Product_4">
             <h3>T13 i7 M70</h3>
             <h6>Electric car</h6>
             <p>
@@ -122,7 +122,7 @@ include "header.php";
         <!-- Column 1 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/SUV-X5-hybrid.png" alt="Product_5">
+            <img class="img-fluid" src="../img/SUV-X5-hybrid.png" alt="Product_5">
             <h3>T13 X5</h3>
             <h6>Hybrid</h6>
             <p>
@@ -134,7 +134,7 @@ include "header.php";
         <!-- Column 2 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/SUV-X7.png" alt="Product_6">
+            <img class="img-fluid" src="../img/SUV-X7.png" alt="Product_6">
             <h3>T13 X7</h3>
             <h6>Petrol - Diesel</h6>
             <p>
@@ -146,7 +146,7 @@ include "header.php";
         <!-- Column 3 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/SUV-X5M.png" alt="Product_7">
+            <img class="img-fluid" src="../img/SUV-X5M.png" alt="Product_7">
             <h3>T13 X7 M60i</h3>
             <h6>Petrol</h6>
             <p>
@@ -158,7 +158,7 @@ include "header.php";
         <!-- Column 4 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/SUV-X4.png" alt="Product_8">
+            <img class="img-fluid" src="../img/SUV-X4.png" alt="Product_8">
             <h3>T13 X6</h3>
             <h6>Petrol - Diesel</h6>
             <p>
@@ -181,7 +181,7 @@ include "header.php";
         <!-- Column 1 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/Sedan-i7.png" alt="Product_9">
+            <img class="img-fluid" src="../img/Sedan-i7.png" alt="Product_9">
             <h3>T13 M5 Sedan</h3>
             <h6>Hybrid</h6>
             <p>
@@ -193,7 +193,7 @@ include "header.php";
         <!-- Column 2 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/Sedan-7series.png" alt="Product_10">
+            <img class="img-fluid" src="../img/Sedan-7series.png" alt="Product_10">
             <h3>T13 7 Series Sedan</h3>
             <h6>Hybrid</h6>
             <p>
@@ -205,7 +205,7 @@ include "header.php";
         <!-- Column 3 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/Sedan-5series.png" alt="Product_11">
+            <img class="img-fluid" src="../img/Sedan-5series.png" alt="Product_11">
             <h3>T13 M760e</h3>
             <h6>Diesel</h6>
             <p>
@@ -217,7 +217,7 @@ include "header.php";
         <!-- Column 4 -->
         <div class=" col-3 item-box">
           <a href="#" class="text-box">
-            <img class="img-fluid" src="img/Sedan-3series.png" alt="Product_12">
+            <img class="img-fluid" src="../img/Sedan-3series.png" alt="Product_12">
             <h3>T13 M5 Sedan</h3>
             <h6>Hybrid</h6>
             <p>
@@ -232,4 +232,4 @@ include "header.php";
 </div>
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "../sub_page/footer.php"; ?>

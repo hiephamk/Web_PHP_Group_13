@@ -1,12 +1,12 @@
 <?php
 $title = "News";
-include "header.php";
+include "../sub_page/header.php";
 ?>
 <!-- body -->
 <div class="body-page container d-inline-block justify-content-center">
   <div class="banner-items">
     <div class="banner-img">
-      <img src="./img/News.jpg" alt="" class="img-fluid">
+      <img src="../img/News.jpg" alt="" class="img-fluid">
     </div>
     <div class="banner-text">
       <input type="checkbox" id="ck">
@@ -19,7 +19,7 @@ include "header.php";
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
           <a href="#" target="#">
-            <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-play.png" alt="Video">
+            <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-play.png" alt="Video">
             <h2>Watch videos</h2>
           </a>
         </div>
@@ -27,7 +27,7 @@ include "header.php";
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
           <a href="Products.php" target="#">
-            <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-find.png" alt="">
+            <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-find.png" alt="">
             <h2>Find spare parts</h2>
           </a>
         </div>
@@ -35,7 +35,7 @@ include "header.php";
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
           <a href="Contact.php" target="#">
-            <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-write.png" alt="">
+            <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-write.png" alt="">
             <h2>Become our partner</h2>
           </a>
         </div>
@@ -142,7 +142,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/042.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Palm Springs Road">
                   </div>
 
@@ -181,7 +181,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/044.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Skyscrapers">
                   </div>
 
@@ -244,7 +244,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/031.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/031.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Five Lands National Park">
                   </div>
 
@@ -263,7 +263,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/032.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/032.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Paris - Eiffel Tower">
                   </div>
 
@@ -282,7 +282,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/033.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/033.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Louvre">
                   </div>
 
@@ -301,7 +301,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/034.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/034.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Times Square">
                   </div>
 
@@ -364,7 +364,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/011.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/011.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Brooklyn Bridge">
                   </div>
 
@@ -383,7 +383,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/012.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/012.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Hamilton Park">
                   </div>
 
@@ -402,7 +402,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/013.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/013.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden Kuala Lumpur">
                   </div>
 
@@ -421,7 +421,7 @@ include "header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/014.webp"
+                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/014.webp"
                       class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden">
                   </div>
 
@@ -466,4 +466,4 @@ include "header.php";
 </div> <!-- End Body-->
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "../sub_page/footer.php"; ?>

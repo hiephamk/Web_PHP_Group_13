@@ -1,13 +1,13 @@
 <?php
 $title = "Contact";
-include "header.php";
+include "../sub_page/header.php";
 ?>
 
 <!-- Body -->
 <div class="full-container">
   <!-- Banner -->
   <div class="banner">
-    <img src="img/contact-banner.jpg" alt="Banner">
+    <img src="../img/contact-banner.jpg" alt="Banner">
   </div>
 </div>
 <!-- Main -->
@@ -74,11 +74,11 @@ include "header.php";
       </div>
     </div>
     <div class="flex-item">
-      <div class="newcar-img"><img src="./img/Contact-question.jpg" alt="digital-services">
+      <div class="newcar-img"><img src="./../img/Contact-question.jpg" alt="digital-services">
       </div>
     </div>
   </div>
 </main>
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "../sub_page/footer.php"; ?>

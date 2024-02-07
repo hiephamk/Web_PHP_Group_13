@@ -4,7 +4,7 @@ session_start();
 
 ?>
 <?php
-include 'db.php';
+include '../Database/db.php';
 include "functions.php";
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
@@ -28,7 +28,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                 $_SESSION['customer_id'] = $row['customer_id'];
                 $_SESSION['fname'] = $row['fname'];
                 $_SESSION['lname'] = $row['lname'];
-                header('Location: index.php');
+                header('Location: ../main_page/index.php');
             } else {
                 header("Location: login.php?error=Incorrect email or password. Please try again!");
                 exit();

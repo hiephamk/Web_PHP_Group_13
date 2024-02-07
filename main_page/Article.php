@@ -1,6 +1,6 @@
 <?php
 $title = "Article";
-include "header.php";
+include "../sub_page/header.php";
 ?>
 
 <!-- Body -->
@@ -54,4 +54,4 @@ include "header.php";
 </div> <!-- End of d-flex-column -->
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "../sub_page/footer.php"; ?>

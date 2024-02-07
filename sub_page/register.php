@@ -1,9 +1,9 @@
 <?php
 $title = "Register";
-include "header.php";
+include_once "header.php";
 ?>
 <div class="container w-50 align-middle">
-    <h3 style="color: rgb(27, 3, 241);text-align: center;"> SIGN UP </h3> <br>
+    <h3 style="color: rgb(27, 3, 241);text-align: center;"> SIGN UP FOR FREE </h3> <br>
     <form class="row g-3 bg-warning" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">First Name</label>
@@ -36,9 +36,17 @@ include "header.php";
                     By checking this box, you are agreeing to our terms of service.
                 </label>
             </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Email me with news and updates
+                </label>
+            </div>
         </div>
         <div class="col-12" align-middle>
-            <input type="submit" class="btn btn-primary" name="submit" value="Sign Up">
+            <input type="submit" class="btn-primary"
+                style="margin:0 0 20px 260px;width:300px; height:50px;border-radius:7px;box-shadow:2px 2px #234;"
+                name="submit" value="Sign Up">
         </div>
     </form>
 </div>
@@ -56,7 +64,7 @@ include "header.php";
         $customer_password = $_POST['password'];
 
         // Include the database connection file
-        include 'db.php';
+        include '../Database/db.php';
 
         // Define an SQL query to insert data into the 'studentsinfo' table
         $sql = "INSERT INTO customers (fname, lname, phone,address,email,password)
@@ -65,8 +73,7 @@ include "header.php";
         // Execute the SQL query using the database connection
     
         if ($conn->query($sql) === TRUE) {
-            // If the query was successful, display a success message
-            echo "<h4>You have successfully registered</h4>";
+            echo "<p>You have successfully registered. Now you can <a href='login.php'>log in</a> or back to <a href='../main_page/index.php'>Home?</a> </p>";
         } else {
             // If there was an error in the query, display an error message
             echo "<p>Error! The email or phone number have already existed. Please try an another! ";
