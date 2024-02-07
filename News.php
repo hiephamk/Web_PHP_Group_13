@@ -91,7 +91,7 @@ include "header.php";
       <section>
         <div class="row gx-lg-5">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <!-- News block -->
+            <!-- News Travel block -->
             <div>
               <!-- Featured image -->
               <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
@@ -209,11 +209,11 @@ include "header.php";
                 </div>
               </a>
             </div>
-            <!-- News block -->
+            <!-- End News / Travel block -->
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <!-- News block -->
+            <!-- News / Business block -->
             <div>
               <!-- Featured image -->
               <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4" data-mdb-ripple-color="light">
@@ -329,11 +329,11 @@ include "header.php";
                 </div>
               </a>
             </div>
-            <!-- News block -->
+            <!-- End News / Business block -->
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <!-- News block -->
+            <!-- News / Technolog block -->
             <div>
               <!-- Featured image -->
               <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4" data-mdb-ripple-color="light">
@@ -449,7 +449,7 @@ include "header.php";
                 </div>
               </a>
             </div>
-            <!-- News block -->
+            <!-- End News / Technology block -->
           </div>
         </div>
       </section>
