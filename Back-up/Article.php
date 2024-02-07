@@ -21,18 +21,6 @@ include "header.php";
     <!-- Article title and description -->
     <div class="row mb-3">
       <div class="col-6">
-
-       <!-- breadcrumb (Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.)-->
-       <nav aria-label="breadcrumb"> 
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item"><a href="Products.php">Products</a></li>
-              <li class="breadcrumb-item"><a href="News.php">News</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Articles</li>
-            </ol>
-          </nav>
-          <!-- end breadcrumb -->
-
         <a href="" class="text-info">
           <i class="fas fa-plane"></i>
           Travels
@@ -62,11 +50,7 @@ include "header.php";
       </p><br>
     </div>
   </div>
-    <a href="../Web_PHP_Group_13/News.php">
-      <input type="button" value="Go Back" class="btn btn-outline-info">
-    </a>
 </div>
-<br>  
 </div> <!-- End of d-flex-column -->
 
 <!--Footer-->
