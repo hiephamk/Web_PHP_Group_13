@@ -55,21 +55,8 @@ include "header.php";
             </a>
           </div>
         </div>
-
-        
-         
         
         <div class="news-text">
-        <!-- breadcrumb (Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.)-->
-        <nav aria-label="breadcrumb"> 
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item"><a href="Products.php">Products</a></li>
-              <li class="breadcrumb-item active" aria-current="page">News</li>
-            </ol>
-          </nav>
-          <!-- end breadcrumb -->
-
           <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
           <h4><strong>Facilis consequatur eligendi</strong></h4>
           <p class="text-muted">
