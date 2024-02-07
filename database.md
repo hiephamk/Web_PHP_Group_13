@@ -34,14 +34,14 @@ CREATE TABLE `EnergyType` (
 # table 4: hiep23000
 ```Database_Customers:
 CREATE TABLE `customers` (
-  `customer_id` int NOT NULL,
+  `customer_id` int NOT NULL PRIMARY KEY,
   `fname` varchar(100) DEFAULT NULL,
   `lname` varchar(100) DEFAULT NULL,
   `address` varchar(200) DEFAULT NULL,
   `login_status` tinyint(1) DEFAULT NULL,
-  `email` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL UNIQUE,
   `password` varchar(100) NOT NULL,
-  `phone` varchar(15) NOT NULL
+  `phone` varchar(15) NOT NULL UNIQUE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 # table 5: dan23000
