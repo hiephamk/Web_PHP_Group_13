@@ -20,7 +20,7 @@ include "header.php";
         <div class="cta-icon text-center">
           <a href="#" target="#">
             <img class="img-fluid" style="width: 80px; height: 80px" src="./img/icons8-play.png" alt="Video">
-            <h2>Watch videos</h2>
+            <h2>Filter News</h2>
           </a>
         </div>
       </div>
