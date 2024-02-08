@@ -13,6 +13,7 @@ CREATE TABLE `Product` (
   FOREIGN KEY (`energy_id`) REFERENCES `EnergyType` (`energy_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
+
 # table 2: dinh23000
 ```sql
 CREATE TABLE `CarCategory` (
@@ -44,6 +45,7 @@ CREATE TABLE `customers` (
   `phone` varchar(15) NOT NULL UNIQUE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
+
 # table 5: dan23000
 ```sql
 CREATE TABLE Requests (
@@ -74,8 +76,6 @@ CREATE TABLE `news` (
 --
 -- Dumping data for table `news`
 --
-able `news`
---
 
 INSERT INTO `news` (`id`, `title`, `news_desc`, `image`, `create_date`, `news_categoryId`) VALUES
 (2, 'News-1', 'News about travelling today', '../andy_tasks/images/news1.jpg', '2024-02-05', 1),
@@ -100,6 +100,7 @@ INSERT INTO `news` (`id`, `title`, `news_desc`, `image`, `create_date`, `news_ca
 (21, 'Technology 5', 'News about technology today', '../andy_tasks/images/news/Technology-5.jpg', '2024-02-07', 3);
 
 ```
+
 # table 7: duy23000
 ```sql
 CREATE TABLE `NewsCategory` (
@@ -143,8 +144,6 @@ ALTER TABLE `news`
 ALTER TABLE `news`
   ADD CONSTRAINT `news_ibfk_1` FOREIGN KEY (`news_categoryId`) REFERENCES `NewsCategory` (`news_catergoryId`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
-
-
 ```
 
 
