@@ -46,7 +46,16 @@ CREATE TABLE `customers` (
 ```
 # table 5: dan23000
 ```sql
-
+CREATE TABLE Requests (
+    request_id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100),
+    email VARCHAR(50),
+    phone VARCHAR(20),
+    address VARCHAR(100),
+    city VARCHAR(50),
+    zip VARCHAR(20),
+    request VARCHAR(500)
+);
 ```
 
 # table 6: duy23000
