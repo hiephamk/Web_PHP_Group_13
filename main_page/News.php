@@ -153,7 +153,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/042.webp"
+                    <img src="../img/news/Travel-3.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Palm Springs Road">
                   </div>
 
@@ -192,7 +192,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/044.webp"
+                    <img src="../img/news/Travel-5.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Skyscrapers">
                   </div>
 
@@ -256,7 +256,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/031.webp"
+                    <img src="../img/news/Business-2.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Five Lands National Park">
                   </div>
 
@@ -275,7 +275,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/032.webp"
+                    <img src="../img/news/Business-3.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Paris - Eiffel Tower">
                   </div>
 
@@ -294,7 +294,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/033.webp"
+                    <img src="../img/news/Business-4.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Louvre">
                   </div>
 
@@ -313,7 +313,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/034.webp"
+                    <img src="../img/news/Business-5.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Times Square">
                   </div>
 
@@ -376,7 +376,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/011.webp"
+                    <img src="../img/news/Technology-2.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Brooklyn Bridge">
                   </div>
 
@@ -395,7 +395,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/012.webp"
+                    <img src="../img/news/Technology-3.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Hamilton Park">
                   </div>
 
@@ -414,7 +414,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/013.webp"
+                    <img src="../img/news/Technology-4.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden Kuala Lumpur">
                   </div>
 
@@ -433,7 +433,7 @@ include "../sub_page/header.php";
               <a href="" class="text-dark">
                 <div class="row mb-4 border-bottom pb-2">
                   <div class="col-3">
-                    <img src="https://mdbcdn.b-cdn.ne../img/new/standard/city/014.webp"
+                    <img src="../img/news/Technology-5.jpg"
                       class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden">
                   </div>
 

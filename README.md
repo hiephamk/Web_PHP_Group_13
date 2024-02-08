@@ -30,7 +30,7 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 5 (Huynh Van Hiep): Login and update profile
 - [ ] Feature 6 (Full Name): Display cars on sales for Home, product and news pages
 - [ ] Feature 7 (Full Name): Search - in header of all pages
-- [ ] Feature 8 (Full Name): Voting options (rate, review - only for members) for product page
+- [ ] Feature 8 (Full Name): View and update new information for News page
 
 ### Feature 1
 
@@ -61,6 +61,7 @@ List the database tables that are part of your project.
 - Table 7 (Created By duy23000): NewsCategory
 
 > Include the ER Diagram of the database. 
+[Database_diagram](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Database_diagram.png)
 
 ---
 
