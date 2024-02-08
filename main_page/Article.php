@@ -10,7 +10,7 @@ include "../sub_page/header.php";
     <!-- Image -->
     <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
       <img
-        src="https://www.ford.fi/content/dam/guxeu/nextgen/cx740s/adventure/Adventure_16_CX740S_Int_Beauty_Cockpit_1920x1080_16x9.jpg"
+        src="//img/news/Travel-2.jpg"
         class="img-fluid" alt="">
       <a
         href="https://www.ford.fi/content/dam/guxeu/nextgen/cx740s/adventure/Adventure_16_CX740S_Int_Beauty_Cockpit_1920x1080_16x9.jpg">
