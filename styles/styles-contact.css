@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
 }
-  
+
 html,
 body {
   margin: 0;
@@ -10,7 +10,7 @@ body {
   position: relative;
   width: 100%;
   height: max-content;
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 .body-container {
@@ -22,12 +22,12 @@ body {
 
 div > a {
   text-decoration: none;
-  color:#333333;
+  color: #333333;
 }
 
 button {
   background: transparent;
-  border: 2px solid #E74C3C;
+  border: 2px solid #e74c3c;
 }
 
 .card-body {
@@ -45,7 +45,7 @@ ul > li {
   list-style: none;
   padding: 10px;
 }
-/* Header - banner */
+/* Header - banner
 .header-container {
   display: flex;
   width: 100%;
@@ -87,7 +87,7 @@ input {
   right: 0;
 }
 
-.search-icon {
+/* .search-icon {
   position: absolute;
   bottom: 0;
   right: 10px;
@@ -95,8 +95,7 @@ input {
 }
 .search-icon > img {
   width: 25px;
-}
-
+} */ */
 
 /* Banner */
 
@@ -109,8 +108,8 @@ input {
 
 /*.full-container {
   max-width: 1300px; /* Hoặc kích thước tối đa phù hợp với thiết kế của bạn */
-  /* Định nghĩa grid và các thuộc tính khác */
-  /*grid-template-columns: 1fr 1fr; /* Chia container thành 2 cột với kích thước bằng nhau *
+/* Định nghĩa grid và các thuộc tính khác */
+/*grid-template-columns: 1fr 1fr; /* Chia container thành 2 cột với kích thước bằng nhau *
   align-items: start; /* Căn chỉnh các items ở đầu mỗi cột *
 }
 
@@ -126,7 +125,7 @@ input {
 }
 
 .btn-primary {
-  background-color: #E74C3C;
+  background-color: #e74c3c;
   color: #ffffff;
   text-align: center;
   margin-top: 10px;
@@ -139,12 +138,11 @@ input {
 .btn-primary:hover {
   background: #fc0101;
   font-weight: bold;
-  border:#F4F4F4 1px solid;
+  border: #f4f4f4 1px solid;
   cursor: pointer;
 }
-  
-/* Call to Action */
 
+/* Call to Action */
 
 .cta-col {
   box-sizing: border-box;
@@ -158,8 +156,8 @@ input {
 }
 
 .cta-col:hover {
-  background: #E74C3C;
-  border: #E74C3C 1px solid;
+  background: #e74c3c;
+  border: #e74c3c 1px solid;
   filter: drop-shadow(0px 4px 4px #333333);
   cursor: pointer;
 }
@@ -209,14 +207,14 @@ footer h5 {
   font-weight: 400;
   font-size: 20px;
   line-height: 122%;
-  color: #E74C3C;
+  color: #e74c3c;
 }
 
 .footer-text {
   font-weight: 400;
   font-size: 14.5px;
   line-height: 24px; /* or 166% */
-  color: #F4F4F4;
+  color: #f4f4f4;
   padding: 10px;
 }
 
@@ -230,10 +228,10 @@ footer img {
 }
 
 .copyright {
-  color: #F4F4F4;
+  color: #f4f4f4;
   font-size: 14.5px;
   text-align: left;
-  border-top: 1px solid #F4F4F4;
+  border-top: 1px solid #f4f4f4;
   margin-top: 20px;
   margin-left: -30px;
 }
@@ -263,7 +261,7 @@ footer img {
 }
 
 .text-box > h3 {
-  color:#E74C3C;
+  color: #e74c3c;
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
@@ -298,17 +296,18 @@ footer img {
     margin: auto;
   }
 
-
-.grid-full-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cột sẽ tự điều chỉnh dựa trên kích thước màn hình */
-  /* Các thuộc tính grid khác */
-}
+  .grid-full-container {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(300px, 1fr)
+    ); /* Cột sẽ tự điều chỉnh dựa trên kích thước màn hình */
+    /* Các thuộc tính grid khác */
+  }
 }
 
 @media (max-width: 768px) {
   .full-container {
-   
   }
 }
 .newcar-box {

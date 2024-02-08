@@ -40,7 +40,7 @@ ul > li {
   padding: 10px;
 }
 
-/* Header & Navigation*/
+/* Header & Navigation
 .card-header {
   width: 100%;
 }
@@ -67,7 +67,7 @@ nav {
 }
 .banner-img{
 
-}
+} */
 .btn-primary {
   background-color: #e74c3c;
   color: #ffffff;
@@ -256,19 +256,23 @@ footer img {
     height: 100vh;
   }
 
-  .icon-container, .product-container, .product-items{
+  .icon-container,
+  .product-container,
+  .product-items {
     display: flex;
     flex-direction: column;
   }
-  .item-box{
-    width: 100%;;
-  }
-
-  .banner-text, .cta-col {
+  .item-box {
     width: 100%;
   }
 
-  .footer-container, .footer-item-container {
+  .banner-text,
+  .cta-col {
+    width: 100%;
+  }
+
+  .footer-container,
+  .footer-item-container {
     flex-direction: column;
     margin: auto;
   }
