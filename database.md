@@ -60,13 +60,14 @@ CREATE TABLE Requests (
 
 # table 6: duy23000
 ```sql
-CREATE TABLE `news` (
-  `id` int NOT NULL,
+CREATE TABLE `News` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
   `title` varchar(50) NOT NULL,
   `news_desc` varchar(200) NOT NULL,
   `image` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `create_date` date DEFAULT NULL,
-  `news_categoryId` int NOT NULL
+  `news_categoryId` int NOT NULL,
+  FOREIGN KEY (`news_categoryId`) REFERENCES `NewsCategory` (`news_categoryId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
@@ -126,24 +127,6 @@ ALTER TABLE `news`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `news`
---
-ALTER TABLE `news`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `news`
---
-ALTER TABLE `news`
-  ADD CONSTRAINT `news_ibfk_1` FOREIGN KEY (`news_categoryId`) REFERENCES `NewsCategory` (`news_catergoryId`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-COMMIT;
-
 
 ```
 
