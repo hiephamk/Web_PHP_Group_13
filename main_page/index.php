@@ -24,7 +24,8 @@ include_once "../sub_page/header.php";
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
                     <a href="https://www.youtube.com/watch?v=fdGWRq1dVBA" target="blank">
-                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-play.png" alt="Video">
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-play.png"
+                            alt="Video">
                         <h2>Watch videos</h2>
                     </a>
                 </div>
@@ -32,7 +33,8 @@ include_once "../sub_page/header.php";
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
                     <a href="Products.php" target="#">
-                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-find.png" alt="Product">
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-find.png"
+                            alt="Product">
                         <h2>Find spare parts</h2>
                     </a>
                 </div>
@@ -40,7 +42,8 @@ include_once "../sub_page/header.php";
             <div class="cta-col col-4">
                 <div class="cta-icon text-center">
                     <a href="Contact.php" target="#">
-                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-write.png" alt="Partner">
+                        <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-write.png"
+                            alt="Partner">
                         <h2>Become our partner</h2>
                     </a>
                 </div>

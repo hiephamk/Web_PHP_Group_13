@@ -76,8 +76,8 @@ session_start();
                             <div class="login_btn">
                                 <?php
                                 if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
-                                    echo '<a href="../main_page/index.php">' . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '! </a> <br>';
-                                    echo '<a href="../sub_page/logout.php"><button class="btn-primary" style="margin-bottom: 30px;" >Log Out</button></a>';
+                                    echo '<a href="../main_page/index.php">' . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '</a> <br>';
+                                    echo '<a href="../sub_page/logout.php"><button class="btn-primary" style="margin-bottom: 30px;">Log Out</button></a>';
                                 } else {
                                     ?>
                                     <a href="../sub_page/register.php"><button style="margin-bottom: 5px;"
