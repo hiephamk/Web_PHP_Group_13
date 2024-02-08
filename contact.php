@@ -80,5 +80,44 @@ include "./layout/header.php";
   </div>
 </main>
 
+<?php
+// Check if the 'send' button in the form was clicked
+if (isset($_POST['submit'])) {
+    // Retrieve data from the form and store it in variables
+    $full_name = $_POST['full_name']; // Full name from the form
+    $email = $_POST['email']; // Email from the form
+    $phone = $_POST['phone']; // Phone number from the form
+    $address = $_POST['address']; // Address from the form
+    $city = $_POST['city']; // City from the form
+    $zip = $_POST['zip']; // Zip code from the form
+    $request = $_POST['request']; // Request details from the form
+
+    // Include the database connection file
+    include 'db.php'; // 'db.php' should contain your connection logic
+
+    // Define an SQL query to insert data into the 'Requests' table
+    $stmt = $conn->prepare("INSERT INTO Requests (full_name, email, phone, address, city, zip, request) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    
+    // Bind parameters to the SQL query
+    $stmt->bind_param("sssssss", $full_name, $email, $phone, $address, $city, $zip, $request);
+
+    // Execute the SQL query using the database connection
+    if ($stmt->execute()) {
+        // If the query was successful, display a success message
+        echo "New request added";
+    } else {
+        // If there was an error in the query, display an error message
+        echo "Error: " . $stmt->error;
+    }
+
+    // Close the statement
+    $stmt->close();
+    
+    // Close the database connection
+    $conn->close();
+}
+?>
+
+
 <!--Footer-->
 <?php include "./layout/footer.php"; ?>
