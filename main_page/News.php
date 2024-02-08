@@ -56,7 +56,18 @@ include "../sub_page/header.php";
           </div>
         </div>
 
+
         <div class="news-text">
+        <!-- breadcrumb (Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.)-->
+        <nav aria-label="breadcrumb"> 
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+              <li class="breadcrumb-item"><a href="Products.php">Products</a></li>
+              <li class="breadcrumb-item active" aria-current="page">News</li>
+            </ol>
+          </nav>
+          <!-- end breadcrumb -->
+
           <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
           <h4><strong>Facilis consequatur eligendi</strong></h4>
           <p class="text-muted">
@@ -72,13 +83,13 @@ include "../sub_page/header.php";
         </div>
       </div>
 
-      <!--Section: News of the day-->
+      <!--Section: End News of the day-->
 
       <!--Section: Content-->
       <section>
         <div class="row gx-lg-5">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <!-- News block -->
+            <!-- News Travel block -->
             <div>
               <!-- Featured image -->
               <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
@@ -198,9 +209,10 @@ include "../sub_page/header.php";
             </div>
             <!-- News block -->
           </div>
+          <!-- End News / Travel block -->
 
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <!-- News block -->
+            <!-- News / Business block -->
             <div>
               <!-- Featured image -->
               <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4" data-mdb-ripple-color="light">
@@ -316,11 +328,11 @@ include "../sub_page/header.php";
                 </div>
               </a>
             </div>
-            <!-- News block -->
+            <!-- End News / Business block -->
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <!-- News block -->
+            <!-- News / Technolog block -->
             <div>
               <!-- Featured image -->
               <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4" data-mdb-ripple-color="light">
@@ -436,7 +448,7 @@ include "../sub_page/header.php";
                 </div>
               </a>
             </div>
-            <!-- News block -->
+            <!-- End News / Technology block -->
           </div>
         </div>
       </section>
