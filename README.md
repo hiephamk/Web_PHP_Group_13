@@ -1,4 +1,4 @@
-Live version's link:
+Repository link:
 https://github.com/hiephamk/Web_PHP_Group_13.git
 
 # Website for Car Producing Company - Team 13
@@ -23,15 +23,14 @@ The website will serve as a comprehensive product showcase platform for a car pr
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 (Full Name): Search - in header of all pages
-- [ ] Feature 2 (Full Name): Adding a match (filter) for product page
-- [ ] Feature 3 (Full Name): Feedback & suggestion (form) for Contact page
-- [ ] Feature 4 (Full Name): Display cars on sales for Home, product and news pages
-- [ ] Feature 5 (Full Name): Member registration 
-- [ ] Feature 6 (Full Name): Login and update profile 
-- [ ] Feature 7 (Full Name): Voting options (rate, review - only for members) for product page
-
-
+- [ ] Feature 1 (Nguyen Dinh Khanh Chi): Add a match for Products page
+- [ ] Feature 2 (Vu Quang Dan): Feedback & suggestion for Contact page
+- [ ] Feature 3 (Tran Huynh An Duy): Add a filter for News page
+- [ ] Feature 4 (Huynh Van Hiep): Member registration 
+- [ ] Feature 5 (Huynh Van Hiep): Login and update profile
+- [ ] Feature 6 (Full Name): Display cars on sales for Home, product and news pages
+- [ ] Feature 7 (Full Name): Search - in header of all pages
+- [ ] Feature 8 (Full Name): Voting options (rate, review - only for members) for product page
 
 ### Feature 1
 
@@ -53,9 +52,13 @@ Include more detailed information about Feature 3 here. Provide links to related
 
 List the database tables that are part of your project. 
 
-- Table 1 (Created By): User Accounts
-- Table 2 (Created By): Products
-- Table 3 (Created By): Contacts
+- Table 1 (Created By dinh23000): Products
+- Table 2 (Created By dinh23000): CarCategory
+- Table 3 (Created By dinh23000): EnergyType
+- Table 4 (Created By hiep23000): Customers
+- Table 5 (Created By dan23000): Requests
+- Table 6 (Created By duy23000): News
+- Table 7 (Created By duy23000): NewsCategory
 
 > Include the ER Diagram of the database. 
 

@@ -19,9 +19,9 @@ include "../sub_page/header.php";
       <a class="btn btn-primary" href="Products.html" role="button">View more</a>
     </div>
   </div>
-  <!-- Main page -->
+
+  <!-- Call to Action -->
   <div class="d-flex-column main-page">
-    <!-- Call to Action -->
     <div class="icon-container container">
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
@@ -228,8 +228,8 @@ include "../sub_page/header.php";
         </div>
       </div>
     </section>
-  </div>
-</div>
+  </div> <!-- Product list end -->
+</div> <!-- body-page end -->
 
 <!--Footer-->
 <?php include "../sub_page/footer.php"; ?>
