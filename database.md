@@ -78,42 +78,39 @@ CREATE TABLE `News` (
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`id`, `title`, `news_desc`, `image`, `create_date`, `news_categoryId`) VALUES
-(2, 'News-1', 'News about travelling today', '../andy_tasks/images/news1.jpg', '2024-02-05', 1),
-(3, 'News-2', 'News about business today', '../andy_tasks/images/news2.jpg', '2024-02-06', 2),
-(4, 'News-2', 'News about Technology today', '../andy_tasks/images/news3.jpg', '2024-02-07', 3),
-(5, 'Travel 2', 'News about travelling today', '../andy_tasks/images/news/travel-2.jpg', '2024-02-07', 1),
-(6, 'Travel 1', 'News about travelling today', '../andy_tasks/images/news/Travel-1.jpg', '2024-02-06', 1),
-(7, 'Travel 3', 'News about travelling today', '../andy_tasks/images/news/travel-3.jpg', '2024-02-04', 1),
-(8, 'Travel 4', 'News about travelling today', '../andy_tasks/images/news/travel-4.jpg', '2024-02-06', 1),
-(9, 'Travel 5', 'News about travelling today', '../andy_tasks/images/news/travel-5.jpg', '2024-02-06', 1),
-(10, 'Business 1', 'News about business today', '../andy_tasks/images/news/Business-1.jpg', '2024-02-05', 2),
-(11, 'Business 1', 'News about business today', '../andy_tasks/images/news/Business-1.jpg', '2024-02-05', 2),
-(12, 'Business 2', 'News about business today', '../andy_tasks/images/news/Business-2.jpg', '2024-02-06', 2),
-(13, 'Business 3', 'News about business today', '../andy_tasks/images/news/Business-3.jpg', '2024-02-07', 2),
-(14, 'Business 4', 'News about business today', '../andy_tasks/images/news/Business-4.jpg', '2024-02-07', 2),
-(15, 'Business 5', 'News about business today', '../andy_tasks/images/news/Business-5.jpg', '2024-02-05', 2),
-(16, 'Technology 1', 'News about technology today', '../andy_tasks/images/news/Technology-1.jpg', '2024-02-05', 3),
-(17, 'Technology 1', 'News about technology today', '../andy_tasks/images/news/Technology-1.jpg', '2024-02-05', 3),
-(18, 'Technology 2', 'News about technology today', '../andy_tasks/images/news/Technology-2.jpg', '2024-02-06', 3),
-(19, 'Technology 3', 'News about technology today', '../andy_tasks/images/news/Technology-3.jpg', '2024-02-06', 3),
-(20, 'Technology 4', 'News about technology today', '../andy_tasks/images/news/Technology-4.jpg', '2024-02-07', 3),
-(21, 'Technology 5', 'News about technology today', '../andy_tasks/images/news/Technology-5.jpg', '2024-02-07', 3);
+INSERT INTO `news` (`title`, `news_desc`, `image`, `create_date`, `news_categoryId`) VALUES
+('Travel 2', 'News about travelling today', '../img/news/travel-2.jpg', '2024-02-07', 1),
+('Travel 1', 'News about travelling today', '../img/news/Travel-1.jpg', '2024-02-06', 1),
+('Travel 3', 'News about travelling today', '../img/news/travel-3.jpg', '2024-02-04', 1),
+('Travel 4', 'News about travelling today', '../img/news/travel-4.jpg', '2024-02-06', 1),
+('Travel 5', 'News about travelling today', '../img/news/travel-5.jpg', '2024-02-06', 1),
+('Business 1', 'News about business today', '../img/news/Business-1.jpg', '2024-02-05', 2),
+('Business 1', 'News about business today', '../img/news/Business-1.jpg', '2024-02-05', 2),
+('Business 2', 'News about business today', '../img/news/Business-2.jpg', '2024-02-06', 2),
+('Business 3', 'News about business today', '../img/news/Business-3.jpg', '2024-02-07', 2),
+('Business 4', 'News about business today', '../img/news/Business-4.jpg', '2024-02-07', 2),
+('Business 5', 'News about business today', '../img/news/Business-5.jpg', '2024-02-05', 2),
+('Technology 1', 'News about technology today', '../img/news/Technology-1.jpg', '2024-02-05', 3),
+('Technology 1', 'News about technology today', '../img/news/Technology-1.jpg', '2024-02-05', 3),
+('Technology 2', 'News about technology today', '../img/news/Technology-2.jpg', '2024-02-06', 3),
+('Technology 3', 'News about technology today', '../img/news/Technology-3.jpg', '2024-02-06', 3),
+('Technology 4', 'News about technology today', '../img/news/Technology-4.jpg', '2024-02-07', 3),
+('Technology 5', 'News about technology today', '../img/news/Technology-5.jpg', '2024-02-07', 3);
 
 ```
 
 # table 7: duy23000
 ```sql
 CREATE TABLE `NewsCategory` (
-  `news_catergoryId` int NOT NULL,
-  `catergory_name` varchar(50) NOT NULL
+  `news_categoryId` int NOT NULL,
+  `category_name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `NewsCategory`
 --
 
-INSERT INTO `NewsCategory` (`news_catergoryId`, `catergory_name`) VALUES
+INSERT INTO `NewsCategory` (`news_catergoryId`, `category_name`) VALUES
 (1, 'Travel'),
 (2, 'Business'),
 (3, 'Technologies');
