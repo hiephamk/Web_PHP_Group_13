@@ -59,14 +59,14 @@ include_once "../sub_page/header.php";
                     </label>
                 </div>
                 <div class="accessory-item item-2 col-4">
-                    <img class="img-fluid" src="../img-hiep/interior-2.jpeg" alt="">
+                    <img class="img-fluid" src="../img/interior-2.jpeg" alt="">
                     <label class="label-2" for="expand-2">
                         Interior Accessories<br>
                         Click here
                     </label>
                 </div>
                 <div class="accessory-item item-3 col-4">
-                    <img class="img-fluid" src="../img-hiep/interior-4.jpeg" alt="">
+                    <img class="img-fluid" src="../img/interior-4.jpeg" alt="">
                     <label class="label-3" for="expand-3">
                         Exterior Accessories<br>
                         Click here
