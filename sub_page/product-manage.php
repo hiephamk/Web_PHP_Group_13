@@ -28,6 +28,7 @@ if ($result->num_rows > 0) {
                     <th>Energy Type</th>
                     <th>Short Description</th>
                     <th>Full Description</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>";
@@ -44,6 +45,10 @@ if ($result->num_rows > 0) {
                 <td>{$row['energy_type']}</td>
                 <td>{$row['short_desc']}</td>
                 <td>{$row['full_desc']}</td>
+                <td>
+                    <a href='product-create.php' class='btn btn-add'>Add new product</a>
+                    <a href='product-update.php?id={$row['product_id']}' class='btn btn-warning'>Edit</a>
+                    <a href='product-delete.php?id={$row['product_id']}' class='btn btn-danger'>Delete</a>
               </tr>";
     }
     echo "</tbody></table>";
@@ -66,6 +71,19 @@ $conn->close();
     .form-group {
         margin-bottom: 20px;
     }
+    .btn-add {
+        background-color: #4CAF50;
+        color: #ffffff;
+        text-align: center;
+        border: #333333;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    }
+    .btn-add:hover {
+        background-color: #4CAF50;
+        color: #ffffff;
+        filter: brightness(95%);
+}
 </style>
 
 <?php include_once '../footer.php'; ?>
