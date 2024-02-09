@@ -18,9 +18,9 @@ include "../sub_page/header.php";
     <div class="icon-container container">
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
-          <a href="#" target="#">
-            <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-play.png" alt="Video">
-            <h2>Watch videos</h2>
+          <a href="News-filter.php" target="#">
+            <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-filter-64.png" alt="Video">
+            <h2>Filter News</h2>
           </a>
         </div>
       </div>
