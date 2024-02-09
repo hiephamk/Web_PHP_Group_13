@@ -6,34 +6,14 @@ CREATE TABLE `Product` (
   `short_desc` varchar(100) NOT NULL,
   `full_desc` varchar(500) NOT NULL,
   `image` varchar(50) NOT NULL,
-  `category_id` int NOT NULL,
-  `energy_id` int NOT NULL,
-  PRIMARY KEY (`product_id`),
-  FOREIGN KEY (`category_id`) REFERENCES `CarCategory` (`category_id`),
-  FOREIGN KEY (`energy_id`) REFERENCES `EnergyType` (`energy_id`)
+  `category` varchar(20) NOT NULL,
+  `energy_type` varchar(20) NOT NULL,
+  PRIMARY KEY (`product_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 
-# table 2: dinh23000
+# table 2: hiep23000
 ```sql
-CREATE TABLE `CarCategory` (
-  `category_id` int NOT NULL AUTO_INCREMENT,
-  `category_name` varchar(50) NOT NULL,
-  PRIMARY KEY (`category_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-```
-
-# table 3: dinh23000
-```sql
-CREATE TABLE `EnergyType` (
-  `energy_id` int NOT NULL AUTO_INCREMENT,
-  `energy_type` varchar(50) NOT NULL,
-  PRIMARY KEY (`energy_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-```
-
-# table 4: hiep23000
-```Database_Customers:
 CREATE TABLE `customers` (
   `customer_id` int NOT NULL PRIMARY KEY,
   `fname` varchar(100) DEFAULT NULL,
@@ -46,7 +26,7 @@ CREATE TABLE `customers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 
-# table 5: dan23000
+# table 3: dan23000
 ```sql
 CREATE TABLE Requests (
     request_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -57,10 +37,10 @@ CREATE TABLE Requests (
     city VARCHAR(50),
     zip VARCHAR(20),
     request VARCHAR(500)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 
-# table 6: duy23000
+# table 4: duy23000
 ```sql
 CREATE TABLE `News` (
   `id` int NOT NULL,
@@ -68,80 +48,6 @@ CREATE TABLE `News` (
   `news_desc` varchar(200) NOT NULL,
   `image` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `create_date` date DEFAULT NULL,
-  `news_categoryId` int NOT NULL,
   `category_name` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
 ```
-```sql
---
--- Dumping data for table `news`
---
-
-INSERT INTO `news` (`title`, `news_desc`, `image`, `create_date`, `news_categoryId`) VALUES
-('Travel 2', 'News about travelling today', '../img/news/travel-2.jpg', '2024-02-07', 1),
-('Travel 1', 'News about travelling today', '../img/news/Travel-1.jpg', '2024-02-06', 1),
-('Travel 3', 'News about travelling today', '../img/news/travel-3.jpg', '2024-02-04', 1),
-('Travel 4', 'News about travelling today', '../img/news/travel-4.jpg', '2024-02-06', 1),
-('Travel 5', 'News about travelling today', '../img/news/travel-5.jpg', '2024-02-06', 1),
-('Business 1', 'News about business today', '../img/news/Business-1.jpg', '2024-02-05', 2),
-('Business 1', 'News about business today', '../img/news/Business-1.jpg', '2024-02-05', 2),
-('Business 2', 'News about business today', '../img/news/Business-2.jpg', '2024-02-06', 2),
-('Business 3', 'News about business today', '../img/news/Business-3.jpg', '2024-02-07', 2),
-('Business 4', 'News about business today', '../img/news/Business-4.jpg', '2024-02-07', 2),
-('Business 5', 'News about business today', '../img/news/Business-5.jpg', '2024-02-05', 2),
-('Technology 1', 'News about technology today', '../img/news/Technology-1.jpg', '2024-02-05', 3),
-('Technology 1', 'News about technology today', '../img/news/Technology-1.jpg', '2024-02-05', 3),
-('Technology 2', 'News about technology today', '../img/news/Technology-2.jpg', '2024-02-06', 3),
-('Technology 3', 'News about technology today', '../img/news/Technology-3.jpg', '2024-02-06', 3),
-('Technology 4', 'News about technology today', '../img/news/Technology-4.jpg', '2024-02-07', 3),
-('Technology 5', 'News about technology today', '../img/news/Technology-5.jpg', '2024-02-07', 3);
-
-```
-
-# table 7: duy23000
-```sql
-CREATE TABLE `NewsCategory` (
-  `news_categoryId` int NOT NULL,
-  `category_name` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
---
--- Dumping data for table `NewsCategory`
---
-
-INSERT INTO `NewsCategory` (`news_catergoryId`, `category_name`) VALUES
-(1, 'Travel'),
-(2, 'Business'),
-(3, 'Technologies');
-
------
--- Indexes for table `news`
---
-ALTER TABLE `news`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `news_categoryId` (`news_categoryId`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `news`
---
-ALTER TABLE `news`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `news`
---
-ALTER TABLE `news`
-  ADD CONSTRAINT `news_ibfk_1` FOREIGN KEY (`news_categoryId`) REFERENCES `NewsCategory` (`news_catergoryId`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-COMMIT;
-```
-
-
