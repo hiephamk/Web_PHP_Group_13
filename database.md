@@ -63,14 +63,15 @@ CREATE TABLE Requests (
 # table 6: duy23000
 ```sql
 CREATE TABLE `News` (
-  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL,
   `title` varchar(50) NOT NULL,
   `news_desc` varchar(200) NOT NULL,
   `image` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `create_date` date DEFAULT NULL,
   `news_categoryId` int NOT NULL,
-  FOREIGN KEY (`news_categoryId`) REFERENCES `NewsCategory` (`news_categoryId`)
-) ;
+  `category_name` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 ```
 ```sql
@@ -78,24 +79,26 @@ CREATE TABLE `News` (
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`title`, `news_desc`, `image`, `create_date`, `news_categoryId`) VALUES
-('Travel 2', 'News about travelling today', '../img/news/travel-2.jpg', '2024-02-07', 1),
-('Travel 1', 'News about travelling today', '../img/news/Travel-1.jpg', '2024-02-06', 1),
-('Travel 3', 'News about travelling today', '../img/news/travel-3.jpg', '2024-02-04', 1),
-('Travel 4', 'News about travelling today', '../img/news/travel-4.jpg', '2024-02-06', 1),
-('Travel 5', 'News about travelling today', '../img/news/travel-5.jpg', '2024-02-06', 1),
-('Business 1', 'News about business today', '../img/news/Business-1.jpg', '2024-02-05', 2),
-('Business 1', 'News about business today', '../img/news/Business-1.jpg', '2024-02-05', 2),
-('Business 2', 'News about business today', '../img/news/Business-2.jpg', '2024-02-06', 2),
-('Business 3', 'News about business today', '../img/news/Business-3.jpg', '2024-02-07', 2),
-('Business 4', 'News about business today', '../img/news/Business-4.jpg', '2024-02-07', 2),
-('Business 5', 'News about business today', '../img/news/Business-5.jpg', '2024-02-05', 2),
-('Technology 1', 'News about technology today', '../img/news/Technology-1.jpg', '2024-02-05', 3),
-('Technology 1', 'News about technology today', '../img/news/Technology-1.jpg', '2024-02-05', 3),
-('Technology 2', 'News about technology today', '../img/news/Technology-2.jpg', '2024-02-06', 3),
-('Technology 3', 'News about technology today', '../img/news/Technology-3.jpg', '2024-02-06', 3),
-('Technology 4', 'News about technology today', '../img/news/Technology-4.jpg', '2024-02-07', 3),
-('Technology 5', 'News about technology today', '../img/news/Technology-5.jpg', '2024-02-07', 3);
+
+
+INSERT INTO `News` (`id`, `title`, `news_desc`, `image`, `create_date`, `news_categoryId`, `category_name`) VALUES
+(1, 'News about Travel 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi', '../img/news/travel-2.jpg', '2024-02-07', 1, 'Travel'),
+(2, 'News about Travel 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi', '../img/news/Travel-1.jpg', '2024-02-06', 1, 'Travel'),
+(3, 'News about Travel 3', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi', '../img/news/travel-3.jpg', '2024-02-04', 1, 'Travel'),
+(4, 'News about Travel 4', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi', '../img/news/travel-4.jpg', '2024-02-06', 1, 'Travel'),
+(5, 'News about Travel 5', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi', '../img/news/travel-5.jpg', '2024-02-06', 1, 'Travel'),
+(6, 'Business 1', 'News about business today', '../img/news/Business-1.jpg', '2024-02-05', 2, 'Business'),
+(7, 'Business 1', 'News about business today', '../img/news/Business-1.jpg', '2024-02-05', 2, 'Business'),
+(8, 'Business 2', 'News about business today', '../img/news/Business-2.jpg', '2024-02-06', 2, 'Business'),
+(9, 'Business 3', 'News about business today', '../img/news/Business-3.jpg', '2024-02-07', 2, 'Business'),
+(10, 'Business 4', 'News about business today', '../img/news/Business-4.jpg', '2024-02-07', 2, 'Business'),
+(11, 'Business 5', 'News about business today', '../img/news/Business-5.jpg', '2024-02-05', 2, 'Business'),
+(12, 'Technology 1', 'News about technology today', '../img/news/Technology-1.jpg', '2024-02-05', 3, 'Technology'),
+(13, 'Technology 1', 'News about technology today', '../img/news/Technology-1.jpg', '2024-02-05', 3, 'Technology'),
+(14, 'Technology 2', 'News about technology today', '../img/news/Technology-2.jpg', '2024-02-06', 3, 'Technology'),
+(15, 'Technology 3', 'News about technology today', '../img/news/Technology-3.jpg', '2024-02-06', 3, 'Technology'),
+(16, 'Technology 4', 'News about technology today', '../img/news/Technology-4.jpg', '2024-02-07', 3, 'Technology'),
+(17, 'Technology 5', 'News about technology today', '../img/news/Technology-5.jpg', '2024-02-07', 3, 'Technology');
 
 ```
 
@@ -103,8 +106,8 @@ INSERT INTO `news` (`title`, `news_desc`, `image`, `create_date`, `news_category
 ```sql
 CREATE TABLE `NewsCategory` (
   `news_categoryId` int NOT NULL,
-  `category_name` varchar(50) NOT NULL
-) ;
+  `category_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 --
 -- Dumping data for table `NewsCategory`
 --
