@@ -46,7 +46,7 @@ if ($result->num_rows > 0) {
                 <td>{$row['short_desc']}</td>
                 <td>{$row['full_desc']}</td>
                 <td>
-                    <a href='product-update.php?id={$row['product_id']}' class='btn btn-warning'>Edit</a>
+                    <a href='product-edit.php?id={$row['product_id']}' class='btn btn-warning'>Edit</a>
                     <a href='product-delete.php?id={$row['product_id']}' class='btn btn-danger'>Delete</a>
                     <a href='product-create.php' class='btn btn-add'>Add new product</a>
               </tr>";
