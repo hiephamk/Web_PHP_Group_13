@@ -53,6 +53,7 @@ include "../sub_page/header.php";
             </ol>
           </nav>
           <br>
+          <h2>Filter News Category: </h2>
           <?php include '../sub_page/filter-news.php'; 
           ?>
         
