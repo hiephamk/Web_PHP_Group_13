@@ -21,9 +21,9 @@ if ($result->num_rows > 0) {
     echo "<table class='table'>
             <thead>
                 <tr>
-                    <th>Product ID</th>
+                    <th>ID</th>
                     <th>Product Name</th>
-                    <th>Image Link</th>
+                    <th>Image</th>
                     <th>Category</th>
                     <th>Energy Type</th>
                     <th>Short Description</th>
@@ -37,7 +37,9 @@ if ($result->num_rows > 0) {
         echo "<tr>
                 <td>{$row['product_id']}</td>
                 <td>{$row['product_name']}</td>
-                <td>{$row['images']}</td>
+                <td><img src='{$row['images']}' alt='Product Image'
+                    style='max-width: 150px; max-height: 150px;'>
+                </td>
                 <td>{$row['category']}</td>
                 <td>{$row['energy_type']}</td>
                 <td>{$row['short_desc']}</td>
