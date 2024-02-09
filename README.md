@@ -79,33 +79,28 @@ List and describe any forms that have been created as part of your project. Incl
 
 - Form 1 (Created By Nguyen Dinh Khanh Chi):
  - Form name: Product Form 
- - Link to the related code file (github) 
- - Link to the form (shell.hamk.fi). 
+ - Purpose:
  - Validations Applied: 
 
 
 - Form 2 (Created By Vu Quang Dan):
  - Form name: Contact Form 
- - Link to the related code file (github) 
- - Link to the form (shell.hamk.fi). 
+ - Purpose:
  - Validations Applied:
 
 - Form 3 (Created By Huynh Van Hiep):
  - Form name: Login Form 
- - Link to the related code file (github) 
- - Link to the form (shell.hamk.fi). 
+ - Purpose: 
  - Validations Applied:
 
 - Form 4 (Created By Huynh Van Hiep):
  - Form name: Register Form 
- - Link to the related code file (github) 
- - Link to the form (shell.hamk.fi). 
+ - Purpose: 
  - Validations Applied:
 
 - Form 5 (Created By Tran Huynh An Duy):
  - Form name: Filter Form 
- - Link to the related code file (github) 
- - Link to the form (shell.hamk.fi). 
+ - Purpose: 
  - Validations Applied:
 
 ---
