@@ -77,28 +77,28 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By Nguyen Dinh Khanh Chi):
+#### Form 1 (Created By Nguyen Dinh Khanh Chi):
  - Form name: Product Form 
  - Purpose:
  - Validations Applied: 
 
 
-- Form 2 (Created By Vu Quang Dan):
+#### Form 2 (Created By Vu Quang Dan):
  - Form name: Contact Form 
  - Purpose:
  - Validations Applied:
 
-- Form 3 (Created By Huynh Van Hiep):
+#### Form 3 (Created By Huynh Van Hiep):
  - Form name: Login Form 
  - Purpose: 
  - Validations Applied:
 
-- Form 4 (Created By Huynh Van Hiep):
+#### Form 4 (Created By Huynh Van Hiep):
  - Form name: Register Form 
  - Purpose: 
  - Validations Applied:
 
-- Form 5 (Created By Tran Huynh An Duy):
+#### Form 5 (Created By Tran Huynh An Duy):
  - Form name: Filter Form 
  - Purpose: 
  - Validations Applied:
