@@ -1,5 +1,5 @@
 <?php
-$title = "News 2";
+$title = "News with Filter";
 include "../sub_page/header.php";
 ?>
 <!-- body -->
@@ -18,7 +18,7 @@ include "../sub_page/header.php";
     <div class="icon-container container">
       <div class="cta-col col-4">
         <div class="cta-icon text-center">
-          <a href="News2.php" target="#">
+          <a href="News-filter.php" target="#">
             <img class="img-fluid" style="width: 80px; height: 80px" src="../img/icons8-filter-64.png" alt="Filter">
             <h2>Filter News</h2>
           </a>
