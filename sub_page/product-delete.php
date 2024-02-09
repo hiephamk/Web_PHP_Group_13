@@ -78,16 +78,14 @@ $row= mysqli_fetch_array($result);
             </div>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary" id="submit" name="submit">Delete</button>
+    <button type="submit" class="btn btn-primary" id="submit" name="delete">Delete</button>
 </form><br>
 
 <?php
 if (isset($_POST['delete'])){
     $query = mysqli_query($conn,"DELETE FROM Product where product_id='$a'");
     if($query){
-        echo "<h2>Product has been deleted with id: $a </h2><br>";
-        // if you want to redirect to update page after updating
-        //header("location: update.php");
+        echo "<h2>Product has been deleted with id: $a. <a href='product-manage.php'>Click here</a> to go back.</h2><br>";
     }
     else { echo "<h2>Product has not been deleted yet!</h2>";}
 }
