@@ -98,9 +98,9 @@ List the database tables that are part of your project.
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
 #### Form 1 (Created By Nguyen Dinh Khanh Chi):
- - Form name: Product Form 
- - Purpose:
- - Validations Applied: 
+ - Form name: Product Insert Form 
+ - Purpose: To insert product details into table "Products" in database.
+ - Validations Applied: On car category & energy type fields.
 
 
 #### Form 2 (Created By Vu Quang Dan):
@@ -129,7 +129,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Created By Tran Huynh Andy): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
 - Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
