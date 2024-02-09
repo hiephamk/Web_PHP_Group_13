@@ -7,6 +7,6 @@ session_start();
 session_start();
 session_unset();
 session_destroy();
-header("Location: ../main_page/index.php")
+header("Location: index.php")
 
-    ?>
+?>

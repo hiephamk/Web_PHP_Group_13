@@ -44,9 +44,7 @@ include_once "header.php";
             </div>
         </div>
         <div class="col-12" align-middle>
-            <input type="submit" class="btn-primary"
-                style="margin:0 0 20px 260px;width:300px; height:50px;border-radius:7px;box-shadow:2px 2px #234;"
-                name="submit" value="Sign Up">
+            <input type="submit" class="btn-primary" style="margin:0 0 20px 170px;width:300px; height:50px;border-radius:7px;box-shadow:2px 2px #234;" name="submit" value="Sign Up">
         </div>
     </form>
 </div>
@@ -64,14 +62,14 @@ include_once "header.php";
         $customer_password = $_POST['password'];
 
         // Include the database connection file
-        include '../Database/db.php';
+        include './Database/db.php';
 
         // Define an SQL query to insert data into the 'studentsinfo' table
         $sql = "INSERT INTO customers (fname, lname, phone,address,email,password)
                 VALUES ('$fname', '$lname', '$phone', '$address','$email','$customer_password')";
 
         // Execute the SQL query using the database connection
-    
+
         if ($conn->query($sql) === TRUE) {
             echo "<p>You have successfully registered. Now you can <a href='login.php'>log in</a> or back to <a href='../main_page/index.php'>Home?</a> </p>";
         } else {
@@ -85,3 +83,4 @@ include_once "header.php";
     }
     ?>
 </div>
+<?php include "footer.php"; ?>

@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost"; // Replace with your MySQL server hostname
-$username = "duy23000";     // Replace with your MySQL username
-$password = "6ynSiJMs";     // Replace with your MySQL password
-$dbname = "wp_duy23000";       // Replace with the name of your MySQL database
+$servername = "web_group-24-db-1"; // Replace with your MySQL server hostname
+$username = "group_13";     // Replace with your MySQL username
+$password = "group13";     // Replace with your MySQL password
+$dbname = "group_13";       // Replace with the name of your MySQL database
 
 // Create a database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
