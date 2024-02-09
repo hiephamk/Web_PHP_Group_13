@@ -70,7 +70,7 @@ CREATE TABLE `News` (
   `create_date` date DEFAULT NULL,
   `news_categoryId` int NOT NULL,
   FOREIGN KEY (`news_categoryId`) REFERENCES `NewsCategory` (`news_categoryId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 ```
 ```sql
@@ -104,13 +104,12 @@ INSERT INTO `news` (`title`, `news_desc`, `image`, `create_date`, `news_category
 CREATE TABLE `NewsCategory` (
   `news_categoryId` int NOT NULL,
   `category_name` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+) ;
 --
 -- Dumping data for table `NewsCategory`
 --
 
-INSERT INTO `NewsCategory` (`news_catergoryId`, `category_name`) VALUES
+INSERT INTO `NewsCategory` (`news_categoryId`, `category_name`) VALUES
 (1, 'Travel'),
 (2, 'Business'),
 (3, 'Technologies');
