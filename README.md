@@ -81,15 +81,12 @@ We will create a page for admin to insert news article, then this data will be s
 List the database tables that are part of your project. 
 
 - Table 1 (Created By dinh23000): Products
-- Table 2 (Created By dinh23000): CarCategory
-- Table 3 (Created By dinh23000): EnergyType
-- Table 4 (Created By hiep23000): Customers
-- Table 5 (Created By dan23000): Requests
-- Table 6 (Created By duy23000): News
-- Table 7 (Created By duy23000): NewsCategory
+- Table 2 (Created By hiep23000): Customers
+- Table 3 (Created By dan23000): Requests
+- Table 4 (Created By duy23000): News
 
 > Include the ER Diagram of the database. 
-![Database_diagram](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Database_diagram.png)
+![Database_diagram](./img/Database_diagram.png)
 
 ---
 
@@ -98,7 +95,7 @@ List the database tables that are part of your project.
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
 #### Form 1 (Created By Nguyen Dinh Khanh Chi):
- - Form name: Product Insert Form 
+ - Form name: Product Manage Form 
  - Purpose: To insert product details into table "Products" in database.
  - Validations Applied: On car category & energy type fields.
 
