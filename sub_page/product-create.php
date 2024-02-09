@@ -6,7 +6,7 @@
 
 <head>
     <link rel="stylesheet" href="../styles/styles-header-footer.css">
-</head-->
+</head>
 
 <h2>Input Products Information Below</h2>
 <form name="form1" method="post" action="product-process.php">
