@@ -1,5 +1,5 @@
 <?php 
-    $title = "Product Information Table";
+    $title = "Product Information View";
     $md = "Display Product Information as Table";
 ?>
 <?php include_once '../header.php'; ?>
