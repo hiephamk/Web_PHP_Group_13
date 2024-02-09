@@ -1,6 +1,6 @@
 <?php 
-    $title = "Product Information View";
-    $md = "Display Product Information as Table";
+    $title = "Product Management";
+    $md = "Product View and Modification Displays as Table";
 ?>
 <?php include_once '../header.php'; ?>
 
