@@ -69,7 +69,7 @@ List the database tables that are part of your project.
 - Table 7 (Created By duy23000): NewsCategory
 
 > Include the ER Diagram of the database. 
-[Database_diagram](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Database_diagram.png)
+![Database_diagram](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Database_diagram.png)
 
 ---
 
