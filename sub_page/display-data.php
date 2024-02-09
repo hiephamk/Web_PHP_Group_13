@@ -9,7 +9,7 @@
                 <th>Description</th>
                 <th>Image</th>
                 <th>Created in</th>
-                <th>Category</th>
+                <th>Details</th>
             </tr>
         <?php
         foreach($filterDataByCategory as $filterData){
