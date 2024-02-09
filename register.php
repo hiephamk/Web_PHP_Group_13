@@ -44,7 +44,7 @@ include_once "header.php";
             </div>
         </div>
         <div class="col-12" align-middle>
-            <input type="submit" class="btn-primary" style="margin:0 0 20px 170px;width:300px; height:50px;border-radius:7px;box-shadow:2px 2px #234;" name="submit" value="Sign Up">
+            <input type="submit" class="btn-primary btn fs-4" style="margin:20px 0 20px 29%; width:300px; height:50px;border-radius:7px;box-shadow:2px 2px #234;" name="submit" value="Sign Up">
         </div>
     </form>
 </div>
