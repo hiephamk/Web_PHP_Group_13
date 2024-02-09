@@ -40,11 +40,19 @@ Include more detailed information about Feature 1 here.
 
 ### Feature 2
 
-Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+- Github links: Ex: ### Github/project13/Feature1.php
+- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
 
 ### Feature 3
 
-Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+- Github links: Ex: ### Github/project13/Feature1.php
+- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+
+
+### Feature 4
+
+- Github links: Ex: ### Github/project13/Feature1.php
+- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
 
 ---
 
@@ -69,10 +77,36 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-- Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 1 (Created By Nguyen Dinh Khanh Chi):
+ - Form name: Product Form 
+ - Link to the related code file (github) 
+ - Link to the form (shell.hamk.fi). 
+ - Validations Applied: 
 
+
+- Form 2 (Created By Vu Quang Dan):
+ - Form name: Contact Form 
+ - Link to the related code file (github) 
+ - Link to the form (shell.hamk.fi). 
+ - Validations Applied:
+
+- Form 3 (Created By Huynh Van Hiep):
+ - Form name: Login Form 
+ - Link to the related code file (github) 
+ - Link to the form (shell.hamk.fi). 
+ - Validations Applied:
+
+- Form 4 (Created By Huynh Van Hiep):
+ - Form name: Register Form 
+ - Link to the related code file (github) 
+ - Link to the form (shell.hamk.fi). 
+ - Validations Applied:
+
+- Form 5 (Created By Tran Huynh An Duy):
+ - Form name: Filter Form 
+ - Link to the related code file (github) 
+ - Link to the form (shell.hamk.fi). 
+ - Validations Applied:
 
 ---
 
@@ -81,7 +115,9 @@ List and describe any forms that have been created as part of your project. Incl
 List any tables that you have created in the project work
 
 - Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+
 - Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+
 - Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
 ---
