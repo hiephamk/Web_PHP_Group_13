@@ -87,7 +87,7 @@ if (isset($_POST['delete'])){
     if($query){
         echo "<h2>Product has been deleted with id: $a. <a href='product-manage.php'>Click here</a> to go back.</h2><br>";
     }
-    else { echo "<h2>Product has not been deleted yet!</h2>";}
+    else { echo "<h2>Product has not been deleted yet!</h2><br>";}
 }
 
 $conn->close();

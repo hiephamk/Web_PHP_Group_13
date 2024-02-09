@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
     echo "</tbody></table>";
 } else {
     // Display a message if no results are found
-    echo "No results";
+    echo "<h2>No results</h2><br>";
 }
 // close the connection when done
 $conn->close();

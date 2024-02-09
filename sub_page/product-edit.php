@@ -94,7 +94,7 @@ if (isset($_POST['submit'])){
     $image = $_POST['image'];
         // Check if the image URL is valid
         if(!filter_var($image, FILTER_VALIDATE_URL)){
-            echo "Invalid image URL! <a href='product-create.php'>Click here</a> to go back.";
+            echo "<h2>Invalid image URL! <a href='product-create.php'>Click here</a> to go back.</h2><br>";
             exit();
         }
     $category = $_POST['category'];
@@ -107,7 +107,7 @@ if (isset($_POST['submit'])){
         set product_name='$name', images='$image', category='$category', energy_type='$energy', short_desc='$short_desc', full_desc='$full_desc'
         where product_id='$a'");
     if($query){
-        echo "<h2>Product information is updated successfully! <a href='product-manage.php'>Click here</a> to go back.</h2>";
+        echo "<h2>Product information is updated successfully! <a href='product-manage.php'>Click here</a> to go back.</h2><br>";
     }
     else { echo "<h2>Record has not been modified.</h2>";}
 }
