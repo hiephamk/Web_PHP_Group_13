@@ -14,7 +14,7 @@ $a = $_GET['id'];
 $result = mysqli_query($conn,"SELECT * FROM Product WHERE product_id= '$a'");
 $row= mysqli_fetch_array($result);
 ?>
-<h2> Update your information below </h2><br>
+<h2> Update product information </h2><br>
 <form name= "form1" method="post" action="">
     <div class="form-group">
         <div class="row">
@@ -78,7 +78,7 @@ $row= mysqli_fetch_array($result);
             </div>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary" id="submit" name="submit">Update product info</button>
+    <button type="submit" class="btn btn-primary" id="submit" name="submit">Update</button>
 </form><br>
 
 <?php 
@@ -101,26 +101,16 @@ if (isset($_POST['submit'])){
     $energy = $_POST['energy'];
     $short_desc = $_POST['short-desc'];
     $full_desc = $_POST['full-desc'];
+    
     // Update data into the Product table
     $query = mysqli_query($conn,"UPDATE Product
         set product_name='$name', images='$image', category='$category', energy_type='$energy', short_desc='$short_desc', full_desc='$full_desc'
-        where id='$a'");
+        where product_id='$a'");
     if($query){
         echo "<h2>Product information is updated successfully! <a href='product-manage.php'>Click here</a> to go back.</h2>";
     }
     else { echo "<h2>Record has not been modified.</h2>";}
 }
-
-if (isset($_POST['delete'])){
-    $query = mysqli_query($conn,"DELETE FROM students where id='$a'");
-    if($query){
-        echo "<h2>Product has been deleted with id: $a </h2><br>";
-        // if you want to redirect to update page after updating
-        //header("location: update.php");
-    }
-    else { echo "<h2>Product has not been deleted yet!</h2>";}
-}
-
 $conn->close();
 ?>
 
