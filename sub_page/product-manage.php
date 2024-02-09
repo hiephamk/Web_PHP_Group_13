@@ -46,9 +46,9 @@ if ($result->num_rows > 0) {
                 <td>{$row['short_desc']}</td>
                 <td>{$row['full_desc']}</td>
                 <td>
-                    <a href='product-create.php' class='btn btn-add'>Add new product</a>
                     <a href='product-update.php?id={$row['product_id']}' class='btn btn-warning'>Edit</a>
                     <a href='product-delete.php?id={$row['product_id']}' class='btn btn-danger'>Delete</a>
+                    <a href='product-create.php' class='btn btn-add'>Add new product</a>
               </tr>";
     }
     echo "</tbody></table>";
@@ -83,7 +83,10 @@ $conn->close();
         background-color: #4CAF50;
         color: #ffffff;
         filter: brightness(95%);
-}
+    }
+    .btn-warning, .btn-danger {
+        margin-bottom: 3px;
+    }
 </style>
 
 <?php include_once '../footer.php'; ?>
