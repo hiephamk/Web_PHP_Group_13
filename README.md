@@ -34,10 +34,8 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 9 (Nguyen Dinh Khanh Chi): Add a match for Products page
 
 ### Feature 1: Products management
-This feature allows users easily add new products and maintain the existing product information via a user-friendly form.
-- Github links to related code files:
-[Insert new products](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-create.php)
-[View all product details](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-read.php)
+This feature allows users easily view all product information, add new products and maintain the existing product details via a user-friendly interface.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php)
 - HAMK Shell link to the feature: Ex: ### shell.hamk.fi/~member1/Feature1.php
 
 ### Feature 2: Request
@@ -103,7 +101,7 @@ List the database tables that are part of your project.
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
 #### Form 1 (Created by Nguyen Dinh Khanh Chi):
- - Form name: Product Insert Form 
+ - Form name: [Product Insert Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-create.php) 
  - Purpose: To insert product details into table "Products" in database.
  - Validations Applied: Product name is required and image link will be checked for invalid URL.
 
@@ -134,7 +132,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created by dinh23000): Product Information View | [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-read.php) | Link to the table (shell.hamk.fi).
+- Table 1 (Created by dinh23000): Product Information View | [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php) | Link to the table (shell.hamk.fi).
 
 - Table 2 (Created by dan23000): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
