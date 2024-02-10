@@ -23,7 +23,7 @@ The website will serve as a comprehensive product showcase platform for a car pr
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 (Nguyen Dinh Khanh Chi): Products management (Insert, View, Update, Delete)
+- [x] Feature 1 (Nguyen Dinh Khanh Chi): Products management (View, Insert, Update, Delete)
 - [ ] Feature 2 (Vu Quang Dan): Feedback & request for Contact page
 - [ ] Feature 3 (Tran Huynh An Duy): Add a filter for News page
 - [ ] Feature 4 (Huynh Van Hiep): Member registration 
@@ -34,9 +34,9 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 9 (Nguyen Dinh Khanh Chi): Add a match for Products page
 
 ### Feature 1: Products management
-This feature allows users easily view all product information, add new products and maintain the existing product details via a user-friendly interface.
+This feature typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
 - [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php)
-- HAMK Shell link to the feature: Ex: ### shell.hamk.fi/~member1/Feature1.php
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php)
 
 ### Feature 2: Request
 Customers can send their feedback or request via the contact form. Data will be stored in the appropriate table.
@@ -100,17 +100,17 @@ List and describe any forms that have been created as part of your project. Incl
 
 #### Form 1 (Created by Nguyen Dinh Khanh Chi):
  - Form name: [Product Insert Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-create.php) 
- - Purpose: To insert product details into table "Product" in database.
+ - Purpose: To add items into table "Product" in database.
  - Validations Applied: Product name is required and image link will be checked for invalid URL.
 
 #### Form 2 (Created by Nguyen Dinh Khanh Chi):
  - Form name: [Product Update Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-edit.php) 
- - Purpose: To update product details into table "Product" in database.
+ - Purpose: To change field details into table "Product" in database.
  - Validations Applied: Product name is required and image link will be checked for invalid URL.
 
  #### Form 3 (Created by Nguyen Dinh Khanh Chi):
  - Form name: [Product Delete Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-delete.php) 
- - Purpose: To delete a product from table "Product" in database.
+ - Purpose: To remove items from table "Product" in database.
  - Validations Applied: Product name is required and image link will be checked for invalid URL.
 
 #### Form 4 (Created by Vu Quang Dan):
@@ -139,7 +139,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created by dinh23000): Product View & Modification | [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php) | Link to the table (shell.hamk.fi).
+- Table 1 (Created by dinh23000): Product View & Modification | [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php) | [Link to the table](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php).
 
 - Table 2 (Created by dan23000): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
