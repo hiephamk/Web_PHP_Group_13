@@ -35,7 +35,7 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 1: Products management
 This feature typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
-- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php)
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php){:target="_blank"}
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php)
 
 ### Feature 2: Request
