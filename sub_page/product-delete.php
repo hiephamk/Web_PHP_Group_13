@@ -81,13 +81,13 @@ $row= mysqli_fetch_array($result);
     <!-- Button -->
     <a class="btn btn-back" href="product-manage.php" role="button">Go back</a>
     <button type="submit" class="btn btn-primary" id="submit" name="delete">Delete</button>
-</form><br>
+</form>
 
 <?php
 if (isset($_POST['delete'])){
     $query = mysqli_query($conn,"DELETE FROM Product where product_id='$a'");
     if($query){
-        echo "<h2>Product has been deleted with id: $a. <a href='product-manage.php'>Click here</a> to go back.</h2><br>";
+        echo "<h2>Product has been deleted with id: $a.</h2><br>";
     }
     else { echo "<h2>Product has not been deleted yet!</h2><br>";}
 }
