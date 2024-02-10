@@ -76,7 +76,7 @@ session_start();
                                     </form>
                                 </div>
                             </nav>
-                            <div class="profile-nav">
+                            <div class="profile-nav ">
                                 <?php
                                 if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
                                     echo '<div class="dropdown d-flex">
@@ -94,9 +94,9 @@ session_start();
 
 
                                 <div class="login-btn">
-                                    <a href="register.php"><button class="btn btn-primary">Sign
+                                    <a href="register.php"><button class="btn-login btn-primary">Sign
                                             Up</button></a>
-                                    <a href="login.php"><button class="btn btn-primary ">Log
+                                    <a href="login.php"><button class="btn-login btn-primary ">Log
                                             In</button></a>
                                 </div>
                                 <?php } ?>
