@@ -21,16 +21,16 @@
         <div class="footer-item">
             <h5>Quick Links</h5>
             <div>
-                <a href="index.html" class="footer-text" target="#">> Home</a>
+                <a href="index.php" class="footer-text" target="#">> Home</a>
             </div>
             <div>
-                <a href="Products.html" class="footer-text">> Products</a>
+                <a href="Products.php" class="footer-text">> Products</a>
             </div>
             <div>
-                <a href="News.html" class="footer-text">> News</a>
+                <a href="News.php" class="footer-text">> News</a>
             </div>
             <div>
-                <a href="Contact.html" class="footer-text">> Contact</a>
+                <a href="Contact.php" class="footer-text">> Contact</a>
             </div>
         </div>
         <div class="footer-item">
