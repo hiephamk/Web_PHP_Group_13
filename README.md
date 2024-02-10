@@ -21,7 +21,7 @@ The website will serve as a comprehensive product showcase platform for a car pr
 
 ## Features
 
-In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
+In this section, list and describe the features or functionality that we are working on.
 
 - [x] Feature 1 (Nguyen Dinh Khanh Chi): Products management (View, Insert, Update, Delete)
 - [ ] Feature 2 (Vu Quang Dan): Feedback & request for Contact page
@@ -35,7 +35,7 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 1: Products management
 This feature typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
-- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php){:target="_blank"}
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php)
 
 ### Feature 2: Request
@@ -74,7 +74,7 @@ We will create a page for admin to insert news article, then this data will be s
 - HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
 
 ### Feature 9: Filter Products
-Users can find products based on their desired request about fuel type and car type.
+Users can find products based on their desired request on fuel type and car type.
 - Github links to related code files: Ex: ### Github/project13/Feature1.php
 - HAMK Shell link to the feature: Ex: ### shell.hamk.fi/~member1/Feature1.php
 
@@ -82,7 +82,7 @@ Users can find products based on their desired request about fuel type and car t
 
 ## Database Tables
 
-List the database tables that are part of your project. 
+List the database tables that are part of our project. 
 
 - Table 1 (Created by dinh23000): Product
 - Table 2 (Created by hiep23000): Customers
@@ -96,7 +96,7 @@ List the database tables that are part of your project.
 
 ## Created Forms
 
-List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
+List and describe forms that have been created as part of our project. Include details about the purpose of each form and any validation logic.
 
 #### Form 1 (Created by Nguyen Dinh Khanh Chi):
  - Form name: [Product Insert Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-create.php) 
@@ -137,7 +137,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 ## Created Tables
 
-List any tables that you have created in the project work
+List tables that we have created in the project work.
 
 - Table 1 (Created by dinh23000): Product View & Modification | [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php) | [Link to the table](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php).
 
