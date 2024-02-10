@@ -5,7 +5,7 @@ CREATE TABLE `Product` (
   `product_name` varchar(50) NOT NULL,
   `short_desc` varchar(100) NOT NULL,
   `full_desc` varchar(500) NOT NULL,
-  `image` varchar(50) NOT NULL,
+  `image` varchar(100) NOT NULL,
   `category` varchar(20) NOT NULL,
   `energy_type` varchar(20) NOT NULL,
   PRIMARY KEY (`product_id`)
