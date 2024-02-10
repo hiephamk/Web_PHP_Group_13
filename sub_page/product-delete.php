@@ -78,6 +78,8 @@ $row= mysqli_fetch_array($result);
             </div>
         </div>
     </div>
+    <!-- Button -->
+    <a class="btn btn-back" href="product-manage.php" role="button">Go back</a>
     <button type="submit" class="btn btn-primary" id="submit" name="delete">Delete</button>
 </form><br>
 
@@ -103,6 +105,20 @@ $conn->close();
     }
     .form-group {
         margin-bottom: 20px;
+    }
+    .btn-back {
+        color: #333333;
+        text-align: center;
+        margin-top: 10px;
+        border: 1px solid #333333;
+        border-radius: 5px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+    }
+    .btn-back:hover {
+        background-color: #333333;
+        color: #ffffff;
+        font-weight: bold;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 </style>
 
