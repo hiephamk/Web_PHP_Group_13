@@ -20,24 +20,24 @@ session_start();
 </head>
 
 <body>
-    <div class="container-fluid full-page">
+    <div class="body-container">
         <!-- Header -->
-        <div class="header-container align-content-center fs-5 fw-bold text-dark">
+        <div class="header-container fs-5 fw-bold text-dark">
             <!-- Logo -->
             <div class="logo-container">
-                <img src="./img/logo.png" alt="logo">
+                <img class="img-fluid" src="./img/logo.png" alt="logo">
             </div>
             <!-- Navigation -->
-            <div class="nav-container">
-                <nav class="navbar navbar-expand-lg">
+            <div class=" navibar-container">
+                <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse nav-item" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="collapse navbar-collapse nav-item-container" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                                 </li>
@@ -65,25 +65,42 @@ session_start();
                                 <li class="nav-item">
                                     <a class="nav-link" href="Contact.php">Contact</a>
                                 </li>
+
                             </ul>
-                            <div class="search">
-                                <input type="text" class="search-input" placeholder="Search" name="Search">
-                                <a href="#" class="search-icon">
-                                    <img src="./img/icons8-search.png" alt="">
-                                </a>
-                            </div>
-                            <div class="login_btn">
+                            <nav class="navbar bg-body-tertiary search-box">
+                                <div class="container-fluid">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </nav>
+                            <div class="profile-nav">
                                 <?php
                                 if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
-                                    echo '<a href="index.php">' . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '</a> <br>';
-                                    echo '<a href="logout.php"><button class="btn-primary" style="margin-bottom: 30px;">Log Out</button></a>';
+                                    echo '<div class="dropdown d-flex">
+                                    
+                                        <button class="rounded-2 btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">'
+                                        . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '</button>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="profile.php"><img src="./img/person-circle.svg" alt=""> Your profile</a></li>
+                                        </ul>
+                                    </div>
+                                </div>';
+                                    echo '<a href="logout.php"><button class="btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';
                                 } else {
                                 ?>
-                                <a href="register.php"><button style="margin-bottom: 5px;" class="btn-primary">Sign
-                                        Up</button></a>
-                                <a href="login.php"><button style="margin-bottom: 5px;" class="btn-primary ">Log
-                                        In</button></a>
+
+
+                                <div class="login-btn">
+                                    <a href="register.php"><button class="btn btn-primary">Sign
+                                            Up</button></a>
+                                    <a href="login.php"><button class="btn btn-primary ">Log
+                                            In</button></a>
+                                </div>
                                 <?php } ?>
+
                             </div>
                         </div>
                     </div>

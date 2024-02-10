@@ -63,6 +63,7 @@ include 'header.php';
                         $_SESSION['customer_id'] = $row['customer_id'];
                         $_SESSION['fname'] = $row['fname'];
                         $_SESSION['lname'] = $row['lname'];
+                        $_SESSION['image'] = $row['image'];
                         header('Location: index.php');
                     } else {
                         header("Location: login.php?error=Incorrect email or password. Please try again!");
