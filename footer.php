@@ -56,7 +56,7 @@
     <!--Copyright-->
     <div class="copyright border-top border-light">
         <p class="copyright-text container">
-            &copy;2024 HAMK Static Web Development by Team 13. Icons by
+            &copy;2024 HAMK Web Development by Team 13. Icons by
             <a target="_blank" href="https://icons8.com"><i>Icons8</i></a>. All rights reserved.
         </p>
     </div>
