@@ -2,8 +2,6 @@
 ob_start();
 session_start();
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,31 +74,27 @@ session_start();
                                     </form>
                                 </div>
                             </nav>
-                            <div class="profile-nav ">
+                            <div class="profile-nav">
                                 <?php
                                 if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
-                                    echo '<div class="dropdown d-flex">
-                                    
-                                        <button class="rounded-2 btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">'
+
+                                    echo '<div class="dropdown btn-profile">
+                                        <button class="rounded-2 btn-profile dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">'
                                         . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '</button>
                                         <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.php"><img src="./img/person-circle.svg" alt=""> Your profile</a></li>
+                                        <li><a class="dropdown-item " href="profile.php"><img src="./img/person-circle.svg" alt=""> Your profile</a></li>
                                         </ul>
-                                    </div>
-                                </div>';
-                                    echo '<a href="logout.php"><button class="btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';
+                                    </div>';
+                                    echo '<a class="" href="logout.php"><button class=" btn btn-logout btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';
                                 } else {
                                 ?>
-
-
                                 <div class="login-btn">
-                                    <a href="register.php"><button class="btn-login btn-primary">Sign
+                                    <a href="register.php"><button class="btn-signup btn-primary">Sign
                                             Up</button></a>
                                     <a href="login.php"><button class="btn-login btn-primary ">Log
                                             In</button></a>
                                 </div>
                                 <?php } ?>
-
                             </div>
                         </div>
                     </div>
