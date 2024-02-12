@@ -35,6 +35,7 @@ CREATE TABLE Requests (
     phone VARCHAR(20),
     address VARCHAR(100),
     city VARCHAR(50),
+    country VARCHAR(50),
     zip VARCHAR(20),
     request VARCHAR(500)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
