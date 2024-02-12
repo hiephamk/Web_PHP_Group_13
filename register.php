@@ -7,11 +7,13 @@ include_once "header.php";
     <form class="row g-3 bg-warning" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="inputEmail4" name="fname">
+            <input type="text" class="form-control" id="fname" name="fname">
+            <span id="fnameError" style="color: red;"></span>
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="inputPassword4" name="lname">
+            <input type="text" class="form-control" id="lname" name="lname">
+            <span id="lnameError" style="color: red;"></span>
         </div>
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
@@ -48,6 +50,47 @@ include_once "header.php";
         </div>
     </form>
 </div>
+
+<script>
+    // function to validate first name
+    function validatefName()
+    {
+        const fname = document.getElementById("fname").value;
+        const fnameError = document.getElementById("fnameError");
+
+        if(fname.length < 3 || fname.length > 20)
+        {
+            fnameError.innerHTML = "First name must be between 3 and 20 characters!";
+            return false;
+        }
+        else
+        {
+            fnameError.innerHTML = "";
+            return true;
+        }
+    } 
+
+    // function to validate last name
+    function validatelName()
+    {
+        const lname = document.getElementById("lname").value;
+        const lnameError = document.getElementById("lnameError");
+
+        if(lname.length < 3 || lname.length > 20)
+        {
+            lnameError.innerHTML = "Last name must be between 3 and 20 characters!";
+            return false;
+        }
+        else
+        {
+            lnameError.innerHTML = "";
+            return true;
+        }
+    }
+    // event listeners for real time validation
+    document.getElementById("fname").addEventListener("input",validatefName);
+    document.getElementById("lname").addEventListener("input",validatelName);
+</script>
 
 <div class="container text-center">`
     <?php
