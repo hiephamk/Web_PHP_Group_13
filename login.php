@@ -70,9 +70,6 @@ include 'header.php';
     </script>
 
 
-
-
-
     <div>
         <?php
         include './Database/db.php';
