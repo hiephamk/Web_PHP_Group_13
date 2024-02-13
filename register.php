@@ -55,6 +55,49 @@ include_once "header.php";
     </form>
 </div>
 
+<!-- JavaScript Validation  -->
+<script>
+    // function to validate first name
+    function validatefName()
+    {
+        const fname = document.getElementById("fname").value;
+        const fnameError = document.getElementById("fnameError");
+
+        if(fname.length < 3 || fname.length > 20)
+        {
+            fnameError.innerHTML = "First name must be between 3 and 20 characters!";
+            return false;
+        }
+        else
+        {
+            fnameError.innerHTML = "";
+            return true;
+        }
+    } 
+
+    // function to validate last name
+    function validatelName()
+    {
+        const lname = document.getElementById("lname").value;
+        const lnameError = document.getElementById("lnameError");
+
+        if(lname.length < 3 || lname.length > 20)
+        {
+            lnameError.innerHTML = "Last name must be between 3 and 20 characters!";
+            return false;
+        }
+        else
+        {
+            lnameError.innerHTML = "";
+            return true;
+        }
+    }
+    // event listeners for real time validation
+    document.getElementById("fname").addEventListener("input",validatefName);
+    document.getElementById("lname").addEventListener("input",validatelName);
+</script>
+
+
 
 <div class="container text-center">`
     <?php
