@@ -1,18 +1,18 @@
 <?php
 $title = "Contact";
-include "header.php";
+include "./layout/header.php";
 ?>
 
 <!-- Body -->
 <div class="full-container">
-    <!-- Banner -->
-    <div class="banner">
-        <img src="./img/contact-banner.jpg" alt="Banner">
-    </div>
+  <!-- Banner -->
+  <div class="banner">
+    <img src="img/contact-banner.jpg" alt="Banner">
+  </div>
 </div>
 <!-- Main -->
 <main class="container mt-5">
-    <section class="contact-form">
+  <section class="contact-form">
     <h2>Send us your request</h2>
     <p>Qui sequam, voluptatum. Incidunt, quia aperiam quos cupiditate consectetur, illum doloremque nulla ratione, amet
       consequuntur voluptates natus neque modi animi nam quaerat consequatur!, a illo!</p>
@@ -31,8 +31,8 @@ include "header.php";
         <input type="tel" class="form-control" id="phone" name="phone" placeholder="+358 1234 56789">
       </div>
       <div class="mb-3">
-        <label for="address" class="form-label">Address</label>
-        <input type="text" class="form-control" id="address" name="address" placeholder="123 Boulevard">
+        <label for="addr" class="form-label">Address</label>
+        <input type="text" class="form-control" id="addr" name="addr" placeholder="123 Boulevard">
       </div>
       <div class="mb-3">
         <label for="Country" class="form-label">Country</label>
@@ -64,14 +64,14 @@ include "header.php";
   </section>
   <?php
 
-    // Check if the 'submit' button in the form was clicked
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Check if the 'submit' button in the form was clicked
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get data from POST and filter them to prevent SQL injection
     $fullName = filter_input(INPUT_POST, 'fullName', FILTER_SANITIZE_STRING);
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
-    $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
+    $addr = filter_input(INPUT_POST, 'addr', FILTER_SANITIZE_STRING);
     $city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING);
     $country = filter_input(INPUT_POST, 'country', FILTER_SANITIZE_STRING);
     $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
@@ -81,43 +81,42 @@ include "header.php";
     include 'db.php';  
 
     // Define SQL query
-    $sql = "INSERT INTO Requests (full_name, email, phone, address, city, country, zip, request) 
-            VALUES ('$fullName', '$email', '$phone', '$address', '$city', '$country', '$zip', '$request')";
+    $sql = "INSERT INTO Requests (full_name, email, phone, addr, city, country, zip, request) 
+            VALUES ('$fullName', '$email', '$phone', '$addr', '$city', '$country', '$zip', '$request')";
 
     // Execute the query
     if ($conn->query($sql) === TRUE) {
       echo "Request updated successfully!";
-     } else {
+  } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+  }
 
     // Close the connection
     $conn->close();
     $conn = null;
-    }
+}
 
-    ?>
+?>
 
-    <!-- Contact info -->
-    <div class="newcar-box">
-        <div class="flex-item">
-            <div class="newcar-text">
-                <h3>QUESTIONS ABOUT DIGITAL SERVICES.</h3>
-                <p>For example, Digital key, remote software upgrade, map functions or My T13 App.</p>
-                <p><strong>Email:</strong> <a
-                        href="mailto:connecteddrive.fi@group-t13.fi">connecteddrive.fi@group-t13.fi</a>
-                </p>
-                <p><strong>Telephone number:</strong> +358 1234 56789</p>
-                <p><strong>Opening hours</strong></p>
-                <p>Monday to Friday from 8 am to 8 pm.</p>
-            </div>
-        </div>
-        <div class="flex-item">
-            <div class="newcar-img"><img src="././img/Contact-question.jpg" alt="digital-services">
-            </div>
-        </div>
+  <!-- Contact info -->
+  <div class="newcar-box">
+    <div class="flex-item">
+      <div class="newcar-text">
+        <h3>QUESTIONS ABOUT DIGITAL SERVICES.</h3>
+        <p>For example, Digital key, remote software upgrade, map functions or My T13 App.</p>
+        <p><strong>Email:</strong> <a href="mailto:connecteddrive.fi@group-t13.fi">connecteddrive.fi@group-t13.fi</a>
+        </p>
+        <p><strong>Telephone number:</strong> +358 1234 56789</p>
+        <p><strong>Opening hours</strong></p>
+        <p>Monday to Friday from 8 am to 8 pm.</p>
+      </div>
     </div>
+    <div class="flex-item">
+      <div class="newcar-img"><img src="./img/Contact-question.jpg" alt="digital-services">
+      </div>
+    </div>
+  </div>
 </main>
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "./layout/footer.php"; ?>
