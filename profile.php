@@ -1,5 +1,6 @@
 <?php
 $title = "Profile";
+// session_start();
 include "header.php"; ?>
 
 <body>
@@ -58,7 +59,7 @@ include "header.php"; ?>
             echo "No results";
         }
         // close the connection when done
-        // $conn->close();
+        $conn->close();
         ?>
     </div>
 </body>
