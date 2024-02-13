@@ -45,23 +45,23 @@ Customers can send their feedback or request via the contact form. Data will be 
 
 ### Feature 3: Filter News
 Users will filter news based on a specific category.
-- [Github links to related code files] (https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/News-filter.php)
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/News-filter.php)
 - [Link to HAMK Shell](http://shell.hamk.fi/~duy23000/Web_PHP_Group_13/main_page/News-filter.php)
 
 ### Feature 4: Member register
 Users will fill in their email and password to sign up our membership.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+- [Github links to related code files]( https://github.com/hiephamk/Web_PHP_Group_13/blob/main/register.php)
+- [Link to HAMK Shell](http://shell.hamk.fi/~hiep23000/Web_php_group_13/register.php)
 
 ### Feature 5: Login
 Users can sign in into their account after registering.
-- Github links to related code files: Ex: ### Github/project13/Feature1.php
-- HAMK Shell link to the feature: Ex: ### shell.hamk.fi/~member1/Feature1.php
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/login.php)
+- [Link to HAMK Shell](http://shell.hamk.fi/~hiep23000/Web_php_group_13/login.php)
 
 ### Feature 6: Update profile
 Members will be directed to their profile page where they can update personal information such as change password, address, phone nubmer.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/profile.php)
+- [Link to HAMK Shell](http://shell.hamk.fi/~hiep23000/Web_php_group_13/profile.php)
 
 ### Feature 7: Search
 We will make the search button interactive and working, and also it will show the result in a new page.
@@ -114,13 +114,16 @@ List and describe forms that have been created as part of our project. Include d
  - Validations Applied: Product name is required and image link will be checked for invalid URL.
 
 #### Form 4 (Created by Vu Quang Dan):
- - Form name: Requests Form 
+ - Form name: [Requests Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Contact.php)
  - Purpose: Get request infromation from customer
- - Validations Applied: full name must be entered, the email should content @, the phone number should have 10 digits
+ - Validations Applied: 
+  - Full name must be entered and minimum lengh is 3 characters.
+  - Email should not empty and content @ character
+  - Phone number should have 10 digits
 
 #### Form 5 (Created by Huynh Van Hiep):
- - Form name: Login Form 
- - Purpose: 
+ - Form name: [Login Form]
+ - Purpose: Allow user login 
  - Validations Applied:
 
 #### Form 6 (Created by Huynh Van Hiep):
