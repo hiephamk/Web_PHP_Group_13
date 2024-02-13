@@ -22,14 +22,17 @@ include "./header.php";
         <label for="fullName" class="form-label">Full Name</label>
         <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g John Smith">
         <span id="fnameError" style="color: red;"></span>
-      </div>
+      </div>  
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="username@gmail.com">
+        <span id="emailError" style="color: red;"></span>
       </div>
       <div class="mb-3">
         <label for="phone" class="form-label">Phone number</label>
-        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+358 1234 56789">
+        <!-- <input type="tel" class="form-control" id="phoneNumber" name="phone" placeholder="+358 1234 56789"> -->
+        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" name="phone" placeholder="+358 1234 56789" onchange="validatePhoneNumber()">
+        <span id="phoneValidationMsg" style="color: red;"></span>
       </div>
       <div class="mb-3">
         <label for="addr" class="form-label">Address</label>
@@ -69,10 +72,10 @@ include "./header.php";
     // function to validate first name
     function validatefullName() {
         const fname = document.getElementById("fullName").value;
-        const fnameError = document.getElementById("fullNameError");
+        const fnameError = document.getElementById("fnameError");
 
         if (fname.length < 3 || fname.length > 20) {
-            fnameError.innerHTML = "FULL name must be between 3 and 20 characters!";
+            fnameError.innerHTML = "Full name must be between 3 and 20 characters!";
             return false;
         } else {
             fnameError.innerHTML = "";
@@ -81,17 +84,20 @@ include "./header.php";
     }
 
     // function to validate last name
-    function validatelName() {
-        const lname = document.getElementById("lname").value;
-        const lnameError = document.getElementById("lnameError");
+    function validatePhoneNumber() 
+    {
+    // Get and trim phone number input
+    const phoneNumber = document.getElementById('phoneNumber').value.trim();
 
-        if (lname.length < 3 || lname.length > 20) {
-            lnameError.innerHTML = "Last name must be between 3 and 20 characters!";
-            return false;
-        } else {
-            lnameError.innerHTML = "";
-            return true;
-        }
+    // Regex pattern for 10-digit phone number
+    const pattern = /^\d{10}$/;
+
+    // Validate phone number and update message
+    const isValid = pattern.test(phoneNumber);
+  document.getElementById('phoneValidationMsg').textContent = isValid ? '' : 'Please enter a valid 10-digit phone number.';
+
+    // Return validation status
+    return isValid;
     }
      // function to validate last name
      function validateEmail()
@@ -101,7 +107,7 @@ include "./header.php";
 
         if(email === "" || !email.includes("@"))
         {
-            emailError.innerHTML = "Email must be in valid format!";
+            emailError.innerHTML = "Email must be in valid format! Example: abc@abc.com";
             return false;
         }
         else
@@ -114,7 +120,8 @@ include "./header.php";
 
     // event listeners for real time validation
     
-    document.getElementById("fname").addEventListener("input", validatefName);
+    document.getElementById("fullName").addEventListener("input", validatefullName);
+    document.getElementById("email").addEventListener("input", validateEmail);
     // document.getElementById("lname").addEventListener("input", validatelName);
     
 </script>
