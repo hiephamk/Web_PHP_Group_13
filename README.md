@@ -34,7 +34,7 @@ In this section, list and describe the features or functionality that we are wor
 - [ ] Feature 9 (Nguyen Dinh Khanh Chi): Add a match for Products page
 
 ### Feature 1: Products management
-This feature typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
+This feature applying CRUD app typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
 - [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php)
 
