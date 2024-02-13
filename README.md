@@ -34,14 +34,14 @@ In this section, list and describe the features or functionality that we are wor
 - [ ] Feature 9 (Nguyen Dinh Khanh Chi): Add a match for Products page
 
 ### Feature 1: Products management
-This feature typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
+This feature applying CRUD app typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
 - [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php)
 
 ### Feature 2: Request
 Customers can send their feedback or request via the contact form. Data will be stored in the appropriate table.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/read.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/read.php)
 
 ### Feature 3: Filter News
 Users will filter news based on a specific category.
@@ -114,7 +114,7 @@ List and describe forms that have been created as part of our project. Include d
  - Validations Applied: Product name is required and image link will be checked for invalid URL.
 
 #### Form 4 (Created by Vu Quang Dan):
- - Form name: Contact Form 
+ - Form name: Requests Form 
  - Purpose:
  - Validations Applied:
 
