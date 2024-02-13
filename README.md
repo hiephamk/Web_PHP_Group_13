@@ -40,8 +40,8 @@ This feature applying CRUD app typically allows users to browse the existing pro
 
 ### Feature 2: Request
 Customers can send their feedback or request via the contact form. Data will be stored in the appropriate table.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/read.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/read.php)
 
 ### Feature 3: Filter News
 Users will filter news based on a specific category.
