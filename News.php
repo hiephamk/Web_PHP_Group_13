@@ -3,7 +3,7 @@ $title = "News";
 include "header.php";
 ?>
 <!-- body -->
-<div class="body-page container d-inline-block justify-content-center">
+<div class="body-page container d-flex-column">
     <div class="banner-items">
         <div class="banner-img">
             <img src="./img/News.jpg" alt="" class="img-fluid">
