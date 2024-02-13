@@ -1,6 +1,6 @@
 <?php
 $title = "Contact";
-include "./layout/header.php";
+include "./header.php";
 ?>
 
 <!-- Body -->
@@ -21,6 +21,7 @@ include "./layout/header.php";
       <div class="mb-3">
         <label for="fullName" class="form-label">Full Name</label>
         <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g John Smith">
+        <span id="fnameError" style="color: red;"></span>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
@@ -62,7 +63,68 @@ include "./layout/header.php";
       <button type="submit" class="btn btn-primary">Send</button>
     </form>
   </section>
-  <?php
+
+<!-- JavaScript Validation  -->
+<script>
+    // function to validate first name
+    function validatefullName() {
+        const fname = document.getElementById("fullName").value;
+        const fnameError = document.getElementById("fullNameError");
+
+        if (fname.length < 3 || fname.length > 20) {
+            fnameError.innerHTML = "FULL name must be between 3 and 20 characters!";
+            return false;
+        } else {
+            fnameError.innerHTML = "";
+            return true;
+        }
+    }
+
+    // function to validate last name
+    function validatelName() {
+        const lname = document.getElementById("lname").value;
+        const lnameError = document.getElementById("lnameError");
+
+        if (lname.length < 3 || lname.length > 20) {
+            lnameError.innerHTML = "Last name must be between 3 and 20 characters!";
+            return false;
+        } else {
+            lnameError.innerHTML = "";
+            return true;
+        }
+    }
+     // function to validate last name
+     function validateEmail()
+    {
+        const email = document.getElementById("email").value;
+        const emailError = document.getElementById("emailError");
+
+        if(email === "" || !email.includes("@"))
+        {
+            emailError.innerHTML = "Email must be in valid format!";
+            return false;
+        }
+        else
+        {
+            emailError.innerHTML = "";
+            return true;
+        }
+    }
+
+
+    // event listeners for real time validation
+    
+    document.getElementById("fname").addEventListener("input", validatefName);
+    // document.getElementById("lname").addEventListener("input", validatelName);
+    
+</script>
+
+
+
+
+
+
+  <?php  
 
 // Check if the 'submit' button in the form was clicked
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -98,6 +160,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
+
   <!-- Contact info -->
   <div class="newcar-box">
     <div class="flex-item">
@@ -119,4 +182,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </main>
 
 <!--Footer-->
-<?php include "./layout/footer.php"; ?>
+<?php include "./footer.php"; ?>
