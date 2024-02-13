@@ -21,8 +21,7 @@ include_once "header.php";
             <label for="inputEmail4" class="form-label">Email</label>
             <span class="error">*</span>
             <input type="email" class="form-control" id="email" name="email">
-            <span id="email" style="color: red;"></span>
-
+            <span id="emailError" style="color: red;"></span>
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Password</label>
@@ -109,14 +108,10 @@ include_once "header.php";
 
 
     // event listeners for real time validation
-<<<<<<< HEAD
-    document.getElementById("fname").addEventListener("input", validatefName);
-    document.getElementById("lname").addEventListener("input", validatelName);
-=======
+
     document.getElementById("fname").addEventListener("input",validatefName);
     document.getElementById("lname").addEventListener("input",validatelName);
     document.getElementById("email").addEventListener("input",validateEmail);
->>>>>>> 4bb3113ab836a7f56a2bb12fdc8349a53424721b
 </script>
 
 <div class="container text-center">`

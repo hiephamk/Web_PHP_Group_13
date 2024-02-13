@@ -24,12 +24,12 @@ The website will serve as a comprehensive product showcase platform for a car pr
 In this section, list and describe the features or functionality that we are working on.
 
 - [x] Feature 1 (Nguyen Dinh Khanh Chi): Products management (View, Insert, Update, Delete)
-- [ ] Feature 2 (Vu Quang Dan): Feedback & request for Contact page
-- [ ] Feature 3 (Tran Huynh An Duy): Add a filter for News page
-- [ ] Feature 4 (Huynh Van Hiep): Member registration 
-- [ ] Feature 5 (Huynh Van Hiep): Member login
-- [ ] Feature 6 (Huynh Van Hiep): Update members profile
-- [ ] Feature 7 (Full Name): Search - in header of all pages
+- [x] Feature 2 (Vu Quang Dan): Feedback & request for Contact page
+- [x] Feature 3 (Tran Huynh An Duy): Add a filter for News page
+- [x] Feature 4 (Huynh Van Hiep): Member registration 
+- [x] Feature 5 (Huynh Van Hiep): Member login
+- [x] Feature 6 (Huynh Van Hiep): Update members profile
+- [ ] Feature 7 (Huynh Van Hiep): Search - in header of all pages
 - [ ] Feature 8 (Tran Huynh An Duy): View and insert new article for News page
 - [ ] Feature 9 (Nguyen Dinh Khanh Chi): Add a match for Products page
 
@@ -45,23 +45,23 @@ Customers can send their feedback or request via the contact form. Data will be 
 
 ### Feature 3: Filter News
 Users will filter news based on a specific category.
-- Github links: Ex: ### Github/project13/Feature1.php
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/News-filter.php)
 - [Link to HAMK Shell](http://shell.hamk.fi/~duy23000/Web_PHP_Group_13/main_page/News-filter.php)
 
 ### Feature 4: Member register
 Users will fill in their email and password to sign up our membership.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+- [Github links to related code files]( https://github.com/hiephamk/Web_PHP_Group_13/blob/main/register.php)
+- [Link to HAMK Shell](http://shell.hamk.fi/~hiep23000/Web_php_group_13/register.php)
 
 ### Feature 5: Login
 Users can sign in into their account after registering.
-- Github links to related code files: Ex: ### Github/project13/Feature1.php
-- HAMK Shell link to the feature: Ex: ### shell.hamk.fi/~member1/Feature1.php
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/login.php)
+- [Link to HAMK Shell](http://shell.hamk.fi/~hiep23000/Web_php_group_13/login.php)
 
 ### Feature 6: Update profile
 Members will be directed to their profile page where they can update personal information such as change password, address, phone nubmer.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/profile.php)
+- [Link to HAMK Shell](http://shell.hamk.fi/~hiep23000/Web_php_group_13/profile.php)
 
 ### Feature 7: Search
 We will make the search button interactive and working, and also it will show the result in a new page.
@@ -114,13 +114,16 @@ List and describe forms that have been created as part of our project. Include d
  - Validations Applied: Product name is required and image link will be checked for invalid URL.
 
 #### Form 4 (Created by Vu Quang Dan):
- - Form name: Requests Form 
- - Purpose:
- - Validations Applied:
+ - Form name: [Requests Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Contact.php)
+ - Purpose: Get request infromation from customer
+ - Validations Applied: 
+  - Full name must be entered and minimum lengh is 3 characters.
+  - Email should not empty and content @ character
+  - Phone number should have 10 digits
 
 #### Form 5 (Created by Huynh Van Hiep):
- - Form name: Login Form 
- - Purpose: 
+ - Form name: [Login Form]
+ - Purpose: Allow user login 
  - Validations Applied:
 
 #### Form 6 (Created by Huynh Van Hiep):
@@ -130,8 +133,8 @@ List and describe forms that have been created as part of our project. Include d
 
 #### Form 7 (Created by Tran Huynh An Duy):
  - Form name: Filter Form 
- - Purpose: 
- - Validations Applied:
+ - Purpose: Display the news based on news category
+ - Validations Applied: 
 
 ---
 

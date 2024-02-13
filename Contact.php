@@ -1,6 +1,6 @@
 <?php
 $title = "Contact";
-include "./header.php";
+include "header.php";
 ?>
 
 <!-- Body -->
@@ -14,15 +14,16 @@ include "./header.php";
 <main class="container mt-5">
   <section class="contact-form">
     <h2>Send us your request</h2>
-    <p>Qui sequam, voluptatum. Incidunt, quia aperiam quos cupiditate consectetur, illum doloremque nulla ratione, amet
+    <p>Qui sequam, voluptatum. Incidunt, quia aperiam quos cupiditate consectetur, illum doloremque nulla ratione,
+      amet
       consequuntur voluptates natus neque modi animi nam quaerat consequatur!, a illo!</p>
 
-      <form method="post" action="">
+    <form method="post" action="" name="contact form">
       <div class="mb-3">
         <label for="fullName" class="form-label">Full Name</label>
         <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g John Smith">
         <span id="fnameError" style="color: red;"></span>
-      </div>  
+      </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="username@gmail.com">
@@ -40,18 +41,18 @@ include "./header.php";
       </div>
       <div class="mb-3">
         <label for="Country" class="form-label">Country</label>
-        <input type="text" class="form-control" id="country"  name="country" placeholder="Finland">
+        <input type="text" class="form-control" id="country" name="country" placeholder="Finland">
       </div>
       <div class="row">
         <div class="col">
           <label for="city" class="form-label">City</label>
           <input type="text" class="form-control" id="city" name="city" placeholder="Hameenlinna">
-            <!-- Options here -->
+          <!-- Options here -->
           </select>
         </div>
         <div class="col">
           <label for="zip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="zip"  name="zip" placeholder="00000">
+          <input type="text" class="form-control" id="zip" name="zip" placeholder="00000">
         </div>
       </div>
       <div class="mb-3">
@@ -60,81 +61,77 @@ include "./header.php";
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="contact-agreement">
-        <label class="form-check-label" for="contact-agreement">I agree to get contacted by email or message for this
+        <label class="form-check-label" for="contact-agreement">I agree to get contacted by email or message for
+          this
           request.</label>
       </div>
       <button type="submit" class="btn btn-primary">Send</button>
     </form>
   </section>
 
-<!-- JavaScript Validation  -->
-<script>
+  <!-- JavaScript Validation  -->
+  <script>
     // function to validate first name
     function validatefullName() {
-        const fname = document.getElementById("fullName").value;
-        const fnameError = document.getElementById("fnameError");
+      const fname = document.getElementById("fullName").value;
+      const fnameError = document.getElementById("fnameError");
 
-        if (fname.length < 3 || fname.length > 20) {
-            fnameError.innerHTML = "Full name must be between 3 and 20 characters!";
-            return false;
-        } else {
-            fnameError.innerHTML = "";
-            return true;
-        }
+      if (fname.length < 3 || fname.length > 20) {
+        fnameError.innerHTML = "Full name must be between 3 and 20 characters!";
+        return false;
+      } else {
+        fnameError.innerHTML = "";
+        return true;
+      }
     }
 
     // function to validate last name
-    function validatePhoneNumber() 
-    {
-    // Get and trim phone number input
-    const phoneNumber = document.getElementById('phoneNumber').value.trim();
+    function validatePhoneNumber() {
+      // Get and trim phone number input
+      const phoneNumber = document.getElementById('phoneNumber').value.trim();
 
-    // Regex pattern for 10-digit phone number
-    const pattern = /^\d{10}$/;
+      // Regex pattern for 10-digit phone number
+      const pattern = /^\d{10}$/;
 
-    // Validate phone number and update message
-    const isValid = pattern.test(phoneNumber);
-  document.getElementById('phoneValidationMsg').textContent = isValid ? '' : 'Please enter a valid 10-digit phone number.';
+      // Validate phone number and update message
+      const isValid = pattern.test(phoneNumber);
+      document.getElementById('phoneValidationMsg').textContent = isValid ? '' :
+        'Please enter a valid 10-digit phone number.';
 
-    // Return validation status
-    return isValid;
+      // Return validation status
+      return isValid;
     }
-     // function to validate last name
-     function validateEmail()
-    {
-        const email = document.getElementById("email").value;
-        const emailError = document.getElementById("emailError");
+    // function to validate email
+    function validateEmail() {
+      const email = document.getElementById("email").value;
+      const emailError = document.getElementById("emailError");
 
-        if(email === "" || !email.includes("@"))
-        {
-            emailError.innerHTML = "Email must be in valid format! Example: abc@abc.com";
-            return false;
-        }
-        else
-        {
-            emailError.innerHTML = "";
-            return true;
-        }
+      if (email === "" || !email.includes("@")) {
+        emailError.innerHTML = "Email must be in valid format! Example: abc@abc.com";
+        return false;
+      } else {
+        emailError.innerHTML = "";
+        return true;
+      }
     }
 
 
     // event listeners for real time validation
-    
+
     document.getElementById("fullName").addEventListener("input", validatefullName);
     document.getElementById("email").addEventListener("input", validateEmail);
     // document.getElementById("lname").addEventListener("input", validatelName);
-    
-</script>
+  </script>
 
 
 
 
 
 
-  <?php  
+  <?php
 
-// Check if the 'submit' button in the form was clicked
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Check if the 'submit' button in the form was clicked
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get data from POST and filter them to prevent SQL injection
     $fullName = filter_input(INPUT_POST, 'fullName', FILTER_SANITIZE_STRING);
@@ -147,7 +144,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $request = filter_input(INPUT_POST, 'request', FILTER_SANITIZE_STRING);
 
     // Include the database connection file
-    include 'db.php';  
+    include 'db.php';
 
     // Define SQL query
     $sql = "INSERT INTO Requests (full_name, email, phone, addr, city, country, zip, request) 
@@ -156,17 +153,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Execute the query
     if ($conn->query($sql) === TRUE) {
       echo "Request updated successfully!";
-  } else {
+    } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
-  }
+    }
 
     // Close the connection
     $conn->close();
     $conn = null;
-}
+  }
 
-?>
-
+  ?>
 
   <!-- Contact info -->
   <div class="newcar-box">
@@ -189,4 +185,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </main>
 
 <!--Footer-->
-<?php include "./footer.php"; ?>
+<?php include "footer.php"; ?>

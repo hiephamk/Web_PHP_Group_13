@@ -1,5 +1,9 @@
 <?php
 $title = "Profile";
+<<<<<<< HEAD
+=======
+// session_start();
+>>>>>>> 1e8cfbb2a3550d65e0790aec0788ef74d44499c7
 include "header.php"; ?>
 
 <body>
@@ -58,7 +62,11 @@ include "header.php"; ?>
             echo "No results";
         }
         // close the connection when done
+<<<<<<< HEAD
         // $conn->close();
+=======
+        $conn->close();
+>>>>>>> 1e8cfbb2a3550d65e0790aec0788ef74d44499c7
         ?>
     </div>
 </body>
