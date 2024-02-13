@@ -9,11 +9,13 @@ include_once "header.php";
     <form class="row g-3 bg-warning" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="inputEmail4" name="fname">
+            <input type="text" class="form-control" id="fname" name="fname">
+            <span id="fnameError" style="color: red;"></span>
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="inputPassword4" name="lname">
+            <input type="text" class="form-control" id="lname" name="lname">
+            <span id="lnameError" style="color: red;"></span>
         </div>
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
