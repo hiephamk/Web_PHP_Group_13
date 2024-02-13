@@ -58,7 +58,7 @@ include "header.php"; ?>
             echo "No results";
         }
         // close the connection when done
-        $conn->close();
+        // $conn->close();
         ?>
     </div>
 </body>

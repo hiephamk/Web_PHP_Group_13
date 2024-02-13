@@ -4,7 +4,7 @@ include_once "header.php";
 ?>
 
 <div class="container w-50 align-middle">
-    <h3 style="color: rgb(27, 3, 241);text-align: center;"> SIGN UP FOR FREE </h3> <br>
+    <h3 style="color: #e74c3c;text-align: center;margin-top:30px;"> SIGN UP FOR FREE </h3> <br>
     <p><span class="error">* Required field</span></p>
     <form class="row g-3 bg-warning" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="col-md-6">
@@ -53,7 +53,7 @@ include_once "header.php";
             </div>
         </div>
         <div class="col-12" align-middle>
-            <input type="submit" class="btn-primary btn fs-4" style="margin:20px 0 20px 29%; width:300px; height:50px;border-radius:7px;box-shadow:2px 2px #234;" name="submit" value="Sign Up">
+            <input type="submit" class="btn-primary btn fs-4" style="margin:10px 0 30px 35%; width:200px; height:50px;border-radius:5px;" name="submit" value="Register">
         </div>
     </form>
 </div>
@@ -61,36 +61,28 @@ include_once "header.php";
 <!-- JavaScript Validation  -->
 <script>
     // function to validate first name
-    function validatefName()
-    {
+    function validatefName() {
         const fname = document.getElementById("fname").value;
         const fnameError = document.getElementById("fnameError");
 
-        if(fname.length < 3 || fname.length > 20)
-        {
+        if (fname.length < 3 || fname.length > 20) {
             fnameError.innerHTML = "First name must be between 3 and 20 characters!";
             return false;
-        }
-        else
-        {
+        } else {
             fnameError.innerHTML = "";
             return true;
         }
-    } 
+    }
 
     // function to validate last name
-    function validatelName()
-    {
+    function validatelName() {
         const lname = document.getElementById("lname").value;
         const lnameError = document.getElementById("lnameError");
 
-        if(lname.length < 3 || lname.length > 20)
-        {
+        if (lname.length < 3 || lname.length > 20) {
             lnameError.innerHTML = "Last name must be between 3 and 20 characters!";
             return false;
-        }
-        else
-        {
+        } else {
             lnameError.innerHTML = "";
             return true;
         }
@@ -117,12 +109,15 @@ include_once "header.php";
 
 
     // event listeners for real time validation
+<<<<<<< HEAD
+    document.getElementById("fname").addEventListener("input", validatefName);
+    document.getElementById("lname").addEventListener("input", validatelName);
+=======
     document.getElementById("fname").addEventListener("input",validatefName);
     document.getElementById("lname").addEventListener("input",validatelName);
     document.getElementById("email").addEventListener("input",validateEmail);
+>>>>>>> 4bb3113ab836a7f56a2bb12fdc8349a53424721b
 </script>
-
-
 
 <div class="container text-center">`
     <?php
@@ -148,6 +143,7 @@ include_once "header.php";
                     $sql = "insert into customers(fname,lname,address,phone,email,password) values('$fname','$lname','$address','$phone','$email','$pass')";
                     if ($conn->query($sql) === TRUE) {
                         echo "<p>You have successfully registered. Now you can <a href='login.php'>log in</a> or back to <a href='../main_page/index.php'>Home</a> </p>";
+                        $conn->close();
                     }
                 }
             } else {
@@ -158,7 +154,7 @@ include_once "header.php";
             echo "<p class='text-danger' >Warning: You need to agree with our terms of service!</p>";
         }
     }
-    $conn->close();
+
     ?>
 </div>
 <?php include "footer.php"; ?>
