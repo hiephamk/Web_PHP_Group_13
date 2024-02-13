@@ -20,8 +20,12 @@ include_once "header.php";
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
             <span class="error">*</span>
+<<<<<<< HEAD
             <input type="email" class="form-control" id="email" name="email">
             <span id="email" style="color: red;"></span>
+=======
+            <input type="email" class="form-control" id="inputEmail4" name="email">
+>>>>>>> 1e8cfbb2a3550d65e0790aec0788ef74d44499c7
 
         </div>
         <div class="col-md-6">
@@ -87,6 +91,7 @@ include_once "header.php";
             return true;
         }
     }
+<<<<<<< HEAD
      // function to validate last name
      function validateEmail()
     {
@@ -117,6 +122,11 @@ include_once "header.php";
     document.getElementById("lname").addEventListener("input",validatelName);
     document.getElementById("email").addEventListener("input",validateEmail);
 >>>>>>> 4bb3113ab836a7f56a2bb12fdc8349a53424721b
+=======
+    // event listeners for real time validation
+    document.getElementById("fname").addEventListener("input", validatefName);
+    document.getElementById("lname").addEventListener("input", validatelName);
+>>>>>>> 1e8cfbb2a3550d65e0790aec0788ef74d44499c7
 </script>
 
 <div class="container text-center">`

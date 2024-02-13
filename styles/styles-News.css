@@ -108,6 +108,7 @@ input {
   height: max-content;
   position: relative;
   color: #333333;
+  margin: auto;
 }
 /* icon + link css */
 div > a {

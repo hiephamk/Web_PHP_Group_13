@@ -29,7 +29,9 @@ include 'header.php';
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Remember me.</label>
             </div>
-            <button type="submit" class=" btn-primary btn fs-4" style="margin:20px 0 20px 29%; width:300px; height:50px;border-radius:7px;box-shadow:2px 2px #234;" name="submit">Login</button>
+  
+            <button type="submit" class=" btn-primary btn fs-4" style="margin:20px 0 20px 29%; width:200px; height:50px;border-radius:7px;box-shadow:2px 2px #234;" name="submit">Login</button>
+ 
         </form>
     </div>
     <div>
