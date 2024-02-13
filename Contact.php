@@ -18,7 +18,7 @@ include "header.php";
       amet
       consequuntur voluptates natus neque modi animi nam quaerat consequatur!, a illo!</p>
 
-    <form method="post" action="">
+    <form method="post" action="" name="contact form">
       <div class="mb-3">
         <label for="fullName" class="form-label">Full Name</label>
         <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g John Smith">
@@ -101,7 +101,7 @@ include "header.php";
       // Return validation status
       return isValid;
     }
-    // function to validate last name
+    // function to validate email
     function validateEmail() {
       const email = document.getElementById("email").value;
       const emailError = document.getElementById("emailError");
