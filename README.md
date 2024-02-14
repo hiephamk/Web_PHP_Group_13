@@ -28,8 +28,8 @@ In this section, list and describe the features or functionality we are working 
 - [x] Feature 3 (Tran Huynh An Duy): Add a filter for News page
 - [x] Feature 4 (Huynh Van Hiep): Member registration 
 - [x] Feature 5 (Huynh Van Hiep): Member login
-- [x] Feature 6 (Huynh Van Hiep): Update the user's profile
-- [x] Feature 7 (Huynh Van Hiep): Search product - on the header of all pages
+- [x] Feature 6 (Huynh Van Hiep): Update users' profile
+- [x] Feature 7 (Huynh Van Hiep): Search product on the header
 
 ### Feature 1: Product management
 This feature applying CRUD app typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
@@ -91,17 +91,20 @@ List and describe forms that have been created as part of our project. Include d
 #### Form 1 (Created by Nguyen Dinh Khanh Chi):
  - Form name: [Product Insert Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/product-create.php) 
  - Purpose: To add items to the table "Product" in the database.
- - Validations Applied: Product name is required and image link will be checked for invalid URL.
+ - Validations Applied:
+   + Product name's length must be between 3-30 characters.
+   + Image link will be checked for invalid URL.
+   + Short description must be less than 100 characters.
 
 #### Form 2 (Created by Nguyen Dinh Khanh Chi):
  - Form name: [Product Update Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/product-edit.php) 
  - Purpose: To change field details into table "Product" in the database.
- - Validations Applied: Product name is required and image link will be checked for invalid URL.
+ - Validations Applied: Image link will be checked for invalid URL after submitted.
 
  #### Form 3 (Created by Nguyen Dinh Khanh Chi):
  - Form name: [Product Delete Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/product-delete.php) 
  - Purpose: To remove items from table "Product" in the database.
- - Validations Applied: Product name is required and image link will be checked for invalid URL.
+ - Validations Applied: None.
 
 #### Form 4 (Created by Vu Quang Dan):
  - Form name: [Requests Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Contact.php)
