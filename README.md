@@ -21,62 +21,52 @@ The website will serve as a comprehensive product showcase platform for a car pr
 
 ## Features
 
-In this section, list and describe the features or functionality that we are working on.
+In this section, list and describe the features or functionality we are working on.
 
 - [x] Feature 1 (Nguyen Dinh Khanh Chi): Products management (View, Insert, Update, Delete)
-- [ ] Feature 2 (Vu Quang Dan): Feedback & request for Contact page
-- [ ] Feature 3 (Tran Huynh An Duy): Add a filter for News page
-- [ ] Feature 4 (Huynh Van Hiep): Member registration 
-- [ ] Feature 5 (Huynh Van Hiep): Member login
-- [ ] Feature 6 (Huynh Van Hiep): Update members profile
-- [ ] Feature 7 (Full Name): Search - in header of all pages
-- [ ] Feature 8 (Tran Huynh An Duy): View and insert new article for News page
-- [ ] Feature 9 (Nguyen Dinh Khanh Chi): Add a match for Products page
+- [x] Feature 2 (Vu Quang Dan): Feedback & request for Contact page
+- [x] Feature 3 (Tran Huynh An Duy): Add a filter for News page
+- [x] Feature 4 (Huynh Van Hiep): Member registration 
+- [x] Feature 5 (Huynh Van Hiep): Member login
+- [x] Feature 6 (Huynh Van Hiep): Update the user's profile
+- [x] Feature 7 (Huynh Van Hiep): Search product - on the header of all pages
 
-### Feature 1: Products management
+### Feature 1: Product management
 This feature applying CRUD app typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
-- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php)
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/product-manage.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php)
 
 ### Feature 2: Request
-Customers can send their feedback or request via the contact form. Data will be stored in the appropriate table.
-- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/read.php)
-- [HAMK Shell link to the feature](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/read.php)
+Customers can send their feedback or requests via the contact form. Data will be stored in the appropriate table.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Contact.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/Contact.php)
 
 ### Feature 3: Filter News
 Users will filter news based on a specific category.
-- Github links: Ex: ### Github/project13/Feature1.php
-- [Link to HAMK Shell](http://shell.hamk.fi/~duy23000/Web_PHP_Group_13/main_page/News-filter.php)
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/News-filter.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~duy23000/Team-13/News-filter.php)
 
 ### Feature 4: Member register
-Users will fill in their email and password to sign up our membership.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+Users will fill in their email and password to sign up for our membership.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/register.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~hiep23000/Web_php_group_13/register.php)
 
 ### Feature 5: Login
-Users can sign in into their account after registering.
-- Github links to related code files: Ex: ### Github/project13/Feature1.php
-- HAMK Shell link to the feature: Ex: ### shell.hamk.fi/~member1/Feature1.php
+Users can sign in to their account after registering.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/login.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~hiep23000/Web_php_group_13/login.php)
 
 ### Feature 6: Update profile
-Members will be directed to their profile page where they can update personal information such as change password, address, phone nubmer.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+Members can view their profile to update personal information such as address and phone number.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/profile.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~hiep23000/Web_php_group_13/profile.php)
 
 ### Feature 7: Search
-We will make the search button interactive and working, and also it will show the result in a new page.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
+We will make the search button interactive and working, and it will also show the result on a new page.
+- [Github links to related code files - Search function](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/search.php)
+- [Github links to related code files - Show search result](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/product-search.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~hiep23000/Web_php_group_13/product-search.php)
 
-### Feature 8: Insert news article
-We will create a page for admin to insert news article, then this data will be stored in web database and display on News page.
-- Github links: Ex: ### Github/project13/Feature1.php
-- HAMK Shell: Ex: ### shell.hamk.fi/~member1/Feature1.
-
-### Feature 9: Filter Products
-Users can find products based on their desired request on fuel type and car type.
-- Github links to related code files: Ex: ### Github/project13/Feature1.php
-- HAMK Shell link to the feature: Ex: ### shell.hamk.fi/~member1/Feature1.php
 
 ---
 
@@ -100,7 +90,7 @@ List and describe forms that have been created as part of our project. Include d
 
 #### Form 1 (Created by Nguyen Dinh Khanh Chi):
  - Form name: [Product Insert Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-create.php) 
- - Purpose: To add items into table "Product" in database.
+ - Purpose: To add items to the table "Product" in the database.
  - Validations Applied: Product name is required and image link will be checked for invalid URL.
 
 #### Form 2 (Created by Nguyen Dinh Khanh Chi):
