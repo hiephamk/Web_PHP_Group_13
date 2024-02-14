@@ -15,8 +15,8 @@ if(isset($_POST['submit'])){
         }
     $category = $_POST['category'];
     $energy = $_POST['energy'];
-    $short_desc = $_POST['short-desc'];
-    $full_desc = $_POST['full-desc'];
+    $short_desc = $_POST['short_desc'];
+    $full_desc = $_POST['full_desc'];
 
     // Insert data into the Product table
     $sql = "INSERT INTO Product (product_name, images, category, energy_type, short_desc, full_desc) VALUES ('$name', '$image', '$category', '$energy', '$short_desc', '$full_desc')";

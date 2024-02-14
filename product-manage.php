@@ -5,7 +5,7 @@ $md = "Product View and Modification Displays as Table";
 <?php include_once 'header.php'; ?>
 
 <?php
-include_once './Database/db.php';
+include_once 'Database/db.php';
 // SQL query to retrieve data from the 'Product' table
 $sql = "SELECT * FROM Product";
 
