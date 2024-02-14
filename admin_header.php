@@ -40,39 +40,21 @@ session_start();
                                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="Products.php" role="button"
+                                    <a class="nav-link dropdown-toggle" href="admin.php" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        Products
+                                        Product Management
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="Products.php">Electric Cars</a></li>
-                                        <li>
-                                            <a class="dropdown-item" href="Products.php">SUV Cars</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="Products.php">Sedan Cars</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="Products.php">Assessories</a>
-                                        </li>
-                                    </ul>
+
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="News.php">News</a>
+                                    <a class="nav-link" href="admin.php">Update News</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Contact.php">Contact</a>
+                                    <a class="nav-link" href="admin.php">Contact Management</a>
                                 </li>
 
                             </ul>
-                            <nav class="navbar bg-body-tertiary search-box">
-                                <div class="container-fluid">
-                                    <form action="product-manage.php" method="post">
-                                        <input type="text" name="keyword">
-                                        <input type="submit" name="submit" value="Search" style="border-radius:5px;">
-                                    </form>
-                                </div>
-                            </nav>
+
                             <div class="profile-nav">
                                 <?php
                                 if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
@@ -81,7 +63,8 @@ session_start();
                                         <button class="rounded-2 btn-profile dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">'
                                         . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '</button>
                                         <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item " href="profile.php"><img src="./img/person-circle.svg" alt=""> Your profile</a></li>
+                                        <li><a class="dropdown-item " href="admin.php"> admin page</a></li>
+                                        <li><a class="dropdown-item " href="logout.php"> Log out</a></li>
                                         </ul>
                                     </div>';
                                     echo '<a class="" href="logout.php"><button class=" btn btn-logout btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';

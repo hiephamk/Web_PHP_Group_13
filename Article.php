@@ -1,6 +1,6 @@
 <?php
 $title = "Article";
-include "header.php";
+include "../sub_page/header.php";
 ?>
 
 <!-- Body -->
@@ -10,7 +10,7 @@ include "header.php";
     <!-- Image -->
     <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
       <img
-        src="./img/news/Travel-2.jpg"
+        src="//img/news/Travel-2.jpg"
         class="img-fluid" alt="">
       <a
         href="https://www.ford.fi/content/dam/guxeu/nextgen/cx740s/adventure/Adventure_16_CX740S_Int_Beauty_Cockpit_1920x1080_16x9.jpg">
@@ -62,7 +62,7 @@ include "header.php";
       </p><br>
     </div>
   </div>
-  <a href="News.php">
+  <a href="../main_page/News.php">
       <input type="button" value="Go Back" class="btn btn-outline-info">
     </a>
 </div>
@@ -70,4 +70,4 @@ include "header.php";
 </div> <!-- End of d-flex-column -->
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "../sub_page/footer.php"; ?>
