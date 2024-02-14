@@ -15,13 +15,13 @@ CREATE TABLE `Product` (
 # table 2: hiep23000
 ```sql
 CREATE TABLE `customers` (
-  `customer_id` int NOT NULL PRIMARY KEY,
+  `customer_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `fname` varchar(100) DEFAULT NULL,
   `lname` varchar(100) DEFAULT NULL,
-  `address` varchar(200) DEFAULT NULL,
+  `addr` varchar(200) DEFAULT NULL,
   `role` tinyint(1) DEFAULT NULL,
   `email` varchar(100) NOT NULL UNIQUE,
-  `password` varchar(100) NOT NULL,
+  `pass` varchar(100) NOT NULL,
   `phone` varchar(15) NOT NULL UNIQUE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```

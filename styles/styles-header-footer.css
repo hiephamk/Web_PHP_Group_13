@@ -50,6 +50,10 @@ body {
 .btn-login {
   width: 100px;
   padding: auto;
+  margin-bottom: 10px;
+}
+.btn-signup {
+  margin-bottom: 10px;
 }
 
 /*  */
