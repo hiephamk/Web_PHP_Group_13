@@ -1,5 +1,5 @@
 <?php
-include 'Database/db.php';
+include '/Database/db.php';
 include 'filter-data.php';
 include 'get-category.php';
 ?>
