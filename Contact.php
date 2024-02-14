@@ -14,7 +14,7 @@ include "header.php";
 <main class="container mt-5">
   <section class="contact-form">
     <h2>Send us your request</h2>
-    <p>Ready to Assist: Please Provide Your Request Details</p>
+    <p><em>Ready to Assist! Please Provide Your Request Details:</em></p>
     
     <form method="post" action="">
       <div class="mb-3">
@@ -138,7 +138,7 @@ include "header.php";
     $request = filter_input(INPUT_POST, 'request', FILTER_SANITIZE_STRING);
 
     // Include the database connection file
-    include './sub_page/contact-db.php';
+    include './Database/db.php';
 
     // Define SQL query
     $sql = "INSERT INTO Requests (full_name, email, phone, addr, city, country, zip, request) 
