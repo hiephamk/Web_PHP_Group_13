@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 $title = "Update Product";
 include "admin-header.php";
 
@@ -20,24 +20,30 @@ include "admin-header.php";
     <form name="form1" method="post" action="update-product.php">
         <div class="row0-6">
             <div class="col">
-                <input type="text" class="form-control" placeholder="<?php echo $row['product_id']; ?>" name="product_id" required value="<?php echo $row['product_id']; ?>">
+                <input type="text" class="form-control" placeholder="<?php echo $row['product_id']; ?>"
+                    name="product_id" required value="<?php echo $row['product_id']; ?>">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="<?php echo $row['product_name']; ?>" name="product_name" required value="<?php echo $row['product_name']; ?>">
+                <input type="text" class="form-control" placeholder="<?php echo $row['product_name']; ?>"
+                    name="product_name" required value="<?php echo $row['product_name']; ?>">
             </div>
             <div class="col-6">
-                <input type="text" class="form-control" placeholder="<?php echo $row['short_desc']; ?>" name="short_desc" required value="<?php echo $row['short_desc']; ?>">
+                <input type="text" class="form-control" placeholder="<?php echo $row['short_desc']; ?>"
+                    name="short_desc" required value="<?php echo $row['short_desc']; ?>">
             </div>
         </div>
         <div class="col">
-            <input type="text" class="form-control" placeholder="<?php echo $row['images']; ?>" name="images" required value="<?php echo $row['images']; ?>">
+            <input type="text" class="form-control" placeholder="<?php echo $row['images']; ?>" name="images" required
+                value="<?php echo $row['images']; ?>">
         </div>
 
         <div class="col">
-            <input type="text" class="form-control" placeholder="<?php echo $row['category']; ?>" name="category" required value="<?php echo $row['category']; ?>">
+            <input type="text" class="form-control" placeholder="<?php echo $row['category']; ?>" name="category"
+                required value="<?php echo $row['category']; ?>">
         </div>
         <div class="col">
-            <input type="text" class="form-control" placeholder="<?php echo $row['energy_type']; ?>" name="energy_type" required value="<?php echo $row['energy_type']; ?>">
+            <input type="text" class="form-control" placeholder="<?php echo $row['energy_type']; ?>" name="energy_type"
+                required value="<?php echo $row['energy_type']; ?>">
         </div>
         <br>
         <div class="col">
@@ -61,7 +67,7 @@ include "admin-header.php";
     </form>
     <?php
 
-    if (isset($_POST['submit'])) {
+    if (isset($_POST['update'])) {
 
         $product_id = $_POST['product_id'];
         $product_name = $_POST['product_name'];
