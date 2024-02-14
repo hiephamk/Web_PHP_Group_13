@@ -3,6 +3,7 @@ $title = "News with Filter";
 include "header.php";
 ?>
 <!-- body -->
+<div class="body-page container d-flex-column justify-content-center">
   <div class="banner-items">
     <div class="banner-img">
       <img src="./img/News.jpg" alt="" class="img-fluid">
@@ -55,6 +56,7 @@ include "header.php";
   </div>
   <!-- End Main page-->
 </div>
+</div> <!-- End Body-->
 <br>
 <!--Footer-->
 <?php include "footer.php"; ?>
