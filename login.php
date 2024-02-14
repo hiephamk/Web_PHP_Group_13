@@ -1,5 +1,6 @@
 <?php
 ob_start();
+session_start();
 $title = "Login";
 include 'header.php';
 ?>
@@ -72,10 +73,10 @@ include 'header.php';
 
     <div>
         <?php
-        include './Database/db.php';
-        include "functions.php";
-        check_data($data);
+
         if (isset($_POST['email']) && isset($_POST['password'])) {
+            include 'Database/db.php';
+            include "functions.php";
 
             $email = check_data($_POST['email']);
             $pass = check_data($_POST['password']);
@@ -91,19 +92,24 @@ include 'header.php';
                 $result = mysqli_query($conn, $sql_login);
                 if (mysqli_num_rows($result) === 1) {
                     $row = mysqli_fetch_assoc($result);
-                    if ($row['email'] === $email && $row['password'] === $pass) {
+                    if ($row['email'] === $email && $row['password'] === $pass && $row['role'] == 1) {
+
                         $_SESSION['email'] = $row['email'];
-                        $_SESSION['id'] = $row['id'];
+                        $_SESSION['customer_id'] = $row['customer_id'];
                         $_SESSION['fname'] = $row['fname'];
                         $_SESSION['lname'] = $row['lname'];
-                        header('Location: index.php');
-                    } else {
-                        header("Location: login.php?error=Incorrect email or password. Please try again!");
+                        header("Location: admin.php");
+                        exit();
+                    } else if ($row['email'] === $email && $row['password'] === $pass && $row['role'] == 0) {
+                        $_SESSION['email'] = $row['email'];
+                        $_SESSION['customer_id'] = $row['customer_id'];
+                        $_SESSION['fname'] = $row['fname'];
+                        $_SESSION['lname'] = $row['lname'];
+                        header("Location: index.php");
                         exit();
                     }
                 } else {
                     header("Location: login.php?error=Incorrect email or password. Please try again!");
-                    exit();
                 }
             }
         }

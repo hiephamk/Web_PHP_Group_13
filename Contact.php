@@ -1,6 +1,6 @@
 <?php
 $title = "Contact";
-include "header.php";
+include "./layout/header.php";
 ?>
 
 <!-- Body -->
@@ -18,7 +18,7 @@ include "header.php";
       amet
       consequuntur voluptates natus neque modi animi nam quaerat consequatur!, a illo!</p>
 
-    <form method="post" action="" name="contact form">
+    <form method="post" action="">
       <div class="mb-3">
         <label for="fullName" class="form-label">Full Name</label>
         <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g John Smith">
@@ -101,7 +101,7 @@ include "header.php";
       // Return validation status
       return isValid;
     }
-    // function to validate email
+    // function to validate last name
     function validateEmail() {
       const email = document.getElementById("email").value;
       const emailError = document.getElementById("emailError");
@@ -185,4 +185,4 @@ include "header.php";
 </main>
 
 <!--Footer-->
-<?php include "footer.php"; ?>
+<?php include "./layout/footer.php"; ?>
