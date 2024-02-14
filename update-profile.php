@@ -55,7 +55,7 @@ include "header.php";
                 $sql = "UPDATE customers set fname='$fname', lname='$lname', address='$addr', phone='$phone'
                 where email = '$email' ";
                 if ($conn->query($sql) === TRUE) {
-                    header("location: update_profile.php?success=Your information was updated successfully");
+                    header("location: update-profile.php?success=Your information was updated successfully");
                     exit();
                     //echo "<p class = 'text-center'>Your information was updated successfully</p>";
                 } else {
