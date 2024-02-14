@@ -1,9 +1,10 @@
 <?php
 
-        if(!empty($filterDataByCategory)) {
+        if(!empty($filterDataByCategory)) 
+        {
         ?>
-        <div class="body-page container d-inline-block justify-content-center">
-        <table border="1" cellspacing="0" cellpadding="5">
+            <div class="body-page container d-inline-block justify-content-center">
+            <table border="1" cellspacing="0" cellpadding="5">
             <tr style = "border: 1px solid black; border-radius: 10px;">
                 <th>Title</th>
                 <th>Description</th>
@@ -12,7 +13,7 @@
                 <th>Details</th>
             </tr>
         <?php
-        foreach($filterDataByCategory as $filterData){
+            foreach($filterDataByCategory as $filterData){
             $sn = 1;
         ?>
         <tr>
@@ -25,8 +26,8 @@
         <?php
         $sn++; }
         ?>
-        </table>
-        </div>
+            </table>
+            </div>
         <?php
         }
  ?>
