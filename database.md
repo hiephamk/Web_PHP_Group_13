@@ -5,7 +5,7 @@ CREATE TABLE `Product` (
   `product_name` varchar(50) NOT NULL,
   `short_desc` varchar(100) NOT NULL,
   `full_desc` varchar(500) NOT NULL,
-  `image` varchar(100) NOT NULL,
+  `images` varchar(100) NOT NULL,
   `category` varchar(20) NOT NULL,
   `energy_type` varchar(20) NOT NULL,
   PRIMARY KEY (`product_id`)
@@ -19,7 +19,7 @@ CREATE TABLE `customers` (
   `fname` varchar(100) DEFAULT NULL,
   `lname` varchar(100) DEFAULT NULL,
   `address` varchar(200) DEFAULT NULL,
-  `login_status` tinyint(1) DEFAULT NULL,
+  `role` tinyint(1) DEFAULT NULL,
   `email` varchar(100) NOT NULL UNIQUE,
   `password` varchar(100) NOT NULL,
   `phone` varchar(15) NOT NULL UNIQUE
@@ -33,7 +33,7 @@ CREATE TABLE Requests (
     full_name VARCHAR(100),
     email VARCHAR(50),
     phone VARCHAR(20),
-    address VARCHAR(100),
+    addr VARCHAR(100),
     city VARCHAR(50),
     country VARCHAR(50),
     zip VARCHAR(20),
