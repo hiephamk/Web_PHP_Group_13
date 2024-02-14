@@ -63,7 +63,7 @@ include "header.php";
 
   <!-- JavaScript Validation  -->
   <script>
-    // function to validate first name
+    // function to validate customer's name
     function validatefullName() {
       const fname = document.getElementById("fullName").value;
       const fnameError = document.getElementById("fnameError");
@@ -78,7 +78,7 @@ include "header.php";
     }
 
 
-    // function to validate last name
+    // function to validate customer's phone number
     function validatePhoneNumber() {
       // Get and trim phone number input
       const phoneNumber = document.getElementById('phone').value.trim();
@@ -94,7 +94,7 @@ include "header.php";
       // Return validation status
       return isValid;
     }
-    // function to validate last name
+    // function to validate customer's email address
     function validateEmail() {
       const email = document.getElementById("email").value;
       const emailError = document.getElementById("emailError");
@@ -113,7 +113,7 @@ include "header.php";
 
     document.getElementById("fullName").addEventListener("input", validatefullName);
     document.getElementById("email").addEventListener("input", validateEmail);
-    // document.getElementById("lname").addEventListener("input", validatelName);
+    
   </script>
 
 
