@@ -37,7 +37,7 @@ session_start();
                         <div class="collapse navbar-collapse nav-item-container" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="admin.php">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="admin.php" role="button"
@@ -63,11 +63,12 @@ session_start();
                                         <button class="rounded-2 btn-profile dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">'
                                         . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '</button>
                                         <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item " href="admin.php"> admin page</a></li>
+                                        <li><a class="dropdown-item " href="admin.php"> Admin-product</a></li>
+                                        <li><a class="dropdown-item " href="admin.php"> Admin-news</a></li>
                                         <li><a class="dropdown-item " href="logout.php"> Log out</a></li>
                                         </ul>
                                     </div>';
-                                    echo '<a class="" href="logout.php"><button class=" btn btn-logout btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';
+                                    //echo '<a class="" href="logout.php"><button class=" btn btn-logout btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';
                                 } else {
                                 ?>
                                 <div class="login-btn">

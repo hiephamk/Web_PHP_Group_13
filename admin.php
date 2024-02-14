@@ -1,14 +1,13 @@
 <?php
-$title = "product_admin";
-// session_start();
-include "admin_header.php"; ?>
+$title = "admin";
+//session_start();
+include "admin-header.php"; ?>
 
 <body>
     <div class="container">
         <h3 class="text-center">Welcome! <?php echo  $_SESSION['lname']; ?></h3>
 
-        <h3 <a href='product-filter.php'> Product Management </a> </td>
-        </h3>
+
         <?php
 
         include './Database/db.php';
@@ -17,7 +16,7 @@ include "admin_header.php"; ?>
             echo '<a href="admin.php"> Back to admin </a>';
         }
 
-        $sql = "SELECT * FROM products";
+        $sql = "SELECT * FROM Product";
 
         // Execute the SQL query and store the result
         $result = $conn->query($sql);
@@ -29,28 +28,31 @@ include "admin_header.php"; ?>
             <tbody>
                 <tr>
                     <td style='border: 1px #333 solid;'>Id</td>
-                    <td style='border: 1px #333 solid;'> <a href='update_product.php?id=$row[id]'>$row[id]</a> </td>
-                    <td style='border: 1px #333 solid;'> <a href='update_product.php'> Change </a> </td>
+                    <td style='border: 1px #333 solid;'> <a href='update-product.php?id=$row[product_id]'>$row[product_id]</a> </td>
+                    <td style='border: 1px #333 solid;'> <a href='update-product.php?id=$row[product_id]'> Update</a> </td>
                 </tr>
                 <tr>
                     <td style='border: 1px #333 solid;'>Product Name</td>
                     <td style='border: 1px #333 solid;'> " . $row['product_name'] . " </td>
-                    <td style='border: 1px #333 solid;'> <a href='update_product.php'> Change </a> </td>
                 </tr>
                 <tr>
                     <td style='border: 1px #333 solid;'>Short Description</td>
-                    <td style='border: 1px #333 solid;'> " . $row['short_description'] . " </td>
-                    <td style='border: 1px #333 solid;'> <a href='update_product.php'> Change </a> </td>
+                    <td style='border: 1px #333 solid;'> " . $row['short_desc'] . " </td>
+
                 </tr>
                 <tr>
                     <td style='border: 1px #333 solid;'>Image</td>
-                    <td style='border: 1px #333 solid;'> " . $row['img'] . " </td>
-                    <td style='border: 1px #333 solid;'> <a href='update_product.php'> Change </a> </td>
+                    <td style='border: 1px #333 solid;'> " . $row['images'] . " </td>
+
                 </tr>
                 <tr>
-                    <td style='border: 1px #333 solid;'>Release year</td>
-                    <td style='border: 1px #333 solid;'> " . $row['product_year'] . " </td>
-                    <td style='border: 1px #333 solid;'> <a href='update_product.php'> Change </a> </td>
+                    <td style='border: 1px #333 solid;'>Category</td>
+                    <td style='border: 1px #333 solid;'> " . $row['category'] . " </td>
+
+                </tr>
+                <tr>
+                    <td style='border: 1px #333 solid;'>Energy type</td>
+                    <td style='border: 1px #333 solid;'> " . $row['energy_type'] . " </td>
                 </tr>
             </tbody>
         </table>

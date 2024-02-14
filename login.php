@@ -1,6 +1,10 @@
 <?php
 ob_start();
+<<<<<<< Updated upstream
 //session_start();
+=======
+// session_start();
+>>>>>>> Stashed changes
 $title = "Login";
 include 'header.php';
 ?>
@@ -8,7 +12,8 @@ include 'header.php';
 <body>
     <div class="container w-50">
         <h3 class="text-center fw-3">LOGIN</h3>
-        <form class="bg-warning p-5 m-5 rounded-3" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" style="align-items: center; justify-items: center;">
+        <form class="bg-warning p-5 m-5 rounded-3" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post"
+            style="align-items: center; justify-items: center;">
 
             <div class="bg-warning text-danger">
                 <?php
@@ -32,38 +37,40 @@ include 'header.php';
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Remember me.</label>
             </div>
-  
-            <button type="submit" class=" btn-primary btn fs-4" style="margin:20px 0 20px 29%; width:200px; height:50px;border-radius:7px;box-shadow:2px 2px #234;" name="submit">Login</button>
- 
+
+            <button type="submit" class=" btn-primary btn fs-4"
+                style="margin:20px 0 20px 29%; width:200px; height:50px;border-radius:7px;box-shadow:2px 2px #234;"
+                name="submit">Login</button>
+
         </form>
     </div>
     <script>
     // function to validate email
     function validateEmail() {
-      const email = document.getElementById("email").value;
-      const emailError = document.getElementById("emailError");
+        const email = document.getElementById("email").value;
+        const emailError = document.getElementById("emailError");
 
-      if (email === "" || !email.includes("@")) {
-        emailError.innerHTML = "Email must be in valid format! Example: abc@abc.com";
-        return false;
-      } else {
-        emailError.innerHTML = "";
-        return true;
-      }
+        if (email === "" || !email.includes("@")) {
+            emailError.innerHTML = "Email must be in valid format! Example: abc@abc.com";
+            return false;
+        } else {
+            emailError.innerHTML = "";
+            return true;
+        }
     }
-    
-        // function to validate password
-        function validatePassword() {
-      const password = document.getElementById("password").value;
-      const passwordError = document.getElementById("passwordError");
 
-      if (password.length < 6) {
-        passwordError.innerHTML = "Password must more than 6 characters!";
-        return false;
-      } else {
-        passwordError.innerHTML = "";
-        return true;
-      }
+    // function to validate password
+    function validatePassword() {
+        const password = document.getElementById("password").value;
+        const passwordError = document.getElementById("passwordError");
+
+        if (password.length < 6) {
+            passwordError.innerHTML = "Password must more than 6 characters!";
+            return false;
+        } else {
+            passwordError.innerHTML = "";
+            return true;
+        }
     }
     // event listeners for real time validation
     document.getElementById("email").addEventListener("input", validateEmail);
