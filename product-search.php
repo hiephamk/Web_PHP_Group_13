@@ -3,11 +3,11 @@ $title = "Product Filter";
 $md = "Show Results for Product Filter";
 ?>
 <?php include_once 'header.php'; ?>
+
 <div>
-    <h1 class="text-center bg-body-secondary">The result of search will be shown here:</h1>
+    <h1 class="text-center bg-body-secondary">Search Results</h1>
 </div>
 <div class="d-flex flex-wrap container" style="box-sizing:border-box; margin:20px 0 20px 40px;">
-
     <?php
     include_once 'Database/db.php';
     if (isset($_POST['submit']) && ($_POST['submit'])) {
@@ -26,15 +26,16 @@ $md = "Show Results for Product Filter";
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo '<div class="col-3 m-4" style="width:21%;">
-    <a href="Products.php?#' . $row['category'] . ' " class="text-box" target="#">
-      <img class="img-fluid" src="' . $row['images'] . '" alt="Product_1">
-      <h3>' . $row['product_name'] . '</h3>
-      <h6>' . $row['energy_type'] . '</h6>
-      <h6>' . $row['category'] . '</h6>
-      <p>' . $row['short_desc'] . '</p>
-    </a>
-  </div>';
+                echo
+                '<div class="col-3 m-4" style="width:21%;">
+                    <a href="Products.php?#' . $row['category'] . ' " class="text-box" target="#">
+                    <img class="img-fluid" src="' . $row['images'] . '" alt="Product_1">
+                    <h3>' . $row['product_name'] . '</h3>
+                    <h6>' . $row['energy_type'] . '</h6>
+                    <h6>' . $row['category'] . '</h6>
+                    <p>' . $row['short_desc'] . '</p>
+                    </a>
+                </div>';
             }
         } else {
             // Display a message if no results are found
