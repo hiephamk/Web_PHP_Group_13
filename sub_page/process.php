@@ -1,31 +1,47 @@
+<?php include_once 'header.php'; ?>
+
 <?php
-// Check if the 'submit' button in the form was clicked
-if (isset($_POST['submit'])) {
-    // Retrieve data from the form and store it in variables
-    $fname = $_POST['fname'];     // First name
-    $lname = $_POST['lname'];     // Last name
-    $address = $_POST['address'];       // City
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+// Connect to the database
+    include_once 'product-db.php';
 
-    // Include the database connection file
-    include './Database/db.php';
+// Check if the form is submitted with data
+if(isset($_POST['submit'])){
+    // Get the submitted form data
+    $name = $_POST['name'];
+    $image = $_POST['image'];
+        // Check if the image URL is valid
+        if(!filter_var($image, FILTER_VALIDATE_URL)){
+            echo "<h2>Invalid image URL!<br>
+                <a href='product-create.php'>Click here</a> to go back.</h2>";
+            exit();
+        }
+    $category = $_POST['category'];
+    $energy = $_POST['energy'];
+    $short_desc = $_POST['short_desc'];
+    $full_desc = $_POST['full_desc'];
 
-    // Define an SQL query to insert data into the 'studentsinfo' table
-    $sql = "INSERT INTO customers (fname, lname, phone,address,email,password)
-            VALUES ('$fname', '$lname', '$phone', '$address','$email','$password')";
-
-    // Execute the SQL query using the database connection
+    // Insert data into the Product table
+    $sql = "INSERT INTO Product (product_name, images, category, energy_type, short_desc, full_desc) VALUES ('$name', '$image', '$category', '$energy', '$short_desc', '$full_desc')";
     if ($conn->query($sql) === TRUE) {
-        // If the query was successful, display a success message
-        echo "New record added";
+        echo "<h2>New product has been added successfully!<br>
+            <a href='product-create.php'>Click here</a> to add new items.<br>
+            <a href='product-manage.php'>Click here</a> to view product list.</h2>";
+        // Close the database connection
+        $conn->close();
+        /* Redirect to the product insert page
+        header('Location: product-create.php');
+        exit();*/
     } else {
-        // If there was an error in the query, display an error message
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
-    // Close the database connection
-    $conn->close();
 }
 ?>
+
+<style>
+    h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+</style>
+
+<?php include_once 'footer.php'; ?>
