@@ -1,15 +1,11 @@
-<?php 
-    $title = "Product Management";
-    $md = "Product View and Modification Displays as Table";
+<?php
+$title = "Product Management";
+$md = "Product View and Modification Displays as Table";
 ?>
-<?php include_once '../header.php'; ?>
-
-<head>
-    <link rel="stylesheet" href="../styles/styles-header-footer.css">
-</head>
+<?php include_once 'header.php'; ?>
 
 <?php
-include_once 'product-db.php';
+include_once './Database/db.php';
 // SQL query to retrieve data from the 'Product' table
 $sql = "SELECT * FROM Product";
 
@@ -65,12 +61,15 @@ $conn->close();
         margin-top: 20px;
         margin-left: 20px;
     }
+
     form {
         margin: 20px;
     }
+
     .form-group {
         margin-bottom: 20px;
     }
+
     .btn-add {
         background-color: #4CAF50;
         color: #ffffff;
@@ -79,14 +78,17 @@ $conn->close();
         border-radius: 5px;
         margin-bottom: 3px;
     }
+
     .btn-add:hover {
         background-color: #4CAF50;
         color: #ffffff;
         filter: brightness(95%);
     }
-    .btn-warning, .btn-danger {
+
+    .btn-warning,
+    .btn-danger {
         margin-bottom: 3px;
     }
 </style>
 
-<?php include_once '../footer.php'; ?>
+<?php include_once 'footer.php'; ?>

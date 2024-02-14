@@ -46,11 +46,10 @@ include "header.php";
               <li class="breadcrumb-item"><a href="News.php">News</a></li>
               <li class="breadcrumb-item active" aria-current="page">Filter News</li>
             </ol>
-          </nav>
+        </nav>
           <br>
           <h2>Filter News Category: </h2>
-          <?php include 'filter-news.php'; 
-          ?>
+      <?php include 'filter-news.php';?>
         
     
     <!--Main layout-->

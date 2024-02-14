@@ -12,7 +12,8 @@ session_start();
         <?php echo $title; ?>
     </title>
     <link rel="stylesheet" href="./styles/styles-<?php echo $title; ?>.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles-header-footer.css">
 </head>
 
@@ -28,7 +29,9 @@ session_start();
             <div class=" navibar-container">
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse nav-item-container" id="navbarSupportedContent">
@@ -37,7 +40,8 @@ session_start();
                                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="Products.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="Products.php" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
@@ -63,9 +67,9 @@ session_start();
                             </ul>
                             <nav class="navbar bg-body-tertiary search-box">
                                 <div class="container-fluid">
-                                    <form class="d-flex" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    <form action="product-manage.php" method="post">
+                                        <input type="text" name="keyword">
+                                        <input type="submit" name="submit" value="Search" style="border-radius:5px;">
                                     </form>
                                 </div>
                             </nav>
@@ -83,12 +87,12 @@ session_start();
                                     echo '<a class="" href="logout.php"><button class=" btn btn-logout btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';
                                 } else {
                                 ?>
-                                    <div class="login-btn">
-                                        <a href="register.php"><button class="btn-signup btn-primary">Sign
-                                                Up</button></a>
-                                        <a href="login.php"><button class="btn-login btn-primary ">Log
-                                                In</button></a>
-                                    </div>
+                                <div class="login-btn">
+                                    <a href="register.php"><button class="btn-signup btn-primary">Sign
+                                            Up</button></a>
+                                    <a href="login.php"><button class="btn-login btn-primary ">Log
+                                            In</button></a>
+                                </div>
                                 <?php } ?>
                             </div>
                         </div>

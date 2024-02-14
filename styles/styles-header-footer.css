@@ -1,4 +1,7 @@
 /* Header - Navigation */
+body {
+  box-sizing: border-box;
+}
 .header-container {
   display: flex;
   width: 100%;

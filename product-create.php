@@ -2,11 +2,7 @@
     $title = "Insert Products Info";
     $md = "Product Information Form";
 ?>
-<?php include_once '../header.php'; ?>
-
-<head>
-    <link rel="stylesheet" href="../styles/styles-header-footer.css">
-</head>
+<?php include_once 'header.php'; ?>
 
 <h2>Input Products Information Below</h2>
 <form name="form1" method="post" action="product-process.php">
@@ -76,4 +72,4 @@
     }
 </style>
 
-<?php include_once '../footer.php'; ?>
+<?php include_once 'footer.php'; ?>
