@@ -2,14 +2,10 @@
   $title = "Product Delete";
   $md = "Delete A Product From The Database";
 ?>
-<?php include_once '../header.php'; ?>
-
-<head>
-    <link rel="stylesheet" href="../styles/styles-header-footer.css">
-</head>
+<?php include_once 'header.php'; ?>
 
 <?php
-include 'product-db.php';
+include './Database/db.php';
 $a = $_GET['id'];
 $result = mysqli_query($conn,"SELECT * FROM Product WHERE product_id= '$a'");
 $row= mysqli_fetch_array($result);
@@ -122,4 +118,4 @@ $conn->close();
     }
 </style>
 
-<?php include_once '../footer.php'; ?>
+<?php include_once 'footer.php'; ?>

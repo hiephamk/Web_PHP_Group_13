@@ -4,12 +4,8 @@ $md = "Product View and Modification Displays as Table";
 ?>
 <?php include_once 'header.php'; ?>
 
-<head>
-    <link rel="stylesheet" href="./styles/styles-header-footer.css">
-</head>
-
 <?php
-include_once 'Database/db.php';
+include_once './Database/db.php';
 // SQL query to retrieve data from the 'Product' table
 $sql = "SELECT * FROM Product";
 
@@ -95,4 +91,4 @@ $conn->close();
     }
 </style>
 
-<?php include_once '../footer.php'; ?>
+<?php include_once 'footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php
 // Connect to the database
-    include_once 'product-db.php';
+    include_once './Database/db.php';
 
 // Check if the form is submitted with data
 if(isset($_POST['submit'])){
