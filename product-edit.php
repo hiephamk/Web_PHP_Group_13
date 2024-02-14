@@ -92,7 +92,7 @@ if (isset($_POST['submit'])){
     $image = $_POST['image'];
         // Check if the image URL is valid
         if(!filter_var($image, FILTER_VALIDATE_URL)){
-            echo "<h2>Invalid image URL! <br>
+            echo "<br><h2>Invalid image URL! <br>
                 <a href='product-create.php'>Click here</a> to go back.</h2>";
             exit();
         }
