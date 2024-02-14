@@ -132,9 +132,9 @@ List and describe forms that have been created as part of our project. Include d
  - Validations Applied:
 
 #### Form 7 (Created by Tran Huynh An Duy):
- - Form name: Filter Form 
+ - Form name: [Filter Form] (https://github.com/hiephamk/Web_PHP_Group_13/blob/main/display-data.php)
  - Purpose: Display the news based on news category
- - Validations Applied: 
+ - Validations Applied: None
 
 ---
 
@@ -142,12 +142,18 @@ List and describe forms that have been created as part of our project. Include d
 
 List tables that we have created in the project work.
 
-- Table 1 (Created by dinh23000): Product View & Modification | [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php) | [Link to the table](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php).
+- Table 1 (Created by dinh23000): Product View & Modification 
+ + [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/sub_page/product-manage.php) 
+ + [Link to the table](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php).
 
-- Table 2 (Created by dan23000): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 2 (Created by dan23000): Table Name 
+ + [Github Link]()
+ + Link to the table (shell.hamk.fi).
 
 - Table 3 (Created by hiep23000): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
-- Table 4 (Created by duy23000): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 4 (Created by duy23000): Display News base on Filter
+  + [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/News-filter.php)
+  + [Link to the table](http://shell.hamk.fi/~duy23000/Web_PHP_Group_13/News-filter.php)
 
 ---
