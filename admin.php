@@ -7,7 +7,7 @@ include "admin_header.php"; ?>
     <div class="container">
         <h3 class="text-center">Welcome! <?php echo  $_SESSION['lname']; ?></h3>
 
-        <h3 <a href='admin.php'> Product Management </a> </td>
+        <h3 <a href='product-filter.php'> Product Management </a> </td>
         </h3>
         <?php
 
