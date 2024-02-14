@@ -1,7 +1,7 @@
 <?php
 
 $title = "Update Product";
-include "admin_header.php";
+include "admin-header.php";
 ?>
 
 <div class="container">
@@ -14,7 +14,7 @@ include "admin_header.php";
     $row = mysqli_fetch_array($result);
     ?>
     <h2> Update your information below: </h2>
-    <form name="form1" method="post" action="update_product.php">
+    <form name="form1" method="post" action="update-product.php">
         <div class="row0-6">
             <div class="col">
                 <input type="text" class="form-control" placeholder="<?php echo $row['product_name']; ?>" name="product_name" required value="<?php echo $row['product_name']; ?>">

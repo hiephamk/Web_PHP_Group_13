@@ -2,7 +2,7 @@
     $title = "Product Filter";
     $md = "Show Results for Product Filter";
 ?>
-<?php include_once 'admin_header.php'; ?>
+<?php include_once 'header.php'; ?>
 
 <div class="d-flex flex-wrap container" style="box-sizing:border-box; margin:20px 0 20px 40px;">
 <?php

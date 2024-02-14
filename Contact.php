@@ -1,6 +1,6 @@
 <?php
 $title = "Contact";
-include "./header.php";
+include "header.php";
 ?>
 
 <!-- Body -->
@@ -179,4 +179,4 @@ include "./header.php";
 </main>
 
 <!--Footer-->
-<?php include "./footer.php"; ?>
+<?php include "footer.php"; ?>
