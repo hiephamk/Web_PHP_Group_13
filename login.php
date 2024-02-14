@@ -1,10 +1,6 @@
 <?php
 ob_start();
-<<<<<<< Updated upstream
 //session_start();
-=======
-// session_start();
->>>>>>> Stashed changes
 $title = "Login";
 include 'header.php';
 ?>
