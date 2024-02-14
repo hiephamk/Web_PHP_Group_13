@@ -1,8 +1,7 @@
 <?php
-include_once '../Database/db.php';
-// include '../sub_page/header.php';
-include '../sub_page/filter-data.php';
-include '../sub_page/get-category.php';
+include_once './Database/db.php';
+include 'filter-data.php';
+include 'get-category.php';
 ?>
 <div class="body-page container d-inline-block justify-content-center">
     <form method="post">
@@ -21,5 +20,5 @@ include '../sub_page/get-category.php';
     </form>
 </div>
 <?php
-    include '../sub_page/display-data.php';
+    include 'display-data.php';
 ?>
