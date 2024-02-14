@@ -29,8 +29,7 @@ include "header.php";
       </div>
       <div class="mb-3">
         <label for="phone" class="form-label">Phone number</label>
-        <!-- <input type="tel" class="form-control" id="phoneNumber" name="phone" placeholder="+358 1234 56789"> -->
-        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+358 1234 56789" onchange="validatePhoneNumber()">
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="040 1234 567" onchange="validatePhoneNumber()">
         <span id="phoneValidationMsg" style="color: red;"></span>
       </div>
       <div class="mb-3">
