@@ -15,7 +15,7 @@ session_start();
             include 'Database/db.php';
             $keyword = $_POST['keyword'];
 
-            $sql = "SELECT * FROM products WHERE product_name LIKE '%$keyword%'";
+            $sql = "SELECT * FROM Product WHERE product_name LIKE '%$keyword%'";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {

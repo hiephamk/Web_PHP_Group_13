@@ -67,7 +67,7 @@ session_start();
                             </ul>
                             <nav class="navbar search-box">
                                 <div class="container-fluid">
-                                    <form action="product-manage.php" method="post">
+                                    <form action="product-search.php" method="post">
                                         <input type="text" name="keyword">
                                         <input type="submit" name="submit" value="Search" style="border-radius:5px;">
                                     </form>
@@ -82,9 +82,10 @@ session_start();
                                         . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . '</button>
                                         <ul class="dropdown-menu">
                                         <li><a class="dropdown-item " href="profile.php"><img src="./img/person-circle.svg" alt=""> Your profile</a></li>
+                                        <li><a class="dropdown-item " href="logout.php"><img src="./img/person-circle.svg" alt=""> Logout</a></li>
                                         </ul>
                                     </div>';
-                                    echo '<a class="" href="logout.php"><button class=" btn btn-logout btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';
+                                    //echo '<a class="" href="logout.php"><button class=" btn btn-logout btn-primary" style="margin-bottom: 30px;width:100px">Log Out</button></a>';
                                 } else {
                                 ?>
                                 <div class="login-btn">
