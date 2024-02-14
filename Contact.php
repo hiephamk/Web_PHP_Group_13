@@ -1,6 +1,6 @@
 <?php
 $title = "Contact";
-include "./layout/header.php";
+include "./header.php";
 ?>
 
 <!-- Body -->
@@ -14,10 +14,8 @@ include "./layout/header.php";
 <main class="container mt-5">
   <section class="contact-form">
     <h2>Send us your request</h2>
-    <p>Qui sequam, voluptatum. Incidunt, quia aperiam quos cupiditate consectetur, illum doloremque nulla ratione,
-      amet
-      consequuntur voluptates natus neque modi animi nam quaerat consequatur!, a illo!</p>
-
+    <p>Ready to Assist: Please Provide Your Request Details</p>
+    
     <form method="post" action="">
       <div class="mb-3">
         <label for="fullName" class="form-label">Full Name</label>
@@ -32,7 +30,7 @@ include "./layout/header.php";
       <div class="mb-3">
         <label for="phone" class="form-label">Phone number</label>
         <!-- <input type="tel" class="form-control" id="phoneNumber" name="phone" placeholder="+358 1234 56789"> -->
-        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" name="phone" placeholder="+358 1234 56789" onchange="validatePhoneNumber()">
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+358 1234 56789" onchange="validatePhoneNumber()">
         <span id="phoneValidationMsg" style="color: red;"></span>
       </div>
       <div class="mb-3">
@@ -52,19 +50,14 @@ include "./layout/header.php";
         </div>
         <div class="col">
           <label for="zip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="zip" name="zip" placeholder="00000">
+          <input type="text" class="form-control" id="zip" name="zip" placeholder="13100">
         </div>
       </div>
       <div class="mb-3">
         <label for="request" class="form-label">Request</label>
         <textarea class="form-control" id="request" name="request" rows="3"></textarea>
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="contact-agreement">
-        <label class="form-check-label" for="contact-agreement">I agree to get contacted by email or message for
-          this
-          request.</label>
-      </div>
+
       <button type="submit" class="btn btn-primary">Send</button>
     </form>
   </section>
@@ -85,10 +78,11 @@ include "./layout/header.php";
       }
     }
 
+
     // function to validate last name
     function validatePhoneNumber() {
       // Get and trim phone number input
-      const phoneNumber = document.getElementById('phoneNumber').value.trim();
+      const phoneNumber = document.getElementById('phone').value.trim();
 
       // Regex pattern for 10-digit phone number
       const pattern = /^\d{10}$/;
@@ -144,15 +138,15 @@ include "./layout/header.php";
     $request = filter_input(INPUT_POST, 'request', FILTER_SANITIZE_STRING);
 
     // Include the database connection file
-    include 'db.php';
+    include './sub_page/contact-db.php';
 
     // Define SQL query
     $sql = "INSERT INTO Requests (full_name, email, phone, addr, city, country, zip, request) 
             VALUES ('$fullName', '$email', '$phone', '$addr', '$city', '$country', '$zip', '$request')";
 
-    // Execute the query
+ 
     if ($conn->query($sql) === TRUE) {
-      echo "Request updated successfully!";
+      echo "<H2 style='color:blue ; text-align:center'>Request updated successfully! </H2>";
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -185,4 +179,4 @@ include "./layout/header.php";
 </main>
 
 <!--Footer-->
-<?php include "./layout/footer.php"; ?>
+<?php include "./footer.php"; ?>
