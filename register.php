@@ -52,43 +52,45 @@ include_once "header.php";
             </div>
         </div>
         <div class="col-12" align-middle>
-            <input type="submit" class="btn-primary btn fs-4" style="margin:10px 0 30px 35%; width:200px; height:50px;border-radius:5px;" name="submit" value="Register">
+            <input type="submit" class="btn-primary btn fs-4"
+                style="margin:10px 0 30px 35%; width:200px; height:50px;border-radius:5px;" name="submit"
+                value="Register">
         </div>
     </form>
 </div>
 
 <!-- JavaScript Validation  -->
 <script>
-    // function to validate first name
-    function validatefName() {
-        const fname = document.getElementById("fname").value;
-        const fnameError = document.getElementById("fnameError");
+// function to validate first name
+function validatefName() {
+    const fname = document.getElementById("fname").value;
+    const fnameError = document.getElementById("fnameError");
 
-        if (fname.length < 3 || fname.length > 20) {
-            fnameError.innerHTML = "First name must be between 3 and 20 characters!";
-            return false;
-        } else {
-            fnameError.innerHTML = "";
-            return true;
-        }
+    if (fname.length < 3 || fname.length > 20) {
+        fnameError.innerHTML = "First name must be between 3 and 20 characters!";
+        return false;
+    } else {
+        fnameError.innerHTML = "";
+        return true;
     }
+}
 
-    // function to validate last name
-    function validatelName() {
-        const lname = document.getElementById("lname").value;
-        const lnameError = document.getElementById("lnameError");
+// function to validate last name
+function validatelName() {
+    const lname = document.getElementById("lname").value;
+    const lnameError = document.getElementById("lnameError");
 
-        if (lname.length < 3 || lname.length > 20) {
-            lnameError.innerHTML = "Last name must be between 3 and 20 characters!";
-            return false;
-        } else {
-            lnameError.innerHTML = "";
-            return true;
-        }
+    if (lname.length < 3 || lname.length > 20) {
+        lnameError.innerHTML = "Last name must be between 3 and 20 characters!";
+        return false;
+    } else {
+        lnameError.innerHTML = "";
+        return true;
     }
-    // event listeners for real time validation
-    document.getElementById("fname").addEventListener("input", validatefName);
-    document.getElementById("lname").addEventListener("input", validatelName);
+}
+// event listeners for real time validation
+document.getElementById("fname").addEventListener("input", validatefName);
+document.getElementById("lname").addEventListener("input", validatelName);
 </script>
 
 <div class="container text-center">`
@@ -104,7 +106,7 @@ include_once "header.php";
         $pass = $_POST['password'];
 
         // Include the database connection file
-        include './Database/db.php';
+        include 'Database/db.php';
         if (isset($_POST['term_agree'])) {
             $check = "select * from customers where email = '$email'";
             if ($result = mysqli_query($conn, $check)) {
