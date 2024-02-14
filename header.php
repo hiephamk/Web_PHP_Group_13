@@ -65,7 +65,7 @@ session_start();
                                 </li>
 
                             </ul>
-                            <nav class="navbar bg-body-tertiary search-box">
+                            <nav class="navbar search-box">
                                 <div class="container-fluid">
                                     <form action="product-manage.php" method="post">
                                         <input type="text" name="keyword">
