@@ -1,7 +1,6 @@
 <?php
 
-        if(!empty($filterDataByCategory)) 
-        {
+        if(!empty($filterDataByCategory)) {
         ?>
             <div class="body-page container d-inline-block justify-content-center">
             <table border="1" cellspacing="0" cellpadding="5">
