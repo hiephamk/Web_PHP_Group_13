@@ -8,7 +8,7 @@ include "header.php"; ?>
         <h3 class="text-center">Welcome! <?php echo  $_SESSION['lname']; ?></h3>
 
 
-        <p class="text-center">Press <a href="update-profile.php?email=$_SESSION['customer_id']">change my info</a> if
+        <p class="text-center">Press <a href='update_profile.php?email=$_SESSION[' customer_id']'>change my info</a> if
             you
             want to
             update your information!!</p>
@@ -28,27 +28,27 @@ include "header.php"; ?>
                         <tr>
                             <td style='border: 1px #333 solid;' >First Name</td>
                             <td style='border: 1px #333 solid;' > " . $row['fname'] . " </td>
-                            <td style='border: 1px #333 solid;' > <a href='update-profile.php'> Change </a> </td>
+                            <td style='border: 1px #333 solid;' > <a href='update_profile.php'> Change </a> </td>
                         </tr>
                         <tr>
                             <td style='border: 1px #333 solid;' >Last Name</td>
                             <td style='border: 1px #333 solid;'> " . $row['lname'] . " </td>
-                            <td style='border: 1px #333 solid;'> <a href='update-profile.php'> Change </a> </td>
+                            <td style='border: 1px #333 solid;'> <a href='update_profile.php'> Change </a> </td>
                         </tr>
                         <tr>
                             <td style='border: 1px #333 solid;'>Phone</td>
                             <td style='border: 1px #333 solid;'> " . $row['phone'] . " </td>
-                            <td style='border: 1px #333 solid;'> <a href='update-profile.php'> Change </a> </td>
+                            <td style='border: 1px #333 solid;'> <a href='update_profile.php'> Change </a> </td>
                         </tr>
                         <tr>
                             <td style='border: 1px #333 solid;'>Address</td>
                             <td style='border: 1px #333 solid;'> " . $row['address'] . " </td>
-                            <td style='border: 1px #333 solid;'> <a href='update-profile.php'> Change </a> </td>
+                            <td style='border: 1px #333 solid;'> <a href='update_profile.php'> Change </a> </td>
                         </tr>
                         <tr>
                             <td style='border: 1px #333 solid;'>Email</td>
                             <td style='border: 1px #333 solid;'> " . $row['email'] . " </td>
-                            <td style='border: 1px #333 solid;'> <a href='update-profile.php'> Change </a> </td>
+                            <td style='border: 1px #333 solid;'> <a href='update_profile.php'> Change </a> </td>
                         </tr>
                     </tbody>
                 </table>
