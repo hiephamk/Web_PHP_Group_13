@@ -148,6 +148,6 @@ List tables that we have created in the project work.
 - Table 2 (Created by duy23000): Display News filter results || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/display-data.php) || [Link to the table](http://shell.hamk.fi/~duy23000/Web_PHP_Group_13/News-filter.php)
 
 - Table 3 (Created by hiep23000): User Profile || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/profile.php) || [Link to the table](http://shell.hamk.fi/~hiep23000/Web_php_group_13/profile.php)
-- 
+
 - Table 4 (Created by dan23000): Customer info || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/customer-info.php) || [Link to the table](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/customer-info.php)
 ---
