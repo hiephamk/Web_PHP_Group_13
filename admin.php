@@ -1,6 +1,5 @@
 <?php
 $title = "admin";
-//session_start();
 include "admin-header.php"; ?>
 
 <body>
@@ -38,6 +37,11 @@ include "admin-header.php"; ?>
                 <tr>
                     <td style='border: 1px #333 solid;'>Short Description</td>
                     <td style='border: 1px #333 solid;'> " . $row['short_desc'] . " </td>
+
+                </tr>
+                <tr>
+                    <td style='border: 1px #333 solid;'>Full Description</td>
+                    <td style='border: 1px #333 solid;'> " . $row['full_desc'] . " </td>
 
                 </tr>
                 <tr>

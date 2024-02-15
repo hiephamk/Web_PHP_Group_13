@@ -8,12 +8,12 @@ include_once "header.php";
     <p><span class="error">* Required field</span></p>
     <form class="row g-3 bg-warning" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="col-md-6">
-            <label for="fname" class="form-label">First Name</label>
+            <label for="inputEmail4" class="form-label">First Name</label>
             <input type="text" class="form-control" id="fname" name="fname">
             <span id="fnameError" style="color: red;"></span>
         </div>
         <div class="col-md-6">
-            <label for="lname" class="form-label">Last Name</label>
+            <label for="inputPassword4" class="form-label">Last Name</label>
             <input type="text" class="form-control" id="lname" name="lname">
             <span id="lnameError" style="color: red;"></span>
         </div>
@@ -30,8 +30,8 @@ include_once "header.php";
 
         </div>
         <div class="col-6">
-            <label for="inputPhone" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" name="phone" id="inputPhone" placeholder="phone number">
+            <label for="inputAddress" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" name="phone" id="inputAddress" placeholder="phone number">
         </div>
         <div class="col-6">
             <label for="inputAddress" class="form-label">Address</label>
@@ -39,14 +39,14 @@ include_once "header.php";
         </div>
         <div class="col-12">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1" name="term_agree">
-                <label class="form-check-label" for="gridCheck1">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="term_agree">
+                <label class="form-check-label" for="gridCheck">
                     By checking this box, you are agreeing to our terms of service.
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck2">
-                <label class="form-check-label" for="gridCheck2">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
                     Email me with news and updates (Option)
                 </label>
             </div>
@@ -91,17 +91,17 @@ include_once "header.php";
     document.getElementById("lname").addEventListener("input", validatelName);
 </script>
 
-<div class="container text-center"><br>
+<div class="container text-center">`
     <?php
     // Check if the 'submit' button in the form was clicked
     if (isset($_POST['submit'])) {
         // Retrieve data from the form and store it in variables
         $fname = $_POST['fname'];     // First name
-        $lname = $_POST['lname'];  
-        $email = $_POST['email'];
-        $pass = $_POST['pass'];     
+        $lname = $_POST['lname'];     // Last name
+        $addr = $_POST['address'];       // City
         $phone = $_POST['phone'];
-        $addr = $_POST['addr'];  
+        $email = $_POST['email'];
+        $pass = $_POST['password'];
 
         // Include the database connection file
         include './Database/db.php';
@@ -112,11 +112,10 @@ include_once "header.php";
                 if ($rowcount >= 1) {
                     echo "<p class='text-danger'>The email has already existed</p>";
                 } else {
-                    $sql = "INSERT INTO customers(fname,lname,email,pass,phone,addr) VALUES ('$fname','$lname','$email','$pass','$phone','$addr')";
+                    $sql = "insert into customers(fname,lname,address,phone,email,password) values('$fname','$lname','$address','$phone','$email','$pass')";
                     if ($conn->query($sql) === TRUE) {
-                        echo "<p>You have successfully registered. Now you can <a href='login.php'>log in</a> or back to <a href='index.php'>Home</a> </p>";
-                    } else {
-                        echo "<p>Error: " . $sql . "<br>" . $conn->error . "</p>";
+                        echo "<p>You have successfully registered. Now you can <a href='login.php'>log in</a> or back to <a href='../main_page/index.php'>Home</a> </p>";
+                        $conn->close();
                     }
                 }
             } else {
@@ -127,8 +126,7 @@ include_once "header.php";
             echo "<p class='text-danger' >Warning: You need to agree with our terms of service!</p>";
         }
     }
-    $conn->close();
+
     ?>
 </div>
-
 <?php include "footer.php"; ?>
