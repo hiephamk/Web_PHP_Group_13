@@ -24,49 +24,48 @@ The website will serve as a comprehensive product showcase platform for a car pr
 In this section, list and describe the features or functionality we are working on.
 
 - [x] Feature 1 (Nguyen Dinh Khanh Chi): Products management (View, Insert, Update, Delete)
-- [x] Feature 2 (Vu Quang Dan): Feedback & request for Contact page
-- [x] Feature 3 (Tran Huynh An Duy): Add a filter for News page
-- [x] Feature 4 (Huynh Van Hiep): Member registration 
-- [x] Feature 5 (Huynh Van Hiep): Member login
-- [x] Feature 6 (Huynh Van Hiep): Update users' profile
-- [x] Feature 7 (Huynh Van Hiep): Search product on the header
+- [x] Feature 2 (Tran Huynh An Duy): Add a filter for News page
+- [x] Feature 3 (Huynh Van Hiep): Member registration 
+- [x] Feature 4 (Huynh Van Hiep): Member login
+- [x] Feature 5 (Huynh Van Hiep): Update users' profile
+- [x] Feature 6 (Huynh Van Hiep): Search product on the header
+- [x] Feature 7 (Vu Quang Dan): Feedback & request for Contact page
 
 ### Feature 1: Product management
 This feature applying CRUD app typically allows users to browse the existing product list and perform further actions (add new items, change field details, remove items) via a user-friendly interface.
 - [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/product-manage.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php)
 
-### Feature 2: Request
-Customers can send their feedback or requests via the contact form. Data will be stored in the appropriate table.
-- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Contact.php)
-- [HAMK Shell link to the feature](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/Contact.php)
-
-### Feature 3: Filter News
+### Feature 2: Filter News
 Users will filter news based on a specific category.
 - [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/News-filter.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~duy23000/Team-13/News-filter.php)
 
-### Feature 4: Member register
+### Feature 3: Member register
 Users will fill in their email and password to sign up for our membership.
 - [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/register.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~hiep23000/Web_php_group_13/register.php)
 
-### Feature 5: Login
+### Feature 4: Login
 Users can sign in to their account after registering.
 - [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/login.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~hiep23000/Web_php_group_13/login.php)
 
-### Feature 6: Update Profile
+### Feature 5: Update Profile
 Members can view their profile to update personal information such as address and phone number.
 - [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/profile.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~hiep23000/Web_php_group_13/profile.php)
 
-### Feature 7: Search
+### Feature 6: Search
 We will make the search button interactive and working, and it will also show the result on a new page.
 - [Github links to related code files - Search function](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/search.php)
 - [Github links to related code files - Show search result](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/product-search.php)
 - [HAMK Shell link to the feature](http://shell.hamk.fi/~hiep23000/Web_php_group_13/product-search.php)
 
+### Feature 7: Request
+Customers can send their feedback or requests via the contact form. Data will be stored in the appropriate table.
+- [Github links to related code files](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Contact.php)
+- [HAMK Shell link to the feature](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/Contact.php)
 
 ---
 
@@ -75,9 +74,9 @@ We will make the search button interactive and working, and it will also show th
 List the database tables that are part of our project. 
 
 - Table 1 (Created by dinh23000): Product
-- Table 2 (Created by hiep23000): customers
-- Table 3 (Created by dan23000): Requests
-- Table 4 (Created by duy23000): News
+- Table 2 (Created by duy23000): News
+- Table 3 (Created by hiep23000): customers
+- Table 4 (Created by dan23000): Requests
 
 > Include the ER Diagram of the database. 
 ![Database_diagram](./img/Database_diagram.png)
@@ -106,14 +105,11 @@ List and describe forms that have been created as part of our project. Include d
  - Purpose: To remove items from table "Product" in the database.
  - Validations Applied: None.
 
-#### Form 4 (Created by Vu Quang Dan):
- - Form name: [Requests Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Contact.php)
- - Purpose: To get the data from the end user/customer and insert it into the database.
- - Validations Applied:
-   + Check full name is not empty
-   + Check email is in the valid format (content @ character)
-   + Check phone number should have at least 10 digits
-
+#### Form 4 (Created by Tran Huynh An Duy):
+ - Form name: [Filter Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/filter-news.php)
+ - Purpose: Display the existing news category, users have to choose which kind of category they would like to see.
+ - Validations Applied: None
+   
 #### Form 5 (Created by Huynh Van Hiep):
  - Form name: [Login Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/login.php)  
  - Purpose: Get data from the end users and compare it with information in the database
@@ -134,11 +130,13 @@ List and describe forms that have been created as part of our project. Include d
  - Purpose: Show the existing data of end users and insert the new update into the database.
  - Validations Applied: None
 
-#### Form 8 (Created by Tran Huynh An Duy):
- - Form name: [Filter Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/filter-news.php)
- - Purpose: Display the existing news category, users have to choose which kind of category they would like to see.
- - Validations Applied: None
-
+#### Form 8 (Created by Vu Quang Dan):
+ - Form name: [Requests Form](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/Contact.php)
+ - Purpose: To get the data from the end user/customer and insert it into the database.
+ - Validations Applied:
+   + Check full name is not empty
+   + Check email is in the valid format (content @ character)
+   + Check phone number should have at least 10 digits
 ---
 
 ## Created Tables
@@ -147,9 +145,9 @@ List tables that we have created in the project work.
 
 - Table 1 (Created by dinh23000): Product View & Modification || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/product-manage.php) || [Link to the table](http://shell.hamk.fi/~dinh23000/team-13-project/product-manage.php).
 
-- Table 2 (Created by dan23000): Customer info || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/customer-info.php) || [Link to the table](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/customer-info.php)
+- Table 2 (Created by duy23000): Display News filter results || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/display-data.php) || [Link to the table](http://shell.hamk.fi/~duy23000/Web_PHP_Group_13/News-filter.php)
 
-- Table 3 (Created by duy23000): Display News filter results || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/display-data.php) || [Link to the table](http://shell.hamk.fi/~duy23000/Web_PHP_Group_13/News-filter.php)
-
-- Table 4 (Created by hiep23000): User Profile || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/profile.php) || [Link to the table](http://shell.hamk.fi/~hiep23000/Web_php_group_13/profile.php)
+- Table 3 (Created by hiep23000): User Profile || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/profile.php) || [Link to the table](http://shell.hamk.fi/~hiep23000/Web_php_group_13/profile.php)
+- 
+- Table 4 (Created by dan23000): Customer info || [Github Link](https://github.com/hiephamk/Web_PHP_Group_13/blob/main/customer-info.php) || [Link to the table](http://shell.hamk.fi/~dan23000/Web_PHP_Group_13/customer-info.php)
 ---
