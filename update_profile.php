@@ -8,13 +8,14 @@ include "header.php";
 <body>
     <div class="container">
         <?php
-        include './Database/db.php';
+        include 'Database/db.php';
         $email = $_SESSION['email'];
         $result = mysqli_query($conn, "SELECT * FROM customers WHERE email = '$email' ");
         $row = mysqli_fetch_array($result);
         ?>
         <h2 class="text-center m-3"> Update your information below: </h2>
-        <form class="container" name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" style="margin: 100px auto;padding:20px; border:1px #333 solid; width:50%">
+        <form class="container" name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>"
+            style="margin: 100px auto;padding:20px; border:1px #333 solid; width:50%">
             <div style="display: flex; justify-content:space-around; margin: 20px auto; width:100%;">
                 <label style="width:150px" for="">First Name:</label>
                 <input style="width:700px;" type="text" name="fname" required value="<?php echo $row['fname']; ?>">
@@ -50,19 +51,20 @@ include "header.php";
 
                 $fname = $_POST['fname'];
                 $lname = $_POST['lname'];
-                $addr = $_POST['address'];
+                $addr = $_POST['addr'];
                 $phone = $_POST['phone'];
-                $sql = "UPDATE customers set fname='$fname', lname='$lname', address='$addr', phone='$phone'
+                $sql = "UPDATE customers set fname='$fname', lname='$lname', addr='$addr', phone='$phone'
                 where email = '$email' ";
                 if ($conn->query($sql) === TRUE) {
                     header("location: update_profile.php?success=Your information was updated successfully");
                     exit();
+                    $conn->close();
                     //echo "<p class = 'text-center'>Your information was updated successfully</p>";
                 } else {
                     echo "Error updating record: " . $conn->error;
                 }
             }
-            $conn->close();
+            
             ?>
         </div>
     </div>
