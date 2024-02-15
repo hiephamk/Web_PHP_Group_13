@@ -26,7 +26,7 @@ include_once "header.php";
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Password</label>
             <span class="error">*</span>
-            <input type="password" class="form-control" id="inputPassword4" name="password">
+            <input type="password" class="form-control" id="inputPassword4" name="pass">
 
         </div>
         <div class="col-6">
@@ -35,7 +35,7 @@ include_once "header.php";
         </div>
         <div class="col-6">
             <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" name="address" id="inputAddress" placeholder="Street, Building...">
+            <input type="text" class="form-control" name="addr" id="inputAddress" placeholder="Street, Building...">
         </div>
         <div class="col-12">
             <div class="form-check">

@@ -28,10 +28,10 @@ div > a {
 
 button {
   background: transparent;
-  border: 2px solid #e74c3c;
+  /* border: 2px solid #e74c3c;*/
 }
 
-img {
+.banner-img {
   width: 100%;
 }
 

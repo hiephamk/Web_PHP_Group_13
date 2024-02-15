@@ -27,7 +27,7 @@ div > a {
 
 button {
   background: transparent;
-  border: 2px solid #e74c3c;
+  /* border: 2px solid #e74c3c; */
 }
 
 .card-body {
@@ -35,7 +35,7 @@ button {
   height: auto;
 }
 
-img {
+.banner > img {
   width: 100%;
   height: auto;
   object-fit: cover;

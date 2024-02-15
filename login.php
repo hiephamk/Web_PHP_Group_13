@@ -26,7 +26,7 @@ include 'header.php';
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password:</label>
-                <input type="password" class="form-control" name="password" id="password">
+                <input type="password" class="form-control" name="pass" id="password">
                 <span id="passwordError" style="color: red;"></span>
             </div>
             <div class="mb-3 form-check">
@@ -77,12 +77,12 @@ include 'header.php';
     <div>
         <?php
 
-        if (isset($_POST['email']) && isset($_POST['password'])) {
+        if (isset($_POST['email']) && isset($_POST['pass'])) {
             include 'Database/db.php';
             include "functions.php";
 
             $email = check_data($_POST['email']);
-            $pass = check_data($_POST['password']);
+            $pass = check_data($_POST['pass']);
 
             if (empty($email)) {
                 header("Location: login.php?error=Enter your email");
@@ -91,11 +91,11 @@ include 'header.php';
                 header("Location: login.php?error=Enter your password");
                 exit();
             } else {
-                $sql_login = "SELECT * FROM customers WHERE email='$email' AND password = '$pass'";
+                $sql_login = "SELECT * FROM customers WHERE email='$email' AND pass = '$pass'";
                 $result = mysqli_query($conn, $sql_login);
                 if (mysqli_num_rows($result) === 1) {
                     $row = mysqli_fetch_assoc($result);
-                    if ($row['email'] === $email && $row['password'] === $pass && $row['role'] == 1) {
+                    if ($row['email'] === $email && $row['pass'] === $pass && $row['role'] == 1) {
 
                         $_SESSION['email'] = $row['email'];
                         $_SESSION['customer_id'] = $row['customer_id'];
@@ -103,7 +103,7 @@ include 'header.php';
                         $_SESSION['lname'] = $row['lname'];
                         header("Location: admin.php");
                         exit();
-                    } else if ($row['email'] === $email && $row['password'] === $pass && $row['role'] == 0) {
+                    } else if ($row['email'] === $email && $row['pass'] === $pass && $row['role'] == 0) {
                         $_SESSION['email'] = $row['email'];
                         $_SESSION['customer_id'] = $row['customer_id'];
                         $_SESSION['fname'] = $row['fname'];

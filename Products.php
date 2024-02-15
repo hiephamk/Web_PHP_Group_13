@@ -8,7 +8,7 @@ include "header.php";
     <!-- Banner -->
     <div class="banner-items container">
         <div class="banner-img">
-            <img src="./img/banner-products.png" alt="banner" class="img-fluid">
+            <img src="./img/banner-products.png" alt="banner" class="banner-img img-fluid">
         </div>
         <div class="banner-text">
             <h3>YOUR IDEAL CAR NOW AVAILABLE!</h3>
