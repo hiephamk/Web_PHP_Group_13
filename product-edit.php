@@ -11,7 +11,7 @@ $result = mysqli_query($conn,"SELECT * FROM Product WHERE product_id= '$a'");
 $row= mysqli_fetch_array($result);
 ?>
 <h2> Update Product Information </h2><br>
-<form name= "form1" method="post" action="">
+<form name= "form2" method="post" action="">
     <div class="form-group">
         <div class="row">
             <div class="col">
