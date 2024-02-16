@@ -25,7 +25,7 @@ include "header.php";
             </div>
             <div style="display: flex;margin: 20px auto; width:100%;">
                 <label style="width:150px" for="">Address:</label>
-                <input style="width:700px;" type="text" name="address" required value="<?php echo $row['address']; ?>">
+                <input style="width:700px;" type="text" name="addr" required value="<?php echo $row['addr']; ?>">
             </div>
             <div style="display: flex;margin: 20px auto; width:100%;">
                 <label style="width:150px" for="">Phone:</label>
@@ -50,9 +50,9 @@ include "header.php";
 
                 $fname = $_POST['fname'];
                 $lname = $_POST['lname'];
-                $addr = $_POST['address'];
+                $addr = $_POST['addr'];
                 $phone = $_POST['phone'];
-                $sql = "UPDATE customers set fname='$fname', lname='$lname', address='$addr', phone='$phone'
+                $sql = "UPDATE customers set fname='$fname', lname='$lname', addr='$addr', phone='$phone'
                 where email = '$email' ";
                 if ($conn->query($sql) === TRUE) {
                     header("location: update-profile.php?success=Your information was updated successfully");
